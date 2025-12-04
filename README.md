@@ -1,6 +1,23 @@
 # Bible Story Builder
 
-Build multilingual Bible stories by downloading text, audio, and timing data from the Digital Bible Platform API.
+Build multilingual Bible stories in minutes - perfect for literacy programs, oral storytelling, and translation projects.
+- by downloading text, audio, and timing data from the Digital Bible Platform API.
+
+## Highlights
+- 🌍 2000+ languages supported
+- 📖 Custom story definitions
+- 🎵 Audio, text, and timing data
+- 🗂️ Organized output structure
+- 🔄 Multiple Bible versions per language
+- 📱 Coming soon: Web app generation
+- Active development (roadmap to v2.0)
+
+### Target Audiences
+1. **Bible translators** - Get content in multiple versions
+2. **Literacy programs** - Simple stories for new readers
+3. **Oral storytellers** - Narrative passages with audio
+4. **Ministry leaders** - Multilingual teaching materials
+5. **App developers** - Ready-to-use Bible content
 
 ## Overview
 
@@ -255,7 +272,7 @@ fij,ton,smo,haw,mao
 # Only languages with audio+text synchronization
 python3 download_language_content.py --book-set SYNC_NT --region Africa --books Jesus_Film
 
-# Only languages with timing data (for video sync)
+# Only languages with timing data (for audio sync)
 python3 download_language_content.py --book-set TIMING_FULL --books Creation_Story
 ```
 
