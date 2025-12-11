@@ -1,0 +1,19 @@
+{
+  "language": "ewo",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "EWOEWO",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "EWOEWON": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_EWOEWON_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

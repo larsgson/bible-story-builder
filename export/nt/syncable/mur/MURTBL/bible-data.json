@@ -1,0 +1,26 @@
+{
+  "language": "mur",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MURTBL",
+  "filesets": {
+    "audio": {
+      "MURTBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MURTBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MURTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MURTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

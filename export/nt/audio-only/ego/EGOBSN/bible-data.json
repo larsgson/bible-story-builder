@@ -1,0 +1,19 @@
+{
+  "language": "ego",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "EGOBSN",
+  "filesets": {
+    "audio": {
+      "EGOBSNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_EGOBSNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

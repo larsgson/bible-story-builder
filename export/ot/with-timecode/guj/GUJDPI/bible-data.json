@@ -1,0 +1,33 @@
+{
+  "language": "guj",
+  "canon": "OT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "GUJDPI",
+  "filesets": {
+    "audio": {
+      "GUJDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GUJDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GUJDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GUJDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "GUJDPIO1DA_timing": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GUJDPIO1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

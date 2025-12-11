@@ -1,0 +1,33 @@
+{
+  "language": "kfs",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KFSDPI",
+  "filesets": {
+    "audio": {
+      "KFSDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFSDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KFSDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFSDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KFSDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFSDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

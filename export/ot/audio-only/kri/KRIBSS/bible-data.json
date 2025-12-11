@@ -1,0 +1,19 @@
+{
+  "language": "kri",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KRIBSS",
+  "filesets": {
+    "audio": {
+      "KRIBSSO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KRIBSSO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

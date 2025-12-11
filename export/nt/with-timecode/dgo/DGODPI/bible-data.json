@@ -1,0 +1,33 @@
+{
+  "language": "dgo",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "DGODPI",
+  "filesets": {
+    "audio": {
+      "DGODPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DGODPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DGODPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DGODPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "DGODPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DGODPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

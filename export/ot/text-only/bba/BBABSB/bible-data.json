@@ -1,0 +1,19 @@
+{
+  "language": "bba",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BBABSB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BBABSB": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BBABSB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "etx",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ETXNBT",
+  "filesets": {
+    "audio": {
+      "ETXNBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ETXNBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

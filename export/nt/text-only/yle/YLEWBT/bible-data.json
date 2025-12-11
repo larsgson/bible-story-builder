@@ -1,0 +1,19 @@
+{
+  "language": "yle",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "YLEWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "YLEWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YLEWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

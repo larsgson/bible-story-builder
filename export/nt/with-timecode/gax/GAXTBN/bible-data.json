@@ -1,0 +1,33 @@
+{
+  "language": "gax",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "GAXTBN",
+  "filesets": {
+    "audio": {
+      "GAXBSEN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAXBSEN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GAXBSEN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAXBSEN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "GAXBSEN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAXBSEN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

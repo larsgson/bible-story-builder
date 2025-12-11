@@ -1,0 +1,26 @@
+{
+  "language": "zpo",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZPOTBL",
+  "filesets": {
+    "audio": {
+      "ZPOTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZPOTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZPOTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZPOTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

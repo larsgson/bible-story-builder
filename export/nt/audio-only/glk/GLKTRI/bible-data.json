@@ -1,0 +1,19 @@
+{
+  "language": "glk",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "GLKTRI",
+  "filesets": {
+    "audio": {
+      "GLKTRIN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GLKTRIN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "dag",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "DAGFUL",
+  "filesets": {
+    "audio": {
+      "DAGBSGN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DAGBSGN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DAGBSGN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DAGBSGN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

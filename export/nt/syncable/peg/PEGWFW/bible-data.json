@@ -1,0 +1,26 @@
+{
+  "language": "peg",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PEGWFW",
+  "filesets": {
+    "audio": {
+      "PEGWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEGWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PEGWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEGWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

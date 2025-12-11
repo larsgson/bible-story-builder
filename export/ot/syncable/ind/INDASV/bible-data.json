@@ -1,0 +1,26 @@
+{
+  "language": "ind",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "INDASV",
+  "filesets": {
+    "audio": {
+      "INDASVO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_INDASVO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "INDASV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_INDASV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

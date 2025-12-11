@@ -1,0 +1,26 @@
+{
+  "language": "mto",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MTOTBL",
+  "filesets": {
+    "audio": {
+      "MTOTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MTOTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MTOTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MTOTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

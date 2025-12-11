@@ -1,0 +1,26 @@
+{
+  "language": "nnh",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NNHNNT",
+  "filesets": {
+    "audio": {
+      "NNHABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NNHABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NNHABC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NNHABC.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

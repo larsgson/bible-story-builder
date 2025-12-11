@@ -1,0 +1,19 @@
+{
+  "language": "wuv",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "WUVWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "WUVWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WUVWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

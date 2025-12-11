@@ -1,0 +1,26 @@
+{
+  "language": "byr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BYRWBT",
+  "filesets": {
+    "audio": {
+      "BYRWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BYRWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BYRWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BYRWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

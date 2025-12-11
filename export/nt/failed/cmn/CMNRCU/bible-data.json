@@ -1,0 +1,17 @@
+{
+  "language": "cmn",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "audio-only",
+  "distinct_id": "CMNRCU",
+  "filesets": {
+    "audio": {
+      "CHNRUVN2DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

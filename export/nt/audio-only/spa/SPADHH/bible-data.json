@@ -1,0 +1,19 @@
+{
+  "language": "spa",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SPADHH",
+  "filesets": {
+    "audio": {
+      "SPNDHHN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SPNDHHN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

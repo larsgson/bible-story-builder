@@ -1,0 +1,26 @@
+{
+  "language": "yaa",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "YAATBL",
+  "filesets": {
+    "audio": {
+      "YAATBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YAATBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "YAATBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YAATBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

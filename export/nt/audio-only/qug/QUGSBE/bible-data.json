@@ -1,0 +1,19 @@
+{
+  "language": "qug",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QUGSBE",
+  "filesets": {
+    "audio": {
+      "QUGSBEN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUGSBEN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

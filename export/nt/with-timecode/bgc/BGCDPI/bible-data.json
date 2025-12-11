@@ -1,0 +1,33 @@
+{
+  "language": "bgc",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BGCDPI",
+  "filesets": {
+    "audio": {
+      "BGCDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGCDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BGCDPI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGCDPI.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BGCDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGCDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

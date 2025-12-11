@@ -1,0 +1,33 @@
+{
+  "language": "gvr",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "GVRWBT",
+  "filesets": {
+    "audio": {
+      "GVRWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GVRWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GVRWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GVRWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "GVRWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GVRWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

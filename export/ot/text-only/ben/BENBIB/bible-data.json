@@ -1,0 +1,19 @@
+{
+  "language": "ben",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BENBIB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BENBIB": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BENBIB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

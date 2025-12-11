@@ -1,0 +1,19 @@
+{
+  "language": "pil",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PILSIM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PILSIMO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PILSIMO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

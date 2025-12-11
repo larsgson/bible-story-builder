@@ -1,0 +1,26 @@
+{
+  "language": "hil",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "HILHPV",
+  "filesets": {
+    "audio": {
+      "HILHPVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HILHPVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HILHPV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HILHPV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

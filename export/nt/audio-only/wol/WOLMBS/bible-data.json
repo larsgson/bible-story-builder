@@ -1,0 +1,19 @@
+{
+  "language": "wol",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "WOLMBS",
+  "filesets": {
+    "audio": {
+      "WOLMBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WOLMBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

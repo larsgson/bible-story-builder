@@ -1,0 +1,19 @@
+{
+  "language": "bku",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BKUOMF",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BKUOMFN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BKUOMFN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

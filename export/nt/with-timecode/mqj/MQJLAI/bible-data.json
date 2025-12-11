@@ -1,0 +1,33 @@
+{
+  "language": "mqj",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MQJLAI",
+  "filesets": {
+    "audio": {
+      "MQJLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MQJLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MQJLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MQJLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MQJLAIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MQJLAIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

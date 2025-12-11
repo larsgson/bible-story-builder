@@ -1,0 +1,33 @@
+{
+  "language": "tgp",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TGPWBT",
+  "filesets": {
+    "audio": {
+      "TGPWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TGPWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TGPWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TGPWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TGPWBTN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TGPWBTN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

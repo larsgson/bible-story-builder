@@ -1,0 +1,26 @@
+{
+  "language": "tur",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TURNVS",
+  "filesets": {
+    "audio": {
+      "TRKNVSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TRKNVSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TRKNVS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TRKNVS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

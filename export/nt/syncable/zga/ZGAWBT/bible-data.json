@@ -1,0 +1,26 @@
+{
+  "language": "zga",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "ZGAWBT",
+  "filesets": {
+    "audio": {
+      "ZGAWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZGAWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZGAWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZGAWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

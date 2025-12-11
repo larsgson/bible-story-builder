@@ -1,0 +1,24 @@
+{
+  "language": "mit",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MITTBL",
+  "filesets": {
+    "audio": {
+      "MITTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MITTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MITTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

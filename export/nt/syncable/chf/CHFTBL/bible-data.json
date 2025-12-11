@@ -1,0 +1,26 @@
+{
+  "language": "chf",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CHFTBL",
+  "filesets": {
+    "audio": {
+      "CHFTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CHFTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CHFTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CHFTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

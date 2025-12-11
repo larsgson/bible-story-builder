@@ -1,0 +1,19 @@
+{
+  "language": "xav",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "XAVTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "XAVTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XAVTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

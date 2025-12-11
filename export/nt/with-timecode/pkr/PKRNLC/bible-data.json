@@ -1,0 +1,33 @@
+{
+  "language": "pkr",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PKRNLC",
+  "filesets": {
+    "audio": {
+      "PKRNLCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PKRNLCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PKRNLCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PKRNLCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PKRNLCN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PKRNLCN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "tpt",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "TPTTBL",
+  "filesets": {
+    "audio": {
+      "TPTTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "TPTTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TPTTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

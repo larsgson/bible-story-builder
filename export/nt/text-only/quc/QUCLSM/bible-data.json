@@ -1,0 +1,24 @@
+{
+  "language": "quc",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "QUCLSM",
+  "filesets": {
+    "audio": {
+      "QU1LSMN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "QU1LSMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QU1LSMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

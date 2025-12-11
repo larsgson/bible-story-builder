@@ -1,0 +1,19 @@
+{
+  "language": "nou",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NOUWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NOUWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NOUWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

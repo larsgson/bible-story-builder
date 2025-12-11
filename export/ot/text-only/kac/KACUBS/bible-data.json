@@ -1,0 +1,19 @@
+{
+  "language": "kac",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KACUBS",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KACUBSO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KACUBSO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

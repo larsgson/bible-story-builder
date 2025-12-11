@@ -1,0 +1,33 @@
+{
+  "language": "law",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LAWNTM",
+  "filesets": {
+    "audio": {
+      "LAWNTMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LAWNTMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LAWNTMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LAWNTMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LAWNTMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LAWNTMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

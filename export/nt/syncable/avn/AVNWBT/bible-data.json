@@ -1,0 +1,26 @@
+{
+  "language": "avn",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "AVNWBT",
+  "filesets": {
+    "audio": {
+      "AVNWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AVNWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AVNWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AVNWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "asm",
+  "canon": "OT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "ASMDPI",
+  "filesets": {
+    "audio": {
+      "ASMDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ASMDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ASMDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ASMDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ASMDPIO1DA_timing": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ASMDPIO1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

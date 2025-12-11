@@ -1,0 +1,19 @@
+{
+  "language": "nvm",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NVMWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NVMWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NVMWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

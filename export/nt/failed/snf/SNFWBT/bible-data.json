@@ -1,0 +1,17 @@
+{
+  "language": "snf",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "SNFWBT",
+  "filesets": {
+    "audio": {
+      "SNFWYIN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

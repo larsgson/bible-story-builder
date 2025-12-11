@@ -1,0 +1,26 @@
+{
+  "language": "myl",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MYLLAI",
+  "filesets": {
+    "audio": {
+      "MYLLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYLLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MYLLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYLLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

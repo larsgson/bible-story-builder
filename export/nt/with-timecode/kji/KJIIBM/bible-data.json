@@ -1,0 +1,33 @@
+{
+  "language": "kji",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KJIIBM",
+  "filesets": {
+    "audio": {
+      "KJIIBMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJIIBMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KJIIBMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJIIBMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KJIIBMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJIIBMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

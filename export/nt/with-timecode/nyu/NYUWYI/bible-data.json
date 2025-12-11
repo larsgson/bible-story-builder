@@ -1,0 +1,33 @@
+{
+  "language": "nyu",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "NYUWYI",
+  "filesets": {
+    "audio": {
+      "NYUWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NYUWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NYUWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NYUWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "NYUWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NYUWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

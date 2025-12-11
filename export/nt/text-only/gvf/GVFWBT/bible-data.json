@@ -1,0 +1,19 @@
+{
+  "language": "gvf",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GVFWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GVFWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GVFWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

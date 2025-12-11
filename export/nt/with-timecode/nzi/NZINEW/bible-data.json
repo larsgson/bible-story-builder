@@ -1,0 +1,33 @@
+{
+  "language": "nzi",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "NZINEW",
+  "filesets": {
+    "audio": {
+      "NZIBSGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NZIBSGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NZIBSGN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NZIBSGN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "NZIBSGN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NZIBSGN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

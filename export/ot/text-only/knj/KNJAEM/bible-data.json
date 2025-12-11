@@ -1,0 +1,19 @@
+{
+  "language": "knj",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KNJAEM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KNJAEM": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KNJAEM.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

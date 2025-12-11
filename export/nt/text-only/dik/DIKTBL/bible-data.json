@@ -1,0 +1,24 @@
+{
+  "language": "dik",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "DIKTBL",
+  "filesets": {
+    "audio": {
+      "DIKTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "DIKTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DIKTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

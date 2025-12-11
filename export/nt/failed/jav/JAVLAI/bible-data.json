@@ -1,0 +1,17 @@
+{
+  "language": "jav",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "JAVLAI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "JAVLAI": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "gdn",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GDNPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GDNPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GDNPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

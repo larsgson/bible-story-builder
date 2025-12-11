@@ -1,0 +1,19 @@
+{
+  "language": "kwj",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KWJWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KWJWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KWJWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

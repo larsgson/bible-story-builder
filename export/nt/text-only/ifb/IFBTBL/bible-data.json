@@ -1,0 +1,24 @@
+{
+  "language": "ifb",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "IFBTBL",
+  "filesets": {
+    "audio": {
+      "IFBTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "IFBTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IFBTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "ben",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BENBBS",
+  "filesets": {
+    "audio": {
+      "BENBBSO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BENBBSO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "knb",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KNBTAP",
+  "filesets": {
+    "audio": {
+      "KNBTAPN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNBTAPN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KNBTAPN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNBTAPN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KNBTAPN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNBTAPN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

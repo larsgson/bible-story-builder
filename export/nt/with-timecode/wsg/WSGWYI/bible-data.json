@@ -1,0 +1,33 @@
+{
+  "language": "wsg",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "WSGWYI",
+  "filesets": {
+    "audio": {
+      "WSGWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WSGWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "WSGWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WSGWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "WSGWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WSGWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

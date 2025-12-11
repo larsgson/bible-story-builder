@@ -1,0 +1,19 @@
+{
+  "language": "pma",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PMAWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PMAWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PMAWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

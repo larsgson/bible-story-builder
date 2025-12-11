@@ -1,0 +1,19 @@
+{
+  "language": "ubu",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "UBUNPG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "UB2NPG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UB2NPG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "cul",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CULMNT",
+  "filesets": {
+    "audio": {
+      "CULMNTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CULMNTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CULMNTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CULMNTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CULMNTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CULMNTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

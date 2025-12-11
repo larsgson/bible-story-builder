@@ -1,0 +1,19 @@
+{
+  "language": "aoz",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "AOZLAI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "AOZLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AOZLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

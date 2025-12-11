@@ -1,0 +1,19 @@
+{
+  "language": "por",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "PORBBS",
+  "filesets": {
+    "audio": {
+      "PORBBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PORBBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

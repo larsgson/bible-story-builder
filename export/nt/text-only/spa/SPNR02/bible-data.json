@@ -1,0 +1,19 @@
+{
+  "language": "spa",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SPNR02",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SPNR02": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SPNR02.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

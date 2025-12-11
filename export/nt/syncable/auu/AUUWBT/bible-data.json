@@ -1,0 +1,26 @@
+{
+  "language": "auu",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "AUUWBT",
+  "filesets": {
+    "audio": {
+      "AUUWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AUUWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AUUWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AUUWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

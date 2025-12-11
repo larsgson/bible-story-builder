@@ -1,0 +1,30 @@
+{
+  "language": "zsm",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZLMAVB",
+  "filesets": {
+    "audio": {
+      "ZLMAVBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ZLMAVBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZLMAVBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ZLMAVBO_ET.txt"
+        ]
+      },
+      "ZLMAVB": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

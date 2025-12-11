@@ -1,0 +1,26 @@
+{
+  "language": "zpz",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "ZPZTBL",
+  "filesets": {
+    "audio": {
+      "ZPZTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZPZTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZPZTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZPZTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

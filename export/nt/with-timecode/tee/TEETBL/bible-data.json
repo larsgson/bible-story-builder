@@ -1,0 +1,33 @@
+{
+  "language": "tee",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TEETBL",
+  "filesets": {
+    "audio": {
+      "TEETBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TEETBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TEETBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TEETBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TEETBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TEETBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

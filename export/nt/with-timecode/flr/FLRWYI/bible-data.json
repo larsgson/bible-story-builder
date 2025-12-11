@@ -1,0 +1,33 @@
+{
+  "language": "flr",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "FLRWYI",
+  "filesets": {
+    "audio": {
+      "FLRWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FLRWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "FLRWYI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FLRWYI.txt"
+        ]
+      }
+    },
+    "timing": {
+      "FLRWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FLRWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "mwm",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MWMBSC",
+  "filesets": {
+    "audio": {
+      "MWMABTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MWMABTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MWMABTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MWMABTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MWMABTN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MWMABTN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

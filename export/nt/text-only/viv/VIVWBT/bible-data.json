@@ -1,0 +1,19 @@
+{
+  "language": "viv",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "VIVWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "VIVWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VIVWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

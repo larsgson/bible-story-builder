@@ -1,0 +1,19 @@
+{
+  "language": "zim",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "ZIMBSC",
+  "filesets": {
+    "audio": {
+      "ZIMBSCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZIMBSCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

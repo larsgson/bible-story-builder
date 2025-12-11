@@ -1,0 +1,17 @@
+{
+  "language": "kay",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "KAYALE",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KAYALE": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

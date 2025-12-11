@@ -1,0 +1,26 @@
+{
+  "language": "krs",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KRSWYI",
+  "filesets": {
+    "audio": {
+      "KRSWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KRSWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KRSWYI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KRSWYI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

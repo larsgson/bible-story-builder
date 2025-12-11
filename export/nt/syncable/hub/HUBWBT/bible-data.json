@@ -1,0 +1,26 @@
+{
+  "language": "hub",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "HUBWBT",
+  "filesets": {
+    "audio": {
+      "HUBWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HUBWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HUBWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HUBWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

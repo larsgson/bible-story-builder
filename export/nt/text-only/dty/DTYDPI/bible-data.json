@@ -1,0 +1,19 @@
+{
+  "language": "dty",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DTYDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "DTYDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DTYDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

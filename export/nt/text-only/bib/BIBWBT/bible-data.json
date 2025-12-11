@@ -1,0 +1,24 @@
+{
+  "language": "bib",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "BIBWBT",
+  "filesets": {
+    "audio": {
+      "BIBWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "BIBWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BIBWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

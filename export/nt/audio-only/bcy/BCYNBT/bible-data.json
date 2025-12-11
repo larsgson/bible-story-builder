@@ -1,0 +1,19 @@
+{
+  "language": "bcy",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BCYNBT",
+  "filesets": {
+    "audio": {
+      "BCYNBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BCYNBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

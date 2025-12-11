@@ -1,227 +1,313 @@
 # Bible Story Builder
 
-Build multilingual Bible stories in minutes - perfect for literacy programs, oral storytelling, and translation projects.
-- by downloading text, audio, and timing data from the Digital Bible Platform API.
+Download Bible text, audio, and timing data from the Digital Bible Platform API - organized and ready to use.
 
-## Highlights
-- 🌍 2000+ languages supported
-- 📖 Custom story definitions
-- 🎵 Audio, text, and timing data
-- 🗂️ Organized output structure
-- 🔄 Multiple Bible versions per language
-- 📱 Coming soon: Web app generation
-- Active development (roadmap to v2.0)
+## What It Does
 
-### Target Audiences
-1. **Bible translators** - Get content in multiple versions
-2. **Literacy programs** - Simple stories for new readers
-3. **Oral storytellers** - Narrative passages with audio
-4. **Ministry leaders** - Multilingual teaching materials
-5. **App developers** - Ready-to-use Bible content
+Bible Story Builder downloads Bible content in 2000+ languages from the [Digital Bible Platform](https://www.biblebrain.com/):
+- 📖 **Text** - Bible text in multiple formats
+- 🎵 **Audio** - Narrated Bible passages
+- ⏱️ **Timing** - Word-by-word synchronization data
+- 🗂️ **Organized** - Automatically categorized by quality and canon
 
-## Overview
-
-Bible Story Builder helps you create Bible stories in multiple languages by:
-1. Defining which Bible passages make up your story
-2. Selecting which languages you want
-3. Downloading the content automatically
-4. (Coming soon) Generating a ready-to-use web app
-
-Perfect for Bible translation projects, literacy programs, oral Bible storytelling, and multilingual ministry.
+Perfect for:
+- Bible translation projects
+- Literacy programs  
+- Oral Bible storytelling
+- Multilingual ministry
+- Bible app development
 
 ## Quick Start
 
 See [QUICKSTART.md](QUICKSTART.md) for detailed instructions.
 
-### 1. Setup
+### 1. Install
 
 ```bash
-# Install dependencies
 pip install -r requirements.txt
-
-# Set API key environment variable
-export DBP_API_KEY="your_key_here"
 ```
 
-Get your API key from [https://www.biblebrain.com/](https://www.biblebrain.com/)
+Get your free API key from [BibleBrain.com](https://www.biblebrain.com/)
 
-### 2. Define Your Story
+### 2. Configure
 
-Edit `config/story-set.conf` to define your Bible story:
-
+Create `.env` file:
 ```
-Creation_Story
-GEN:1-3,GEN:6-9
-
-Jesus_Life
-MAT:1-2,LUK:2:1-20,JHN:1:1-14
+BIBLE_API_KEY=your-api-key-here
 ```
 
-### 3. Define Your Languages
-
-Edit `config/regions.conf` to specify which languages:
-
-```
-Africa
-swa,yor,amh,som,hau
-
-Asia
-hin,ben,tam,tel,vie
-```
-
-### 4. Fetch and Build
+### 3. Setup (First Time Only)
 
 ```bash
-# Fetch Bible catalog from API
+# Fetch Bible catalog from API (2-5 minutes)
 python3 fetch_api_cache.py
 
-# Organize metadata
+# Organize metadata (1-2 minutes)
 python3 sort_cache_data.py
-
-# Download your story in multiple languages
-python3 download_language_content.py --region Africa --books Creation_Story
 ```
 
-## Story Building Workflow
-
-### Step 1: Define Story Content
-
-Create story sets in `config/story-set.conf`:
-
-```
-# Old Testament Stories
-OT_STORIES
-GEN:1-11,EXO:1-20,JOS:1-6,JDG:6-7,RUT:1-4,1SA:16-17,2SA:11-12
-
-# New Testament Stories  
-NT_STORIES
-MAT:1-2,MAT:5-7,MAT:26-28,LUK:2,LUK:15,JHN:1,JHN:3,JHN:11,ACT:1-2,ACT:9
-
-# Creation to Christ
-CREATION_TO_CHRIST
-GEN:1-3,GEN:6-9,GEN:12,GEN:22,EXO:12,EXO:20,MAT:1-2,LUK:2,JHN:3,MAT:26-28,ACT:1-2
-
-# Single book stories
-RUTH_STORY
-RUT:1-4
-
-JONAH_STORY
-JON:1-4
-```
-
-### Step 2: Define Target Languages
-
-Create regions in `config/regions.conf`:
-
-```
-# Geographic regions
-West_Africa
-yor,hau,ibo,ewe,twi
-
-East_Africa
-swa,som,orm,amh,tir
-
-# Language families
-Bantu_Languages
-swa,zul,xho,lin,lug
-
-# Ministry focus
-Primary_Languages
-eng,spa,fra,por,ara,hin,zho
-```
-
-### Step 3: Download Story Content
+### 4. Download Content
 
 ```bash
-# Download specific story for specific region
-python3 download_language_content.py --region West_Africa --books Creation_Story
+# Download specific language
+python3 download_language_content.py eng --books GEN:1-3
 
-# Download multiple stories
-python3 download_language_content.py --region East_Africa --books OT_STORIES,NT_STORIES
-
-# Download for all languages in a region
-python3 download_language_content.py --region Bantu_Languages --books CREATION_TO_CHRIST
+# Download from all languages with timing data
+python3 download_language_content.py --book-set TIMING_NT --books MAT:1-7
 ```
 
-### Step 4: Access Your Story Content
+## How It Works
 
-Content is organized by language and Bible version:
+### Three Simple Scripts
 
-```
-downloads/BB/{language}/{bible_version}/{book}/
-├── {book}_{chapter}_{format}.mp3     # Audio
-├── {book}_{chapter}_{format}.txt     # Text
-└── {book}_{chapter}_{format}_timing.json  # Timing data
-```
+1. **fetch_api_cache.py** - Download Bible catalog from API
+2. **sort_cache_data.py** - Organize by language and canon
+3. **download_language_content.py** - Download Bible content
 
-Example for Swahili Creation story:
-```
-downloads/BB/swa/SWAHAU/GEN/
-├── GEN_001_SWAHAU2N2DA.mp3
-├── GEN_001_SWAHAU2TP.txt
-├── GEN_002_SWAHAU2N2DA.mp3
-├── GEN_002_SWAHAU2TP.txt
-└── ...
-```
+Optional:
+4. **export_story_data.py** - Generate metadata JSON files
 
-## Common Story Building Scenarios
+### Canonical Structure
 
-### Scenario 1: Literacy Program
-```bash
-# Define simple stories for new readers
-# config/story-set.conf:
-Beginner_Stories
-RUT:1-4,JON:1-4,PSA:23,PSA:117
+Content is organized by:
+- **Canon**: NT (New Testament), OT (Old Testament), PARTIAL
+- **Category**: with-timecode, syncable, text-only, audio-only, etc.
+- **Language**: ISO 639-3 codes (eng, spa, fra, etc.)
+- **Version**: 6-letter Bible version identifier
 
-# Download for your language
-python3 download_language_content.py swa --books Beginner_Stories
-```
-
-### Scenario 2: Oral Bible Storytelling
-```bash
-# Focus on narrative passages
-# config/story-set.conf:
-Storytelling_Set
-GEN:1-3,GEN:6-9,GEN:37-50,EXO:1-15,JOS:2,JDG:6-7,RUT:1-4,1SA:17
-
-# Download audio for multiple languages
-python3 download_language_content.py --region Africa --books Storytelling_Set
-```
-
-### Scenario 3: Jesus Film Project
-```bash
-# Gospel stories with audio and timing for video sync
-# config/story-set.conf:
-Jesus_Film
-MAT:1-2,LUK:1-2,JHN:1-3,MAT:5-7,LUK:15,JHN:11,MAT:26-28,LUK:24,ACT:1-2
-
-# Download with timing data
-python3 download_language_content.py --book-set TIMING_NT --books Jesus_Film
-```
-
-### Scenario 4: Multi-language Bible App
-```bash
-# Full Bible story arc for app
-python3 download_language_content.py --region Primary_Languages --books CREATION_TO_CHRIST
-```
-
-## Output Structure
+### Output Structure
 
 ```
 downloads/BB/
-└── {language_iso}/
-    └── {bible_version}/
-        └── {book}/
-            ├── {book}_{chapter}_{fileset}.mp3
-            ├── {book}_{chapter}_{fileset}.txt
-            └── {book}_{chapter}_{fileset}_timing.json
+└── {canon}/              # nt, ot, or partial
+    └── {category}/       # with-timecode, syncable, etc.
+        └── {iso}/        # Language code (eng, spa, etc.)
+            └── {id}/     # 6-letter version ID
+                └── {BOOK}/
+                    ├── {BOOK}_001_{ID}.mp3
+                    ├── {BOOK}_001_{ID}.txt
+                    └── {BOOK}_001_{ID}_timing.json
+```
 
-sorted/BB/
-├── {language}_language_info.json    # Language metadata
-└── {language}_metadata.json         # Available Bible versions
+## Usage
 
-download_log/
-└── {language}_errors.json           # Error logs (if any)
+### Single Language Downloads
+
+```bash
+# Download English - Genesis 1-3
+python3 download_language_content.py eng --books GEN:1-3
+
+# Download Spanish - Psalm 23
+python3 download_language_content.py spa --books PSA:23
+
+# Download Swahili - Gospel of John
+python3 download_language_content.py swa --books JHN
+
+# Download French - Multiple books
+python3 download_language_content.py fra --books GEN:1-3,EXO:1-5,MAT:1-7
+```
+
+### Batch Downloads by Quality
+
+```bash
+# All languages with NT timing data (audio + text + timing)
+python3 download_language_content.py --book-set TIMING_NT --books MAT:5-7
+
+# All languages with OT timing data
+python3 download_language_content.py --book-set TIMING_OT --books GEN:1-3
+
+# All languages with NT audio+text sync (no timing required)
+python3 download_language_content.py --book-set SYNC_NT --books JHN
+
+# All languages with OT audio+text sync
+python3 download_language_content.py --book-set SYNC_OT --books PSA:23
+
+# All languages with any NT or OT content
+python3 download_language_content.py --book-set ALL --books MAT:1-2
+
+# All languages with only partial content
+python3 download_language_content.py --book-set PARTIAL --books JON
+```
+
+### Book-Set Options
+
+- **TIMING_NT** - Languages with NT audio + text + timing 
+- **TIMING_OT** - Languages with OT audio + text + timing
+- **SYNC_NT** - Languages with NT audio + text (no timing)
+- **SYNC_OT** - Languages with OT audio + text (no timing)
+- **ALL** - Languages with any NT or OT content
+- **PARTIAL** - Languages with only partial/incomplete content
+
+### Using Story Sets
+
+Define reusable story collections in `config/story-set.conf`:
+
+```
+Creation_Story
+GEN:1-3
+
+Christmas_Story
+LUK:1:26-56,LUK:2:1-40,MAT:2:1-23
+
+Easter_Story
+MAT:26-28,LUK:24,JHN:20
+```
+
+Then use them:
+
+```bash
+python3 download_language_content.py eng --books Creation_Story
+python3 download_language_content.py --book-set TIMING_NT --books Easter_Story
+```
+
+## Book Specifications
+
+### Book Codes
+
+**Old Testament**: GEN, EXO, LEV, NUM, DEU, JOS, JDG, RUT, 1SA, 2SA, 1KI, 2KI, 1CH, 2CH, EZR, NEH, EST, JOB, PSA, PRO, ECC, SNG, ISA, JER, LAM, EZK, DAN, HOS, JOL, AMO, OBA, JON, MIC, NAM, HAB, ZEP, HAG, ZEC, MAL
+
+**New Testament**: MAT, MRK, LUK, JHN, ACT, ROM, 1CO, 2CO, GAL, EPH, PHP, COL, 1TH, 2TH, 1TI, 2TI, TIT, PHM, HEB, JAS, 1PE, 2PE, 1JN, 2JN, 3JN, JUD, REV
+
+### Chapter Formats
+
+```bash
+# Entire book
+--books GEN
+
+# Single chapter
+--books GEN:1
+
+# Chapter range
+--books GEN:1-3
+
+# Multiple chapters
+--books PSA:1,23,91
+
+# Multiple books
+--books GEN:1-3,EXO:1-5,MAT:1-2
+```
+
+## Content Categories
+
+Downloaded content is automatically categorized:
+
+- **with-timecode** - Has audio + text + timing data 
+- **syncable** - Has audio + text (can be synced, no timing)
+- **text-only** - Has text only
+- **audio-only** - Has audio only
+- **incomplete-timecode** - Has timing but missing audio or text
+
+## Command Reference
+
+```bash
+# Single language
+python3 download_language_content.py <iso> --books <book-spec>
+
+# Batch by quality
+python3 download_language_content.py --book-set <set> --books <book-spec>
+
+# Force re-download
+python3 download_language_content.py <iso> --books <book-spec> --force
+
+# Include partial content
+python3 download_language_content.py <iso> --books <book-spec> --force-partial
+
+# Export metadata
+python3 export_story_data.py
+```
+
+## Error Handling
+
+Download errors are logged in `download_log/`:
+
+```bash
+# View errors for specific language
+cat download_log/nt/eng/nt-eng-error.json | python3 -m json.tool
+
+# Count languages with errors
+ls download_log/*/* | wc -l
+```
+
+Common error types:
+- **no_audio_available** - API doesn't have audio for this chapter
+- **no_text_available** - API doesn't have text for this chapter
+- **no_timing_available** - API doesn't have timing for this chapter
+- **download_failed** - Network or API error (rare, < 1%)
+
+Most errors are "content not available" (not in API), not actual download failures.
+
+## Finding Languages
+
+```bash
+# List all available languages (after running sort_cache_data.py)
+ls sorted/BB/nt/
+ls sorted/BB/ot/
+
+# Count available languages
+ls sorted/BB/*/ | wc -l
+
+# Check if specific language has content
+ls sorted/BB/*/swa* 2>/dev/null || echo "Not found"
+```
+
+Common language codes:
+- **eng** (English), **spa** (Spanish), **fra** (French), **por** (Portuguese)
+- **deu** (German), **rus** (Russian), **cmn** (Mandarin Chinese), **arb** (Arabic)
+- **hin** (Hindi), **ben** (Bengali), **swa** (Swahili), **ind** (Indonesian)
+
+Full list: [ISO 639-3 Language Codes](https://iso639-3.sil.org/)
+
+## Use Cases
+
+### Literacy Programs
+
+```bash
+# Simple stories for new readers
+python3 download_language_content.py swa --books RUT,JON,PSA:23
+```
+
+### Oral Storytelling
+
+```bash
+# Get audio for narrative passages
+python3 download_language_content.py --book-set SYNC_NT --books MAT:1-2,LUK:2
+```
+
+### Bible App Development
+
+```bash
+# Content with timing for all languages
+python3 download_language_content.py --book-set TIMING_NT --books JHN:1-3
+```
+
+### Translation Projects
+
+```bash
+# Compare multiple versions in same language
+python3 download_language_content.py eng --books GEN:1 --force
+
+# Get timing data for gospel stories
+python3 download_language_content.py --book-set TIMING_NT --books MAT:26-28,LUK:24
+```
+
+## Project Statistics
+
+- **Languages**: 2000+
+- **Bible Versions**: 12,000+ filesets
+- **Audio Formats**: MP3, Opus
+- **Text Formats**: Plain text, USX, JSON
+- **Timing**: Verse-level synchronization
+
+## Requirements
+
+- Python 3.7+
+- `requests>=2.31.0`
+- `python-dotenv>=1.0.0`
+- Digital Bible Platform API key
+
+Install:
+```bash
+pip install -r requirements.txt
 ```
 
 ## Configuration Files
@@ -237,163 +323,122 @@ BOOK:CHAPTERS,BOOK:CHAPTERS
 Example:
 Christmas_Story
 LUK:1:26-56,LUK:2:1-40,MAT:2:1-23
-
-Easter_Story  
-MAT:26-27,LUK:24,JHN:20
 ```
 
-### config/regions.conf
-
-Define language groups:
-
+Multiple lines are concatenated:
 ```
-Region_Name
-iso,iso,iso
-
-Example:
-Southeast_Asia
-vie,tha,mya,khm,lao
-
-Pacific_Islands
-fij,ton,smo,haw,mao
+OT_Stories
+GEN:1-3,GEN:6-9
+EXO:1-15
 ```
 
-## Book Codes Reference
+### .env
 
-**Old Testament**: GEN, EXO, LEV, NUM, DEU, JOS, JDG, RUT, 1SA, 2SA, 1KI, 2KI, 1CH, 2CH, EZR, NEH, EST, JOB, PSA, PRO, ECC, SNG, ISA, JER, LAM, EZK, DAN, HOS, JOL, AMO, OBA, JON, MIC, NAM, HAB, ZEP, HAG, ZEC, MAL
-
-**New Testament**: MAT, MRK, LUK, JHN, ACT, ROM, 1CO, 2CO, GAL, EPH, PHP, COL, 1TH, 2TH, 1TI, 2TI, TIT, PHM, HEB, JAS, 1PE, 2PE, 1JN, 2JN, 3JN, JUD, REV
-
-## Advanced Features
-
-### Filter by Bible Version Quality
-
-```bash
-# Only languages with audio+text synchronization
-python3 download_language_content.py --book-set SYNC_NT --region Africa --books Jesus_Film
-
-# Only languages with timing data (for audio sync)
-python3 download_language_content.py --book-set TIMING_FULL --books Creation_Story
-```
-
-### Force Re-download
-
-```bash
-python3 download_language_content.py eng --books Creation_Story --force
-```
-
-### Batch Processing
-
-Create a file with language codes (one per line):
+API key configuration:
 
 ```
-# languages.txt
-eng
-spa
-fra
-por
+BIBLE_API_KEY=your-api-key-here
 ```
 
-Download:
-```bash
-python3 download_language_content.py --batch languages.txt --books Creation_Story
+## Directory Structure
+
 ```
-
-## Error Handling
-
-Download errors are logged with detailed information in `download_log/{language}_errors.json`.
-
-View errors:
-```bash
-# Check specific language
-cat download_log/eng_errors.json | python3 -m json.tool
-
-# Count languages with errors
-ls download_log/*_errors.json | wc -l
-
-# Search for specific error types
-grep -r "audio_download_failed" download_log/
+bible-story-builder/
+├── fetch_api_cache.py          # Fetch Bible catalog from API
+├── sort_cache_data.py          # Organize metadata
+├── download_language_content.py # Download Bible content
+├── export_story_data.py        # Export metadata JSON
+├── requirements.txt            # Python dependencies
+├── .env                        # API key (create this)
+├── config/
+│   └── story-set.conf         # Story definitions
+├── api-cache/                 # API cache (generated)
+├── sorted/                    # Organized metadata (generated)
+├── downloads/                 # Downloaded content (generated)
+├── download_log/              # Error logs (generated)
+└── export/                    # Exported metadata (generated)
 ```
-
-Most errors are "content not available" (API doesn't have the content), not download failures.
-
-See [ERROR_LOGGING_QUICKREF.md](ERROR_LOGGING_QUICKREF.md) for details.
-
-## Roadmap
-
-### Coming Soon: Web App Generation
-
-Bible Story Builder will generate ready-to-use web apps from your stories:
-
-- **Template-based**: Define layout in markdown templates
-- **Multilingual**: Automatic language switching
-- **Audio sync**: Text highlights as audio plays
-- **Responsive**: Works on phones, tablets, and desktops
-- **Offline-capable**: Progressive Web App support
-
-See [ROADMAP.md](ROADMAP.md) for details.
 
 ## Troubleshooting
 
 ### No content downloaded
-- Verify API key is set correctly
-- Check that language has available content in metadata
-- Check story set and region names match configuration files
 
-### Download errors
-- Check `download_log/{iso}_errors.json` for details
-- Most errors are "content not available" (API limitation)
-- Actual download failures are rare (< 1%)
-
-### Missing story set or region
-- Verify names in config files match exactly
-- Story set names are case-sensitive
-- Region names can have spaces or underscores
-
-### Need fresh data
+**Check API key:**
 ```bash
-# Re-fetch API catalog
+echo $BIBLE_API_KEY
+```
+
+**Verify metadata exists:**
+```bash
+ls sorted/BB/nt/ | head
+ls sorted/BB/ot/ | head
+```
+
+**Check error logs:**
+```bash
+cat download_log/nt/eng/nt-eng-error.json 2>/dev/null | python3 -m json.tool
+```
+
+### Missing metadata
+
+**Re-run setup:**
+```bash
+python3 fetch_api_cache.py
+python3 sort_cache_data.py
+```
+
+### Story set not found
+
+**Check spelling in config file:**
+```bash
+grep -A1 "^Creation" config/story-set.conf
+```
+
+Story set names are case-sensitive.
+
+### Script hangs with --book-set ALL
+
+**Use more specific book-sets:**
+- `TIMING_NT` or `SYNC_NT` process fewer languages
+- Or download specific languages individually
+
+## Updating Content
+
+```bash
+# Fetch latest Bible catalog
 python3 fetch_api_cache.py
 
 # Re-organize metadata
 python3 sort_cache_data.py
+
+# Re-download content
+python3 download_language_content.py eng --books GEN:1 --force
 ```
+
+## Type Checking
+
+Run type checks with:
+
+```bash
+./check_types.sh
+```
+
+Requires `basedpyright`, `pyright`, or `mypy`.
 
 ## Documentation
 
-- [QUICKSTART.md](QUICKSTART.md) - Getting started guide
-- [ERROR_LOGGING_QUICKREF.md](ERROR_LOGGING_QUICKREF.md) - Error logging reference
-- [ROADMAP.md](ROADMAP.md) - Future features and plans
-
-## Requirements
-
-- Python 3.7+
-- `requests>=2.31.0`
-- `python-dotenv>=1.0.0`
-- Digital Bible Platform API key (get from [BibleBrain.com](https://www.biblebrain.com/))
-
-Install:
-```bash
-pip install -r requirements.txt
-```
-
-## Project Statistics
-
-- **Languages**: 2000+
-- **Bible Versions**: 12,000+ filesets
-- **Audio Formats**: MP3, Opus
-- **Text Formats**: Plain text, USX, JSON
-- **Success Rate**: 99.4%
-- **License**: MIT
-
-## License
-
-MIT License - See [LICENSE](LICENSE) file for details.
+- [QUICKSTART.md](QUICKSTART.md) - Step-by-step getting started guide
+- [ROADMAP.md](ROADMAP.md) - Future features and development plans
+- [config/story-set.conf](config/story-set.conf) - Example story definitions
 
 ## Credits
 
 Bible content from [Digital Bible Platform](https://www.biblebrain.com/) / Faith Comes By Hearing.
 
+## License
+
+MIT License - See [LICENSE](LICENSE) file for details.
+
 ## Support
 
-For issues, questions, or contributions, please visit the GitHub repository.
+For issues or questions, please visit the GitHub repository.

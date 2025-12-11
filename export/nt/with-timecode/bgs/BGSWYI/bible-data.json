@@ -1,0 +1,33 @@
+{
+  "language": "bgs",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BGSWYI",
+  "filesets": {
+    "audio": {
+      "BGSWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGSWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BGSWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGSWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BGSWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGSWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

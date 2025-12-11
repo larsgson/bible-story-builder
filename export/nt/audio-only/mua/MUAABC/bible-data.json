@@ -1,0 +1,19 @@
+{
+  "language": "mua",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MUAABC",
+  "filesets": {
+    "audio": {
+      "MUAABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MUAABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "mif",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MIFWBT",
+  "filesets": {
+    "audio": {
+      "MIFWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MIFWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIFWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

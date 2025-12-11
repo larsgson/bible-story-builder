@@ -1,0 +1,26 @@
+{
+  "language": "goj",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "GOJWFW",
+  "filesets": {
+    "audio": {
+      "GOJWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GOJWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GOJWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GOJWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

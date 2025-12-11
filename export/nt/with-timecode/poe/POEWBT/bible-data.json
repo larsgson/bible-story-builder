@@ -1,0 +1,33 @@
+{
+  "language": "poe",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "POEWBT",
+  "filesets": {
+    "audio": {
+      "POEWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_POEWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "POEWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_POEWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "POEWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_POEWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

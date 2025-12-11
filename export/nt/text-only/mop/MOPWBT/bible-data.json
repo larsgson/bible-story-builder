@@ -1,0 +1,24 @@
+{
+  "language": "mop",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MOPWBT",
+  "filesets": {
+    "audio": {
+      "MOPWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MOPWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MOPWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

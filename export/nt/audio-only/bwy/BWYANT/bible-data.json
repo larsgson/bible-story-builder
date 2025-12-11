@@ -1,0 +1,19 @@
+{
+  "language": "bwy",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BWYANT",
+  "filesets": {
+    "audio": {
+      "BWYANTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BWYANTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "bzi",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BZIWBT",
+  "filesets": {
+    "audio": {
+      "BZIWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BZIWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BZIWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BZIWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BZIWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BZIWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

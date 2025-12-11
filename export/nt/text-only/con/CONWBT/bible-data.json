@@ -1,0 +1,24 @@
+{
+  "language": "con",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "CONWBT",
+  "filesets": {
+    "audio": {
+      "CONWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "CONWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CONWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "bps",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "BPSWPS",
+  "filesets": {
+    "audio": {
+      "BPSWPSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "BPSWPS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BPSWPS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

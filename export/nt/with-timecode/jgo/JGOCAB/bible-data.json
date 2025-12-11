@@ -1,0 +1,33 @@
+{
+  "language": "jgo",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "JGOCAB",
+  "filesets": {
+    "audio": {
+      "JGOCABN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JGOCABN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "JGOCABN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JGOCABN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "JGOCABN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JGOCABN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

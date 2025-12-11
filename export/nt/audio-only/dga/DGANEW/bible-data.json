@@ -1,0 +1,19 @@
+{
+  "language": "dga",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "DGANEW",
+  "filesets": {
+    "audio": {
+      "DGABSGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DGABSGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

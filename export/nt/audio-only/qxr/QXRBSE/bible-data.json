@@ -1,0 +1,19 @@
+{
+  "language": "qxr",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QXRBSE",
+  "filesets": {
+    "audio": {
+      "QXRBSEN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QXRBSEN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

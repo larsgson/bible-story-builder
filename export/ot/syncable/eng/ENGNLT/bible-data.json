@@ -1,0 +1,26 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ENGNLT",
+  "filesets": {
+    "audio": {
+      "ENGNLTO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGNLTO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ENGNLTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGNLTO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

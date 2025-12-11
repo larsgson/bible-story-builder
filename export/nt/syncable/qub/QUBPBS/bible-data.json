@@ -1,0 +1,26 @@
+{
+  "language": "qub",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "QUBPBS",
+  "filesets": {
+    "audio": {
+      "QUBPBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUBPBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QUBPBS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUBPBS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

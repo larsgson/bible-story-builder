@@ -1,0 +1,24 @@
+{
+  "language": "nfr",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "NFRIBS",
+  "filesets": {
+    "audio": {
+      "NFRIBSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "NFRIBSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NFRIBSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

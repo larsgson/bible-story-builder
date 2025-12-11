@@ -1,0 +1,33 @@
+{
+  "language": "iri",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "IRIWYI",
+  "filesets": {
+    "audio": {
+      "IRIWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IRIWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "IRIWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IRIWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "IRIWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IRIWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

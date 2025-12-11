@@ -1,0 +1,19 @@
+{
+  "language": "sna",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "SNASUV",
+  "filesets": {
+    "audio": {
+      "SHDIBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SHDIBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

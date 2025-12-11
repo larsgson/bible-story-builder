@@ -1,0 +1,26 @@
+{
+  "language": "rus",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "RUSSYN",
+  "filesets": {
+    "audio": {
+      "RUSSYNO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_RUSSYNO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RUSSYN": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_RUSSYN.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "prk",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PRKBSM",
+  "filesets": {
+    "audio": {
+      "PRKBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PRKBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PRKBSM": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PRKBSM.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PRKBSMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PRKBSMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

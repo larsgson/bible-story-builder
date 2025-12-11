@@ -1,0 +1,19 @@
+{
+  "language": "kxp",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KXPDPI",
+  "filesets": {
+    "audio": {
+      "KXPDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXPDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

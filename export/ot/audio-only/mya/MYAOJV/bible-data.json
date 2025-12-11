@@ -1,0 +1,19 @@
+{
+  "language": "mya",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MYAOJV",
+  "filesets": {
+    "audio": {
+      "MYAOJVO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MYAOJVO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

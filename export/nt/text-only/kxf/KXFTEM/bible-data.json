@@ -1,0 +1,19 @@
+{
+  "language": "kxf",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KXFTEM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KXFTEMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXFTEMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

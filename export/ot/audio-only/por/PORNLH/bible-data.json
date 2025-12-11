@@ -1,0 +1,19 @@
+{
+  "language": "por",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "PORNLH",
+  "filesets": {
+    "audio": {
+      "PO1NLHO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PO1NLHO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

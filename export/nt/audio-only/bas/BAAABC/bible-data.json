@@ -1,0 +1,19 @@
+{
+  "language": "bas",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BAAABC",
+  "filesets": {
+    "audio": {
+      "BAAABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BAAABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

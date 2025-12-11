@@ -1,0 +1,19 @@
+{
+  "language": "anl",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ANLBSM",
+  "filesets": {
+    "audio": {
+      "ANLBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ANLBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

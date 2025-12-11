@@ -1,0 +1,19 @@
+{
+  "language": "mrn",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MRNWBT",
+  "filesets": {
+    "audio": {
+      "MRNWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MRNWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

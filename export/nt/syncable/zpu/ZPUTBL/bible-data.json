@@ -1,0 +1,26 @@
+{
+  "language": "zpu",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "ZPUTBL",
+  "filesets": {
+    "audio": {
+      "ZPUTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZPUTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZPUTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZPUTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

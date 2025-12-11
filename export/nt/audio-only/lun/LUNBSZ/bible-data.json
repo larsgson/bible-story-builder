@@ -1,0 +1,19 @@
+{
+  "language": "lun",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LUNBSZ",
+  "filesets": {
+    "audio": {
+      "LUNBSZN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LUNBSZN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

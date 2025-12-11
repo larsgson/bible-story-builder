@@ -1,0 +1,33 @@
+{
+  "language": "mnh",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MNHACT",
+  "filesets": {
+    "audio": {
+      "MNHACTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNHACTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MNHACTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNHACTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MNHACTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNHACTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

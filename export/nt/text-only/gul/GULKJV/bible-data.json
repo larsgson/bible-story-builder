@@ -1,0 +1,19 @@
+{
+  "language": "gul",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GULKJV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GULKJVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GULKJVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

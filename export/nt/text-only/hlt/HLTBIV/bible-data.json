@@ -1,0 +1,19 @@
+{
+  "language": "hlt",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "HLTBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "HLTBIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HLTBIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "language": "tuk",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TUKIBT",
+  "filesets": {
+    "audio": {
+      "TUKIBTO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TUKIBTO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TUKIBTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TUKIBTO_ET.txt"
+        ]
+      },
+      "TUKIBT": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

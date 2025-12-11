@@ -1,0 +1,26 @@
+{
+  "language": "hil",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "HILDPI",
+  "filesets": {
+    "audio": {
+      "HILDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HILDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HILDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HILDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

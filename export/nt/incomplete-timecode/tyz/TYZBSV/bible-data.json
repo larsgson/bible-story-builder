@@ -1,0 +1,26 @@
+{
+  "language": "tyz",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "TYZBSV",
+  "filesets": {
+    "audio": {
+      "TYZBSVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TYZBSVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "TYZBSVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TYZBSVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

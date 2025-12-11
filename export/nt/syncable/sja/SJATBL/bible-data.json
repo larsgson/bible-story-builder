@@ -1,0 +1,26 @@
+{
+  "language": "sja",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SJATBL",
+  "filesets": {
+    "audio": {
+      "SJATBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SJATBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SJATBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SJATBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

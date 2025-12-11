@@ -1,0 +1,26 @@
+{
+  "language": "lje",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LJELAI",
+  "filesets": {
+    "audio": {
+      "LJELAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LJELAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LJELAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LJELAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

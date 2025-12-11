@@ -1,0 +1,26 @@
+{
+  "language": "vie",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "VIEO98",
+  "filesets": {
+    "audio": {
+      "VIEVOVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VIEVOVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "VIEVOV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VIEVOV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

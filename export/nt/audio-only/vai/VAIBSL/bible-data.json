@@ -1,0 +1,19 @@
+{
+  "language": "vai",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "VAIBSL",
+  "filesets": {
+    "audio": {
+      "VAIBSLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VAIBSLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

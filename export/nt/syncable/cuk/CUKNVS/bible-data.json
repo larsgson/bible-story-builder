@@ -1,0 +1,26 @@
+{
+  "language": "cuk",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CUKNVS",
+  "filesets": {
+    "audio": {
+      "CUKNVSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CUKNVSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CUKNVSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CUKNVSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

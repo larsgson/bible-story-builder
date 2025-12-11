@@ -1,0 +1,24 @@
+{
+  "language": "wmw",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "WMWWYI",
+  "filesets": {
+    "audio": {
+      "WMWWYIN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "WMWWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WMWWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

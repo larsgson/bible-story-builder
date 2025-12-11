@@ -1,0 +1,19 @@
+{
+  "language": "its",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ITSNEW",
+  "filesets": {
+    "audio": {
+      "ITSBSNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ITSBSNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

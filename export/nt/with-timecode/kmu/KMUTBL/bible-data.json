@@ -1,0 +1,33 @@
+{
+  "language": "kmu",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KMUTBL",
+  "filesets": {
+    "audio": {
+      "KMUTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMUTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KMUTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMUTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KMUTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMUTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

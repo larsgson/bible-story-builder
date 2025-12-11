@@ -1,0 +1,24 @@
+{
+  "language": "ind",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "INDALA",
+  "filesets": {
+    "audio": {
+      "INDALAO1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "INDALA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_INDALA.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

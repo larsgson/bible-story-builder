@@ -1,0 +1,19 @@
+{
+  "language": "mal",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MALNIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MJSNIVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MJSNIVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

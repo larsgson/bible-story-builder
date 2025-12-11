@@ -1,0 +1,33 @@
+{
+  "language": "azg",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "AZGTBL",
+  "filesets": {
+    "audio": {
+      "AZGTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZGTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AZGTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZGTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "AZGTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZGTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

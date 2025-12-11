@@ -1,0 +1,24 @@
+{
+  "language": "blz",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "BLZLAI",
+  "filesets": {
+    "audio": {
+      "BLZLAIN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "BLZLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BLZLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

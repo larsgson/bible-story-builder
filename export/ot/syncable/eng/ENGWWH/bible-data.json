@@ -1,0 +1,30 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ENGWWH",
+  "filesets": {
+    "audio": {
+      "EN1WEBO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_EN1WEBO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "EN1WEBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_EN1WEBO_ET.txt"
+        ]
+      },
+      "EN1WEB": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

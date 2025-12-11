@@ -1,0 +1,17 @@
+{
+  "language": "mfq",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "MFQABT",
+  "filesets": {
+    "audio": {
+      "MFQABTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

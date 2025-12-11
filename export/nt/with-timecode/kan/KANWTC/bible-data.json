@@ -1,0 +1,33 @@
+{
+  "language": "kan",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KANWTC",
+  "filesets": {
+    "audio": {
+      "ERVWTCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ERVWTCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ERVWTC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ERVWTC.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ERVWTCN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ERVWTCN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "fab",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "FABSBE",
+  "filesets": {
+    "audio": {
+      "FABSBEN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FABSBEN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "FABSBEN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FABSBEN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "FABSBEN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FABSBEN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

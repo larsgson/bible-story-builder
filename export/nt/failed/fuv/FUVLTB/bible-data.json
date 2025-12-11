@@ -1,0 +1,22 @@
+{
+  "language": "fuv",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "syncable",
+  "distinct_id": "FUVLTB",
+  "filesets": {
+    "audio": {
+      "FUVTBLN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "FUVTBL": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

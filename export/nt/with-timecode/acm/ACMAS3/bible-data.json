@@ -1,0 +1,33 @@
+{
+  "language": "acm",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "ACMAS3",
+  "filesets": {
+    "audio": {
+      "ACMAS3N2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ACMAS3N2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ACMAS3": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ACMAS3.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ACMAS3N2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ACMAS3N2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

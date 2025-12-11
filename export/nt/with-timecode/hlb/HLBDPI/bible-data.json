@@ -1,0 +1,33 @@
+{
+  "language": "hlb",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "HLBDPI",
+  "filesets": {
+    "audio": {
+      "HLBDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HLBDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HLBDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HLBDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "HLBDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HLBDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "bim",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BIMDPI",
+  "filesets": {
+    "audio": {
+      "BIMDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BIMDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

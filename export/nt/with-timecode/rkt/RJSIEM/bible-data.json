@@ -1,0 +1,33 @@
+{
+  "language": "rkt",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "RJSIEM",
+  "filesets": {
+    "audio": {
+      "RJSIEMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RJSIEMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RJSIEMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RJSIEMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "RJSIEMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RJSIEMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

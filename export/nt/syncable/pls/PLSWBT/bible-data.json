@@ -1,0 +1,26 @@
+{
+  "language": "pls",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PLSWBT",
+  "filesets": {
+    "audio": {
+      "PLSWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PLSWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PLSWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PLSWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

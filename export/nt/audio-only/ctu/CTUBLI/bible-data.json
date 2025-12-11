@@ -1,0 +1,19 @@
+{
+  "language": "ctu",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "CTUBLI",
+  "filesets": {
+    "audio": {
+      "CTUBSMN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CTUBSMN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "dua",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "DUAFUL",
+  "filesets": {
+    "audio": {
+      "DUAABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DUAABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

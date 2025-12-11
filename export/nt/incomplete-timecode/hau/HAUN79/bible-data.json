@@ -1,0 +1,26 @@
+{
+  "language": "hau",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "HAUN79",
+  "filesets": {
+    "audio": {
+      "HUABSNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HUABSNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "HUABSNN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HUABSNN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

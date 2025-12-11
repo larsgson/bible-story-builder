@@ -1,0 +1,26 @@
+{
+  "language": "kjh",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KJHIBT",
+  "filesets": {
+    "audio": {
+      "KJHIBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJHIBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KJHIBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJHIBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "quf",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "QUFLLB",
+  "filesets": {
+    "audio": {
+      "QUFLLBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUFLLBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QUFLLB": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUFLLB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

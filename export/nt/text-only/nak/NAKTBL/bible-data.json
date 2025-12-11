@@ -1,0 +1,19 @@
+{
+  "language": "nak",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NAKTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NAKTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NAKTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

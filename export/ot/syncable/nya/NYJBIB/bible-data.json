@@ -1,0 +1,30 @@
+{
+  "language": "nya",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NYJBIB",
+  "filesets": {
+    "audio": {
+      "NYJBIBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_NYJBIBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NYJBIBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_NYJBIBO_ET.txt"
+        ]
+      },
+      "NYJBIB": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

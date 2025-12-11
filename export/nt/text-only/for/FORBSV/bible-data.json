@@ -1,0 +1,19 @@
+{
+  "language": "for",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "FORBSV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FORBSV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FORBSV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

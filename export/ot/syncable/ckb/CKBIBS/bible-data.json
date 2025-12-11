@@ -1,0 +1,30 @@
+{
+  "language": "ckb",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CKBIBS",
+  "filesets": {
+    "audio": {
+      "CKBIBSO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CKBIBSO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CKBIBSO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CKBIBSO_ET.txt"
+        ]
+      },
+      "CKBIBS": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

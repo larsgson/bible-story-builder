@@ -1,0 +1,26 @@
+{
+  "language": "qvw",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "QVWTBL",
+  "filesets": {
+    "audio": {
+      "QVWTBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QVWTBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QVWTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QVWTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

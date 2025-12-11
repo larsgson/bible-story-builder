@@ -1,0 +1,19 @@
+{
+  "language": "kpx",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KPXTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KPXTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KPXTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

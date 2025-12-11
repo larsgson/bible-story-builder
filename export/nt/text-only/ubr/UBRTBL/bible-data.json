@@ -1,0 +1,19 @@
+{
+  "language": "ubr",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "UBRTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "UBRTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UBRTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

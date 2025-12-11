@@ -1,0 +1,33 @@
+{
+  "language": "omw",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "OMWWBT",
+  "filesets": {
+    "audio": {
+      "OM1TBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_OM1TBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "OM1TBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_OM1TBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "OM1TBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_OM1TBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

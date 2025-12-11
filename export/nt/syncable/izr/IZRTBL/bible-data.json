@@ -1,0 +1,26 @@
+{
+  "language": "izr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "IZRTBL",
+  "filesets": {
+    "audio": {
+      "FIZTBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FIZTBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "FIZTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FIZTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

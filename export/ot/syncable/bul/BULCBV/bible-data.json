@@ -1,0 +1,26 @@
+{
+  "language": "bul",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BULCBV",
+  "filesets": {
+    "audio": {
+      "BULCBVO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BULCBVO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BULCBVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BULCBVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

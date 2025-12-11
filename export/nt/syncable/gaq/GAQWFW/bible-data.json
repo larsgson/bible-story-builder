@@ -1,0 +1,26 @@
+{
+  "language": "gaq",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "GAQWFW",
+  "filesets": {
+    "audio": {
+      "GAQWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAQWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GAQWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAQWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

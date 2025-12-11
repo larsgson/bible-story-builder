@@ -1,0 +1,19 @@
+{
+  "language": "stv",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "STVBSE",
+  "filesets": {
+    "audio": {
+      "STVBSEN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_STVBSEN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

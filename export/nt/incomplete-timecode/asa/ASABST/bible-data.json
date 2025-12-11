@@ -1,0 +1,26 @@
+{
+  "language": "asa",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "ASABST",
+  "filesets": {
+    "audio": {
+      "ASABSTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ASABSTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "ASABSTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ASABSTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

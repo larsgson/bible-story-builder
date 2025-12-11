@@ -1,0 +1,19 @@
+{
+  "language": "sua",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SUKTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SUKTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SUKTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

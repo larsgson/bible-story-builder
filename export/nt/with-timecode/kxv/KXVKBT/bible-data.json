@@ -1,0 +1,33 @@
+{
+  "language": "kxv",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KXVKBT",
+  "filesets": {
+    "audio": {
+      "KXVKBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXVKBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KXVKBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXVKBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KXVKBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXVKBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

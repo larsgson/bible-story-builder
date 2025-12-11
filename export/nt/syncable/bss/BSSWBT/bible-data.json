@@ -1,0 +1,26 @@
+{
+  "language": "bss",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BSSWBT",
+  "filesets": {
+    "audio": {
+      "BSSWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BSSWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BSSWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BSSWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

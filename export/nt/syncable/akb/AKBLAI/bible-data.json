@@ -1,0 +1,26 @@
+{
+  "language": "akb",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "AKBLAI",
+  "filesets": {
+    "audio": {
+      "AKBLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AKBLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AKBLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AKBLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

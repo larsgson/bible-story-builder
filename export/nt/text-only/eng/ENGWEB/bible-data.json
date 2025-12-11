@@ -1,0 +1,24 @@
+{
+  "language": "eng",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "ENGWEB",
+  "filesets": {
+    "audio": {
+      "ENGWEBN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "ENGWEBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGWEBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

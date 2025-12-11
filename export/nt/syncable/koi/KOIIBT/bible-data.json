@@ -1,0 +1,26 @@
+{
+  "language": "koi",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KOIIBT",
+  "filesets": {
+    "audio": {
+      "KOIIBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KOIIBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KOIIBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KOIIBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

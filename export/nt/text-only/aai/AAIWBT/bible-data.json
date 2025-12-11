@@ -1,0 +1,19 @@
+{
+  "language": "aai",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "AAIWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "AAIWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AAIWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

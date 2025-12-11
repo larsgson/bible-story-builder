@@ -1,0 +1,19 @@
+{
+  "language": "hrv",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "HRVCBV",
+  "filesets": {
+    "audio": {
+      "SRCCRVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRCCRVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

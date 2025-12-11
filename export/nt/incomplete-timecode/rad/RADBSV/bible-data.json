@@ -1,0 +1,26 @@
+{
+  "language": "rad",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "RADBSV",
+  "filesets": {
+    "audio": {
+      "RADBSVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RADBSVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "RADBSVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RADBSVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

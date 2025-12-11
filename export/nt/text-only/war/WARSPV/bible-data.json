@@ -1,0 +1,24 @@
+{
+  "language": "war",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "WARSPV",
+  "filesets": {
+    "audio": {
+      "WARSPVN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "WARSPV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WARSPV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

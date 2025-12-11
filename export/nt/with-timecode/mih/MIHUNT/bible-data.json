@@ -1,0 +1,33 @@
+{
+  "language": "mih",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MIHUNT",
+  "filesets": {
+    "audio": {
+      "MIHUNTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIHUNTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MIHUNT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIHUNT.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MIHUNTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIHUNTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

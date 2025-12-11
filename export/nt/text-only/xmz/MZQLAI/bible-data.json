@@ -1,0 +1,24 @@
+{
+  "language": "xmz",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "MZQLAI",
+  "filesets": {
+    "audio": {
+      "MZQLAIN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "MZQLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MZQLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

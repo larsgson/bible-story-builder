@@ -1,0 +1,17 @@
+{
+  "language": "dgr",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "DGRCBS",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "DGRBSC": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

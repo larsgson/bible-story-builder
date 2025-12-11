@@ -1,0 +1,17 @@
+{
+  "language": "ben",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "BENCLV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BNGCLV": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

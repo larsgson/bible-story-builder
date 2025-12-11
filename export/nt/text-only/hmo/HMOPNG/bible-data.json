@@ -1,0 +1,19 @@
+{
+  "language": "hmo",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "HMOPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "HMOPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HMOPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "bev",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BEVABU",
+  "filesets": {
+    "audio": {
+      "BEVABUN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BEVABUN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

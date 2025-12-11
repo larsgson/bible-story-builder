@@ -1,0 +1,19 @@
+{
+  "language": "spa",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SPABDA",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SPNBDAO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SPNBDAO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

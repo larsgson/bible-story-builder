@@ -1,0 +1,19 @@
+{
+  "language": "ban",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BANDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BANDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BANDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

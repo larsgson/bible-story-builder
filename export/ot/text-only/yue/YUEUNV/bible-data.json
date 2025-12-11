@@ -1,0 +1,19 @@
+{
+  "language": "yue",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "YUEUNV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "YUHUNV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_YUHUNV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

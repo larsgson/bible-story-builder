@@ -1,0 +1,26 @@
+{
+  "language": "rej",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "REJNEW",
+  "filesets": {
+    "audio": {
+      "REJLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_REJLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "REJLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_REJLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

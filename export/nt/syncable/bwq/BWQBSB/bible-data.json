@@ -1,0 +1,26 @@
+{
+  "language": "bwq",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BWQBSB",
+  "filesets": {
+    "audio": {
+      "BWQBSBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BWQBSBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BWQBSBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BWQBSBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

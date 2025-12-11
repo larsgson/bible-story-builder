@@ -1,0 +1,17 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "ENGNKJ",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ENGNKJO_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

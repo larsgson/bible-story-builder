@@ -1,0 +1,19 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ENGCSB",
+  "filesets": {
+    "audio": {
+      "ENGCSBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGCSBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

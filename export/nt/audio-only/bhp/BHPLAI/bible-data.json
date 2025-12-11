@@ -1,0 +1,19 @@
+{
+  "language": "bhp",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BHPLAI",
+  "filesets": {
+    "audio": {
+      "BHPLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BHPLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

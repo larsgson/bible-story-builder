@@ -1,0 +1,17 @@
+{
+  "language": "ron",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "audio-only",
+  "distinct_id": "RONCOR",
+  "filesets": {
+    "audio": {
+      "RONDCVO1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

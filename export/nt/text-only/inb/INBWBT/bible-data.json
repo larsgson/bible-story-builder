@@ -1,0 +1,24 @@
+{
+  "language": "inb",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "INBWBT",
+  "filesets": {
+    "audio": {
+      "INBWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "INBWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_INBWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

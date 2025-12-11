@@ -1,0 +1,19 @@
+{
+  "language": "mni",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MNIBIL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MNIBILO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MNIBILO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

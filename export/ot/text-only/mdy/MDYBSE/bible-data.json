@@ -1,0 +1,19 @@
+{
+  "language": "mdy",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MDYBSE",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MDYBSEN": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MDYBSEN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

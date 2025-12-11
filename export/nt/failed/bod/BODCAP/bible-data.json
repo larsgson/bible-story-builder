@@ -1,0 +1,22 @@
+{
+  "language": "bod",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "syncable",
+  "distinct_id": "BODCAP",
+  "filesets": {
+    "audio": {
+      "BO1CAPN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "BO1CAPN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

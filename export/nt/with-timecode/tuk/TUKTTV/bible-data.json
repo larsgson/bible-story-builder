@@ -1,0 +1,33 @@
+{
+  "language": "tuk",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TUKTTV",
+  "filesets": {
+    "audio": {
+      "TUKTTVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TUKTTVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TUKTTVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TUKTTVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TUKTTVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TUKTTVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

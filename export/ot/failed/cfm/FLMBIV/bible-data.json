@@ -1,0 +1,17 @@
+{
+  "language": "cfm",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "FLMBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FLMBIV": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

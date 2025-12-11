@@ -1,0 +1,24 @@
+{
+  "language": "mfi",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MFIWYI",
+  "filesets": {
+    "audio": {
+      "MFIWYIN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MFIWYI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MFIWYI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

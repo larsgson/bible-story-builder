@@ -1,0 +1,24 @@
+{
+  "language": "fal",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "FALTBL",
+  "filesets": {
+    "audio": {
+      "FALTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "FALTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FALTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

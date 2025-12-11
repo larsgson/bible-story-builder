@@ -1,0 +1,19 @@
+{
+  "language": "ksd",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KSDPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KSDPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSDPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

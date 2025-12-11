@@ -1,0 +1,19 @@
+{
+  "language": "zam",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ZAMILM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ZAMILMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAMILMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

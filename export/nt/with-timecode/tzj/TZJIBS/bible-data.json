@@ -1,0 +1,33 @@
+{
+  "language": "tzj",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TZJIBS",
+  "filesets": {
+    "audio": {
+      "TZJIBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TZJIBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TZJIBSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TZJIBSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TZJIBSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TZJIBSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

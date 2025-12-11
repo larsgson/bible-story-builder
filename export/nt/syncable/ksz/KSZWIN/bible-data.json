@@ -1,0 +1,26 @@
+{
+  "language": "ksz",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KSZWIN",
+  "filesets": {
+    "audio": {
+      "KSZWINN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSZWINN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KSZWINN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSZWINN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

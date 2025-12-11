@@ -1,0 +1,26 @@
+{
+  "language": "min",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MINLAI",
+  "filesets": {
+    "audio": {
+      "MINLAIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MINLAIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MINLAIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MINLAIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

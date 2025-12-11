@@ -1,0 +1,26 @@
+{
+  "language": "tyv",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TYVIBT",
+  "filesets": {
+    "audio": {
+      "TYVIBTO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TYVIBTO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TYVIBT": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TYVIBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

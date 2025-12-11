@@ -1,0 +1,33 @@
+{
+  "language": "btt",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BTTPDT",
+  "filesets": {
+    "audio": {
+      "BTTPDTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BTTPDTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BTTPDTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BTTPDTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BTTPDTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BTTPDTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

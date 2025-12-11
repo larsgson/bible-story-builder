@@ -1,0 +1,19 @@
+{
+  "language": "esk",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ESKWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ESKWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ESKWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

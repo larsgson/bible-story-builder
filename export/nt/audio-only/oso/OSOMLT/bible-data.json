@@ -1,0 +1,19 @@
+{
+  "language": "oso",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "OSOMLT",
+  "filesets": {
+    "audio": {
+      "OSOMLTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_OSOMLTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

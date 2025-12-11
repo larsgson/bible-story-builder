@@ -1,0 +1,26 @@
+{
+  "language": "zmz",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "ZMZDRC",
+  "filesets": {
+    "audio": {
+      "ZMZDRCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZMZDRCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZMZDRCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZMZDRCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

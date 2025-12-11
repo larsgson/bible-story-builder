@@ -1,0 +1,33 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "ENGKJV",
+  "filesets": {
+    "audio": {
+      "ENGKJVO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGKJVO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ENGKJVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGKJVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ENGKJVO1DA_timing": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGKJVO1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

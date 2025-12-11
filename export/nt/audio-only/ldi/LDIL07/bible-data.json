@@ -1,0 +1,19 @@
+{
+  "language": "ldi",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LDIL07",
+  "filesets": {
+    "audio": {
+      "LDIBSCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LDIBSCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

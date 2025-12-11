@@ -1,0 +1,19 @@
+{
+  "language": "pdc",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "PDCWYI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PDCWYI": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PDCWYI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

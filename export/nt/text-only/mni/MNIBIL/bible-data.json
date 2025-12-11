@@ -1,0 +1,19 @@
+{
+  "language": "mni",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MNIBIL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MNIBILN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNIBILN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

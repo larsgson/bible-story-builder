@@ -1,0 +1,26 @@
+{
+  "language": "nca",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NCAWBT",
+  "filesets": {
+    "audio": {
+      "NCAWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NCAWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NCAWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NCAWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

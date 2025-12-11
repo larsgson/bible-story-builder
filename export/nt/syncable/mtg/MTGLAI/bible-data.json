@@ -1,0 +1,26 @@
+{
+  "language": "mtg",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MTGLAI",
+  "filesets": {
+    "audio": {
+      "MTGLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MTGLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MTGLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MTGLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

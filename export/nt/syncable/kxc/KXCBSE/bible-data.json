@@ -1,0 +1,26 @@
+{
+  "language": "kxc",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KXCBSE",
+  "filesets": {
+    "audio": {
+      "KXCBSEN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXCBSEN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KXCBSE": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KXCBSE.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

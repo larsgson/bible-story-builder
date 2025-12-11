@@ -1,0 +1,19 @@
+{
+  "language": "nii",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NIIWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NIIWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NIIWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

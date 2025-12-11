@@ -1,0 +1,26 @@
+{
+  "language": "zao",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZAOTBL",
+  "filesets": {
+    "audio": {
+      "ZAOTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAOTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZAOTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAOTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

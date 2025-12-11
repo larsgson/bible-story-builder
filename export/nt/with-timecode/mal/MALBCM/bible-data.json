@@ -1,0 +1,33 @@
+{
+  "language": "mal",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MALBCM",
+  "filesets": {
+    "audio": {
+      "MALBCMN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MALBCMN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MALBCMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MALBCMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MALBCMN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MALBCMN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

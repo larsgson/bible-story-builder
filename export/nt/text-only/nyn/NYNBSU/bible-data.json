@@ -1,0 +1,24 @@
+{
+  "language": "nyn",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "NYNBSU",
+  "filesets": {
+    "audio": {
+      "NYNBSUN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "NYNBSU": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NYNBSU.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

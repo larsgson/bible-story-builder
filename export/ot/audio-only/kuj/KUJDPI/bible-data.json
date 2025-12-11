@@ -1,0 +1,19 @@
+{
+  "language": "kuj",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KUJDPI",
+  "filesets": {
+    "audio": {
+      "KUJDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KUJDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

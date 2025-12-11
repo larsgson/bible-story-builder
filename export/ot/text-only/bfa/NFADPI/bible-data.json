@@ -1,0 +1,19 @@
+{
+  "language": "bfa",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NFADPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NFADPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_NFADPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

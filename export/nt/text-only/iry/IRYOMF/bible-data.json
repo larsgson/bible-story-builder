@@ -1,0 +1,19 @@
+{
+  "language": "iry",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "IRYOMF",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "IRYOMF": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IRYOMF.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

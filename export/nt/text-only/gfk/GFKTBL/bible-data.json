@@ -1,0 +1,19 @@
+{
+  "language": "gfk",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GFKTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GFKTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GFKTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "bkv",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "BKVWYI",
+  "filesets": {
+    "audio": {
+      "BKVWYIN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "BKVWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BKVWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

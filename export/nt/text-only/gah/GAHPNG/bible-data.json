@@ -1,0 +1,19 @@
+{
+  "language": "gah",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GAHPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GAHPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAHPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

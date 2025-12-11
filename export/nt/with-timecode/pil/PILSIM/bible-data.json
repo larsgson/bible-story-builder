@@ -1,0 +1,33 @@
+{
+  "language": "pil",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PILSIM",
+  "filesets": {
+    "audio": {
+      "PILSIMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PILSIMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PILSIMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PILSIMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PILSIMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PILSIMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

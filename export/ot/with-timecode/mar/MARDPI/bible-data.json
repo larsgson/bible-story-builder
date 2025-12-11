@@ -1,0 +1,33 @@
+{
+  "language": "mar",
+  "canon": "OT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MARDPI",
+  "filesets": {
+    "audio": {
+      "MARDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MARDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MARDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MARDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MARDPIO1DA_timing": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MARDPIO1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

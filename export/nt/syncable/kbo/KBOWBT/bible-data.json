@@ -1,0 +1,26 @@
+{
+  "language": "kbo",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "KBOWBT",
+  "filesets": {
+    "audio": {
+      "KBOWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KBOWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KBOWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KBOWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

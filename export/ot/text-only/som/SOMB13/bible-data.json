@@ -1,0 +1,19 @@
+{
+  "language": "som",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SOMB13",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SOMTVIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SOMTVIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

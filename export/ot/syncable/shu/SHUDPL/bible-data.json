@@ -1,0 +1,26 @@
+{
+  "language": "shu",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SHUDPL",
+  "filesets": {
+    "audio": {
+      "SHUDPLO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SHUDPLO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SHUDPLO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SHUDPLO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

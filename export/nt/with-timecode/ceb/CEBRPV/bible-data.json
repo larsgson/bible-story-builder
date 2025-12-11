@@ -1,0 +1,33 @@
+{
+  "language": "ceb",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CEBRPV",
+  "filesets": {
+    "audio": {
+      "CEBRPVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CEBRPVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CEBRPVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CEBRPVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CEBRPVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CEBRPVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "pez",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PEZBSM",
+  "filesets": {
+    "audio": {
+      "PEZBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEZBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PEZBSMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEZBSMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PEZBSMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEZBSMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

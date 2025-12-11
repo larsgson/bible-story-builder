@@ -1,0 +1,19 @@
+{
+  "language": "auy",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "AUYWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "AUYWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AUYWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "qub",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QUBPBS",
+  "filesets": {
+    "audio": {
+      "QUBWTCO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_QUBWTCO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

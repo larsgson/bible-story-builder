@@ -1,0 +1,33 @@
+{
+  "language": "mar",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MARDPI",
+  "filesets": {
+    "audio": {
+      "MARDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MARDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MARDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MARDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MARDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MARDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

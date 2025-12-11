@@ -1,0 +1,19 @@
+{
+  "language": "eng",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ENGWM1",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ENGWM1": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGWM1.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "kwg",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KWGBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KWGBIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KWGBIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

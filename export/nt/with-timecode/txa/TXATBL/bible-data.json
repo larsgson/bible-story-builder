@@ -1,0 +1,33 @@
+{
+  "language": "txa",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TXATBL",
+  "filesets": {
+    "audio": {
+      "TXATBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TXATBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TXATBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TXATBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TXATBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TXATBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

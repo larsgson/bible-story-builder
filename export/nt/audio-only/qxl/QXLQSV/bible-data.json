@@ -1,0 +1,19 @@
+{
+  "language": "qxl",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QXLQSV",
+  "filesets": {
+    "audio": {
+      "QXLQSVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QXLQSVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

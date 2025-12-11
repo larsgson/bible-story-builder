@@ -1,0 +1,19 @@
+{
+  "language": "ces",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "CESB85",
+  "filesets": {
+    "audio": {
+      "CZCCETN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CZCCETN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "wlx",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "WLXBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "WLXBIVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_WLXBIVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

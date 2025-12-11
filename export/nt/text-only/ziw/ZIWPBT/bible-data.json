@@ -1,0 +1,19 @@
+{
+  "language": "ziw",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ZIWPBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ZIWPBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZIWPBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

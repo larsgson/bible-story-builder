@@ -1,0 +1,22 @@
+{
+  "language": "wal",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "WALSIM",
+  "filesets": {
+    "audio": {
+      "WA1SIMN2DA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "WA1SIMN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

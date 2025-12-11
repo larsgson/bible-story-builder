@@ -1,0 +1,26 @@
+{
+  "language": "fra",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "FRNTLS",
+  "filesets": {
+    "audio": {
+      "FRNTLSO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_FRNTLSO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "FRNTLS": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_FRNTLS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

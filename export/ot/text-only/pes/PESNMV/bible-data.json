@@ -1,0 +1,19 @@
+{
+  "language": "pes",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PESNMV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PESEMV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PESEMV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

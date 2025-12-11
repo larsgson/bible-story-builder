@@ -1,0 +1,19 @@
+{
+  "language": "ctd",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CTDCLB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CT1TEVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CT1TEVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

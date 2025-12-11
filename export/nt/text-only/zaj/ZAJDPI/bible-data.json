@@ -1,0 +1,19 @@
+{
+  "language": "zaj",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ZAJDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ZAJDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAJDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

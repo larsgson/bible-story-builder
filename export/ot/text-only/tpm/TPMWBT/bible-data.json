@@ -1,0 +1,19 @@
+{
+  "language": "tpm",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TPMWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TPMWBTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TPMWBTO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

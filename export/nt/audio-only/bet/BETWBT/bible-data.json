@@ -1,0 +1,19 @@
+{
+  "language": "bet",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BETWBT",
+  "filesets": {
+    "audio": {
+      "BETWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BETWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

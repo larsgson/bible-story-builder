@@ -1,0 +1,19 @@
+{
+  "language": "ceb",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CEBCBV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CEBCBV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CEBCBV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

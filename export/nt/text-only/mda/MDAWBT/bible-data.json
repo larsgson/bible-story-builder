@@ -1,0 +1,24 @@
+{
+  "language": "mda",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MDAWBT",
+  "filesets": {
+    "audio": {
+      "MDAWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MDAWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MDAWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

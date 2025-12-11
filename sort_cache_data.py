@@ -2,8 +2,7 @@
 """
 Sort and organize API cache data into a downloads-like directory structure.
 
-This script is FULLY INDEPENDENT - no dependencies on stats/ directory.
-It computes all categorization logic directly from api-cache/.
+This script computes all categorization logic directly from api-cache/.
 
 Key features:
 - Single script execution: api-cache/ → sorted/BB/
@@ -30,7 +29,35 @@ import sys
 from collections import defaultdict
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Optional
+
+
+# Helper functions for simplification
+def _safe_get_list(data_dict: dict, key: str) -> list:
+    """Safely get a list from dict, returning empty list if not found or wrong type."""
+    result = data_dict.get(key)
+    return result if isinstance(result, list) else []
+
+
+def _safe_append_if_not_exists(lst: list, item) -> None:
+    """Append item to list if it doesn't already exist."""
+    if item not in lst:
+        lst.append(item)
+
+
+def _is_audio_type(fileset_type: str) -> bool:
+    """Check if fileset type is audio."""
+    return fileset_type in [
+        "audio",
+        "audio_stream",
+        "audio_drama",
+        "audio_drama_stream",
+    ]
+
+
+def _is_text_type(fileset_type: str) -> bool:
+    """Check if fileset type is text."""
+    return fileset_type.startswith("text")
 
 
 class IndependentCacheDataSorter:
@@ -46,6 +73,7 @@ class IndependentCacheDataSorter:
         # Data structures
         self.all_bibles = []
         self.timing_filesets = set()
+        self.timing_bibles_metadata = {}  # Map bible abbr to extended metadata
 
         # Language data organized by ISO
         self.language_data = defaultdict(
@@ -81,6 +109,56 @@ class IndependentCacheDataSorter:
 
         print(f"Loaded {len(self.timing_filesets)} filesets with timing data")
 
+    def load_timing_bibles_metadata(self):
+        """
+        Load extended metadata from timing_bibles API endpoint.
+
+        Note: These fields (mark, country, description, vdescription) are Bible-level
+        metadata, NOT timing-specific. They're only available in the timing_bibles
+        API endpoint currently, but organize_language_data() also checks the regular
+        API for future-proofing.
+        """
+        timing_bibles_dir = self.bibles_dir / "timing_bibles"
+        if not timing_bibles_dir.exists():
+            print(
+                f"Note: No timing_bibles directory found - extended metadata only from regular API"
+            )
+            return
+
+        timing_bible_files = list(timing_bibles_dir.glob("*.json"))
+
+        for timing_file in timing_bible_files:
+            try:
+                with open(timing_file) as f:
+                    data = json.load(f)
+                    bible_data = data.get("data", {})
+
+                    abbr = bible_data.get("abbr")
+                    if not abbr:
+                        continue
+
+                    # Extract extended metadata fields
+                    extended_meta = {}
+                    if bible_data.get("mark"):
+                        extended_meta["mark"] = bible_data["mark"]
+                    if bible_data.get("country"):
+                        extended_meta["country"] = bible_data["country"]
+                    if bible_data.get("description"):
+                        extended_meta["description"] = bible_data["description"]
+                    if bible_data.get("vdescription"):
+                        extended_meta["vdescription"] = bible_data["vdescription"]
+
+                    if extended_meta:
+                        self.timing_bibles_metadata[abbr] = extended_meta
+            except Exception as e:
+                print(f"Warning: Could not load timing bible {timing_file.name}: {e}")
+                continue
+
+        if self.timing_bibles_metadata:
+            print(
+                f"Loaded extended metadata from timing_bibles endpoint for {len(self.timing_bibles_metadata)} bibles"
+            )
+
     def load_all_bibles(self):
         """Load all Bible data from paginated cache files."""
         bible_files = sorted(self.bibles_dir.glob("bibles_page_*.json"))
@@ -97,20 +175,30 @@ class IndependentCacheDataSorter:
         print(f"Loaded {len(self.all_bibles)} Bibles from {len(bible_files)} files")
 
     def normalize_fileset_id(self, fileset_id: str) -> str:
-        """
-        Remove suffixes like -opus16 to get base fileset ID.
-
-        Examples:
-            ENGWEBN1DA-opus16 → ENGWEBN1DA
-            ENGWEBN1DA-mp3 → ENGWEBN1DA
-        """
-        suffixes = ["-opus16", "-opus32", "-mp3", "-64", "-128", "16"]
-        for suffix in suffixes:
+        """Remove suffixes like -opus16 to get base fileset ID."""
+        for suffix in ["-opus16", "-opus32", "-mp3", "-64", "-128", "16"]:
             if fileset_id.endswith(suffix):
                 return fileset_id[: -len(suffix)]
         return fileset_id
 
-    def filter_dramatized_versions(self, filesets: List[str]) -> List[str]:
+    def normalize_bible_abbr(self, abbr: str) -> str:
+        """
+        Normalize bible abbreviation to 6 letters.
+
+        The 7th character (if present) indicates canon: N=NT, O=OT, C=FULL
+        We strip it since we have a separate canon field.
+
+        Examples:
+            INDALA -> INDALA (already 6 letters)
+            INDALAO -> INDALA (strip O)
+            INDALAN -> INDALA (strip N)
+        """
+        if len(abbr) > 6:
+            # Strip the 7th character (canon indicator)
+            return abbr[:6]
+        return abbr
+
+    def filter_dramatized_versions(self, filesets: list[str]) -> list[str]:
         """
         Filter out dramatized versions when non-dramatized version exists.
 
@@ -151,8 +239,8 @@ class IndependentCacheDataSorter:
         return filtered
 
     def match_audio_to_text(
-        self, audio_fileset_id: str, text_filesets: List[str]
-    ) -> List[str]:
+        self, audio_fileset_id: str, text_filesets: list[str]
+    ) -> list[str]:
         """
         Find text filesets that match an audio fileset by prefix comparison.
 
@@ -257,12 +345,45 @@ class IndependentCacheDataSorter:
 
             # Store language info (first occurrence)
             if self.language_data[iso]["language_info"] is None:
-                self.language_data[iso]["language_info"] = {
+                language_rolv_code = bible.get("language_rolv_code")
+                lang_info = {
                     "iso": iso,
                     "language_id": language_id,
                     "name": language_name,
                     "autonym": autonym or "",
                 }
+                # Add language_rolv_code if available
+                if language_rolv_code:
+                    lang_info["language_rolv_code"] = language_rolv_code
+                self.language_data[iso]["language_info"] = lang_info  # type: ignore[index]
+
+            # Also capture extended metadata if available in regular API (future-proof)
+            bible_abbr = bible.get("abbr")
+            if bible_abbr:
+                # Normalize to 6 letters for metadata storage
+                normalized_abbr = self.normalize_bible_abbr(bible_abbr)
+
+                extended_meta = {}
+                if bible.get("mark"):
+                    extended_meta["mark"] = bible["mark"]
+                if bible.get("country"):
+                    extended_meta["country"] = bible["country"]
+                if bible.get("description"):
+                    extended_meta["description"] = bible["description"]
+                if bible.get("vdescription"):
+                    extended_meta["vdescription"] = bible["vdescription"]
+
+                # Store or merge with existing timing_bibles_metadata
+                if extended_meta:
+                    if normalized_abbr not in self.timing_bibles_metadata:
+                        self.timing_bibles_metadata[normalized_abbr] = extended_meta
+                    else:
+                        # Merge - prefer timing_bibles data if it exists
+                        for key, value in extended_meta.items():
+                            if key not in self.timing_bibles_metadata[normalized_abbr]:
+                                self.timing_bibles_metadata[normalized_abbr][key] = (
+                                    value
+                                )
 
             # Process filesets
             filesets = bible.get("filesets", {})
@@ -276,39 +397,67 @@ class IndependentCacheDataSorter:
                         continue
 
                     # Categorize and store
-                    if fileset_type in [
-                        "audio",
-                        "audio_drama",
-                        "audio_stream",
-                        "audio_drama_stream",
-                    ]:
-                        if fileset_id not in self.language_data[iso]["audio_filesets"]:
-                            self.language_data[iso]["audio_filesets"].append(fileset_id)
-                            self.language_data[iso]["audio_details"].append(
-                                {
-                                    "fileset": fileset,
-                                    "bible": bible,
-                                    "book_set": self.determine_book_set(
-                                        fileset_id, size
-                                    ),
-                                }
-                            )
-                    elif fileset_type.startswith("text"):
-                        if fileset_id not in self.language_data[iso]["text_filesets"]:
-                            self.language_data[iso]["text_filesets"].append(fileset_id)
-                            self.language_data[iso]["text_details"].append(
-                                {
-                                    "fileset": fileset,
-                                    "bible": bible,
-                                    "book_set": self.determine_book_set(
-                                        fileset_id, size
-                                    ),
-                                }
-                            )
+                    canon = self.determine_book_set(fileset_id, size)
+
+                    # Normalize bible abbreviation to 6 letters
+                    normalized_bible = bible.copy()
+                    if "abbr" in normalized_bible:
+                        normalized_bible["abbr"] = self.normalize_bible_abbr(
+                            normalized_bible["abbr"]
+                        )
+
+                    fileset_detail = {
+                        "fileset": fileset,
+                        "bible": normalized_bible,
+                        "canon": canon,
+                        "original_canon": canon,  # Track original before expansion
+                    }
+
+                    if _is_audio_type(fileset_type):
+                        audio_filesets = _safe_get_list(
+                            self.language_data[iso], "audio_filesets"
+                        )
+                        audio_details = _safe_get_list(
+                            self.language_data[iso], "audio_details"
+                        )
+                        if fileset_id not in audio_filesets:
+                            audio_filesets.append(fileset_id)
+                            audio_details.append(fileset_detail)
+                    elif _is_text_type(fileset_type):
+                        text_filesets = _safe_get_list(
+                            self.language_data[iso], "text_filesets"
+                        )
+                        text_details = _safe_get_list(
+                            self.language_data[iso], "text_details"
+                        )
+                        if fileset_id not in text_filesets:
+                            text_filesets.append(fileset_id)
+                            # Expand FULL text to both NT and OT
+                            if canon == "FULL":
+                                for expanded_canon in ["NT", "OT"]:
+                                    expanded_detail = fileset_detail.copy()
+                                    expanded_detail["canon"] = expanded_canon
+                                    # Keep original_canon as FULL
+                                    text_details.append(expanded_detail)
+                            else:
+                                text_details.append(fileset_detail)
 
         print(f"Organized data for {len(self.language_data)} languages")
 
-    def compute_syncable_pairs(self, iso: str) -> List[Dict]:
+        # Report extended metadata captured from regular API
+        regular_api_extended = sum(
+            1
+            for abbr, meta in self.timing_bibles_metadata.items()
+            if any(
+                k in meta for k in ["mark", "country", "description", "vdescription"]
+            )
+        )
+        if regular_api_extended > 0:
+            print(
+                f"  + Extended metadata captured from regular API for {regular_api_extended} additional bibles"
+            )
+
+    def compute_syncable_pairs(self, iso: str) -> list[dict]:
         """
         Compute which audio-text pairs are syncable for a language.
 
@@ -324,13 +473,13 @@ class IndependentCacheDataSorter:
             List of dictionaries with audio_fileset_id and text_fileset_id
         """
         lang_data = self.language_data[iso]
-        audio_filesets = lang_data["audio_filesets"]
-        text_filesets = lang_data["text_filesets"]
+        audio_filesets = lang_data.get("audio_filesets", [])
+        text_filesets: list[str] = lang_data.get("text_filesets") or []
 
         # Filter out audio that already has timing
         audio_without_timing = [
             fs
-            for fs in audio_filesets
+            for fs in (audio_filesets or [])
             if self.normalize_fileset_id(fs) not in self.timing_filesets
         ]
 
@@ -352,7 +501,7 @@ class IndependentCacheDataSorter:
         return syncable_pairs
 
     def determine_data_source(
-        self, fileset_id: str, is_audio: bool, syncable_pairs: List[Dict]
+        self, fileset_id: str, is_audio: bool, syncable_pairs: list[dict]
     ) -> Optional[str]:
         """
         Determine data source category for a fileset.
@@ -389,7 +538,7 @@ class IndependentCacheDataSorter:
 
         return None
 
-    def is_syncable(self, fileset_id: str, syncable_pairs: List[Dict]) -> bool:
+    def is_syncable(self, fileset_id: str, syncable_pairs: list[dict]) -> bool:
         """
         Check if this audio fileset is part of a syncable pair.
 
@@ -405,23 +554,122 @@ class IndependentCacheDataSorter:
                 return True
         return False
 
-    def create_metadata(
-        self, iso: str, fileset_detail: Dict, syncable_pairs: List[Dict]
-    ) -> Dict:
+    def determine_category(
+        self, iso: str, distinct_id: str, canon: str
+    ) -> Optional[str]:
         """
-        Create comprehensive metadata for a fileset.
+        Determine category for a distinct_id/canon combination.
+
+        Categories (in priority order):
+        - partial: PARTIAL canon (highest priority, overrides all else)
+        - with-timecode: Has text, audio, AND timing
+        - incomplete-timecode: Has timing but missing text or audio
+        - syncable: Has both text and audio, but NO timing
+        - text-only: Has ONLY text
+        - audio-only: Has ONLY audio
 
         Args:
-            iso: Language ISO code
-            fileset_detail: Dictionary with fileset, bible, and book_set
-            syncable_pairs: List of syncable pairs for this language
+            iso: Language code
+            distinct_id: Bible abbreviation (e.g., ENGWEB, LEZIBT)
+            canon: Canon (NT, OT, PARTIAL)
 
         Returns:
-            Complete metadata dictionary
+            Category string, or None if no valid category
         """
+        lang_data = self.language_data.get(iso)
+        if not lang_data:
+            return None
+
+        # FIRST PRIORITY: Check if canon is PARTIAL
+        # PARTIAL overrides all other categorization logic
+        if canon == "PARTIAL":
+            return "partial"
+
+        # Collect audio and text filesets for this distinct_id/canon
+        audio_filesets = []
+        text_filesets = []
+        has_timing = False
+
+        # Collect audio filesets
+        for audio_detail in lang_data.get("audio_details") or []:
+            bible_abbr = audio_detail.get("bible", {}).get("abbr", "")
+            detail_canon = audio_detail.get("canon", "")
+            fileset_id = audio_detail.get("fileset", {}).get("id", "")
+
+            if bible_abbr == distinct_id and detail_canon == canon:
+                audio_filesets.append(fileset_id)
+                # Check if any audio fileset has timing
+                if self.normalize_fileset_id(fileset_id) in self.timing_filesets:
+                    has_timing = True
+
+        # Collect text filesets
+        for text_detail in lang_data.get("text_details") or []:
+            bible_abbr = text_detail.get("bible", {}).get("abbr", "")
+            detail_canon = text_detail.get("canon", "")
+            fileset_id = text_detail.get("fileset", {}).get("id", "")
+
+            if bible_abbr == distinct_id and detail_canon == canon:
+                text_filesets.append(fileset_id)
+
+        # Determine flags
+        # Since filesets are already filtered by distinct_id and canon,
+        # if both audio and text exist, they belong to the same Bible version
+        has_audio = len(audio_filesets) > 0
+        has_text = len(text_filesets) > 0
+
+        # Apply categorization logic
+        if has_timing:
+            if has_text and has_audio:
+                return "with-timecode"
+            else:
+                return "incomplete-timecode"
+        else:
+            if has_text and has_audio:
+                return "syncable"
+            elif has_text and not has_audio:
+                return "text-only"
+            elif has_audio and not has_text:
+                return "audio-only"
+            else:
+                return None  # No content - skip
+
+    def determine_fileset_category(self, fileset_detail: dict) -> str:
+        """
+        Determine category for individual fileset based on its own capabilities.
+
+        Returns individual fileset capability:
+        - "text": Text-only fileset
+        - "audio": Audio-only fileset
+        - "timing": Timing data fileset
+        """
+        fileset_type = fileset_detail["fileset"].get("type", "")
+        fileset_id = fileset_detail["fileset"].get("id", "")
+
+        is_audio = fileset_type in [
+            "audio",
+            "audio_drama",
+            "audio_stream",
+            "audio_drama_stream",
+        ]
+        is_text = fileset_type.startswith("text")
+        has_timing = self.normalize_fileset_id(fileset_id) in self.timing_filesets
+
+        if has_timing:
+            return "timing"
+        elif is_audio:
+            return "audio"
+        elif is_text:
+            return "text"
+        else:
+            return "unknown"
+
+    def create_metadata(
+        self, iso: str, fileset_detail: dict, syncable_pairs: list[dict]
+    ) -> dict:
+        """Create comprehensive metadata for a fileset."""
         fileset = fileset_detail["fileset"]
         bible = fileset_detail["bible"]
-        book_set = fileset_detail["book_set"]
+        canon = fileset_detail["canon"]
 
         fileset_id = fileset.get("id", "")
         fileset_type = fileset.get("type", "")
@@ -444,11 +692,46 @@ class IndependentCacheDataSorter:
         # Check timing availability
         has_timing = self.normalize_fileset_id(fileset_id) in self.timing_filesets
 
+        # Determine categories
+        distinct_id = bible.get("abbr", "")
+        individual_category = self.determine_fileset_category(fileset_detail)
+        aggregate_category = self.determine_category(iso, distinct_id, canon)
+
+        # Check aggregate capabilities for this (distinct_id, canon) combination
+        canon_has_text = False
+        canon_has_audio = False
+        canon_has_timing = False
+
+        lang_data = self.language_data.get(iso)
+        if lang_data:
+            # Check audio filesets for this distinct_id/canon
+            for audio_detail in lang_data.get("audio_details") or []:
+                bible_abbr = audio_detail.get("bible", {}).get("abbr", "")
+                detail_canon = audio_detail.get("canon", "")
+                audio_fileset_id = audio_detail.get("fileset", {}).get("id", "")
+
+                if bible_abbr == distinct_id and detail_canon == canon:
+                    canon_has_audio = True
+                    if (
+                        self.normalize_fileset_id(audio_fileset_id)
+                        in self.timing_filesets
+                    ):
+                        canon_has_timing = True
+
+            # Check text filesets for this distinct_id/canon
+            for text_detail in lang_data.get("text_details") or []:
+                bible_abbr = text_detail.get("bible", {}).get("abbr", "")
+                detail_canon = text_detail.get("canon", "")
+
+                if bible_abbr == distinct_id and detail_canon == canon:
+                    canon_has_text = True
+
         metadata = {
             "language": self.language_data[iso]["language_info"],
             "bible": {
                 "abbr": bible.get("abbr", ""),
                 "name": bible.get("name", ""),
+                "vname": bible.get("vname", ""),
             },
             "fileset": {
                 "id": fileset_id,
@@ -457,14 +740,23 @@ class IndependentCacheDataSorter:
                 "volume": fileset.get("volume", ""),
                 "date": bible.get("date") or fileset.get("date") or "",
             },
+            "individual_category": individual_category,
+            "aggregate_category": aggregate_category,
+            "canon": canon,
+            "category": aggregate_category,  # Backward compatibility - use aggregate
             "categorization": {
+                # Individual fileset capabilities
                 "has_text": is_text,
                 "has_audio": is_audio,
                 "has_timing": has_timing,
+                # Aggregate (distinct_id, canon) capabilities
+                "canon_has_text": canon_has_text,
+                "canon_has_audio": canon_has_audio,
+                "canon_has_timing": canon_has_timing,
+                # Other fields
                 "data_source": self.determine_data_source(
                     fileset_id, is_audio, syncable_pairs
                 ),
-                "book_set": book_set,
                 "syncable": self.is_syncable(fileset_id, syncable_pairs),
                 "audio_text_pairs": audio_text_pairs,
             },
@@ -478,86 +770,92 @@ class IndependentCacheDataSorter:
         # Add collection info if available (position 6 in fileset ID)
         if len(fileset_id) >= 7:
             collection = fileset_id[6]
-            metadata["fileset"]["collection"] = collection
+            fileset_dict = metadata.get("fileset")
+            if fileset_dict is not None:
+                fileset_dict["collection"] = collection
+
+        # Add extended metadata from timing_bibles if available
+        bible_abbr = bible.get("abbr", "")
+        if bible_abbr in self.timing_bibles_metadata:
+            extended = self.timing_bibles_metadata[bible_abbr]
+            bible_dict = metadata.get("bible")
+            if bible_dict is not None:
+                if extended.get("mark"):
+                    bible_dict["mark"] = extended["mark"]
+                if extended.get("country"):
+                    bible_dict["country"] = extended["country"]
+                if extended.get("description"):
+                    bible_dict["description"] = extended["description"]
+                if extended.get("vdescription"):
+                    bible_dict["vdescription"] = extended["vdescription"]
 
         return metadata
 
     def track_exclusions(
         self,
         iso: str,
-        bible: Dict,
-        fileset: Dict,
+        bible: dict,
+        fileset: dict,
         fileset_id: str,
         fileset_type: str,
-        book_set: str,
+        canon: str,
     ):
-        """
-        Track filesets that should be excluded from download attempts.
+        """Track exclusions and reasons."""
 
-        Categories:
-        1. SA versions - Streaming-only Story Adaptations (SA suffix in fileset ID)
-        2. Partial content - Incomplete testaments (OTP, NTP, PARTIAL book_set)
-        3. Story adaptations - Video-based story adaptations
-        """
-        # 1. Check for SA (Story Adaptation) - streaming-only audio
-        if "SA" in fileset_id and len(fileset_id) >= 10:
-            # SA typically appears in positions 7-10 (e.g., N1SA, N2SA, O1SA, O2SA)
-            if fileset_id[7:10].endswith("SA") or fileset_id[8:10] == "SA":
-                self.exclusions["sa_versions"].append(
-                    {
-                        "iso": iso,
-                        "language": bible.get("language", ""),
-                        "bible_abbr": bible.get("abbr", ""),
-                        "bible_name": bible.get("name", ""),
-                        "fileset_id": fileset_id,
-                        "type": fileset_type,
-                        "size": fileset.get("size", ""),
-                        "reason": "Streaming-only Story Adaptation (SA suffix)",
-                    }
-                )
+        def create_exclusion_record(reason: str, **extra_fields):
+            """Create a standard exclusion record."""
+            record = {
+                "iso": iso,
+                "language": bible.get("language", ""),
+                "bible_abbr": bible.get("abbr", ""),
+                "bible_name": bible.get("name", ""),
+                "fileset_id": fileset_id,
+                "type": fileset_type,
+                "size": fileset.get("size", ""),
+                "reason": reason,
+            }
+            record.update(extra_fields)
+            return record
 
-        # 2. Check for partial content (only PARTIAL book_set from collection "P")
-        # Note: OTP/NTP are kept as OT/NT so they work for books they contain
-        if book_set == "PARTIAL":
-            self.exclusions["partial_content"].append(
-                {
-                    "iso": iso,
-                    "language": bible.get("language", ""),
-                    "bible_abbr": bible.get("abbr", ""),
-                    "bible_name": bible.get("name", ""),
-                    "fileset_id": fileset_id,
-                    "type": fileset_type,
-                    "size": fileset.get("size", ""),
-                    "book_set": book_set,
-                    "reason": "Partial content (collection P - incomplete book set)",
-                }
+        # Check for streaming-only story adaptations (SA suffix)
+        if fileset_id.endswith("SA"):
+            self.exclusions["sa_versions"].append(
+                create_exclusion_record("Streaming-only Story Adaptation (SA suffix)")
             )
 
-        # 3. Check for story adaptations from video filesets
+        # Check for partial content (collection P)
+        if canon == "PARTIAL":
+            self.exclusions["partial_content"].append(
+                create_exclusion_record(
+                    "Partial content (collection P - incomplete book set)",
+                    book_set=canon,
+                )
+            )
+
+        # Check for story adaptations from video filesets
         if "story" in fileset_type.lower() or "video" in fileset_type.lower():
             self.exclusions["story_adaptations"].append(
-                {
-                    "iso": iso,
-                    "language": bible.get("language", ""),
-                    "bible_abbr": bible.get("abbr", ""),
-                    "bible_name": bible.get("name", ""),
-                    "fileset_id": fileset_id,
-                    "type": fileset_type,
-                    "size": fileset.get("size", ""),
-                    "reason": "Video/Story adaptation format",
-                }
+                create_exclusion_record("Video/Story adaptation format")
             )
 
-    def save_metadata(self, iso: str, fileset_id: str, metadata: Dict):
-        """
-        Save metadata to the appropriate directory.
+    def save_metadata(
+        self,
+        iso: str,
+        fileset_id: str,
+        metadata: dict,
+        canon: Optional[str] = None,
+        original_canon: Optional[str] = None,
+    ):
+        """Save metadata to the appropriate directory.
 
-        Args:
-            iso: Language ISO code
-            fileset_id: Fileset identifier
-            metadata: Metadata dictionary to save
+        For expanded FULL filesets, append canon suffix to create separate directories.
         """
-        output_path = self.output_dir / iso / fileset_id
+        # If this is an expanded FULL fileset, append canon to directory name
+        if original_canon == "FULL" and canon in ["NT", "OT"]:
+            output_path = self.output_dir / iso / f"{fileset_id}-{canon.lower()}"
+        else:
+            output_path = self.output_dir / iso / fileset_id
+
         output_path.mkdir(parents=True, exist_ok=True)
 
         metadata_file = output_path / "metadata.json"
@@ -580,49 +878,67 @@ class IndependentCacheDataSorter:
             syncable_pairs = self.compute_syncable_pairs(iso)
 
             # Process audio filesets
-            for audio_detail in lang_data["audio_details"]:
+            for audio_detail in lang_data.get("audio_details") or []:
                 fileset_id = audio_detail["fileset"]["id"]
 
-                fileset_key = f"{iso}/{fileset_id}"
+                # For expanded FULL filesets, include canon in key to allow duplicate processing
+                canon_for_key = audio_detail.get("canon", "")
+                original_canon = audio_detail.get("original_canon", canon_for_key)
+                if original_canon == "FULL":
+                    fileset_key = f"{iso}/{fileset_id}/{canon_for_key}"
+                else:
+                    fileset_key = f"{iso}/{fileset_id}"
+
                 if fileset_key in self.processed_filesets:
                     continue
 
                 self.processed_filesets.add(fileset_key)
 
                 metadata = self.create_metadata(iso, audio_detail, syncable_pairs)
-                self.save_metadata(iso, fileset_id, metadata)
+                canon = metadata.get("canon")
+                original_canon = audio_detail.get("original_canon", canon)
+                self.save_metadata(iso, fileset_id, metadata, canon, original_canon)
 
                 # Track exclusions
                 bible = audio_detail.get("bible", {})
                 fileset = audio_detail.get("fileset", {})
                 fileset_type = fileset.get("type", "")
-                book_set = metadata["categorization"]["book_set"]
+                canon = metadata["canon"]
                 self.track_exclusions(
-                    iso, bible, fileset, fileset_id, fileset_type, book_set
+                    iso, bible, fileset, fileset_id, fileset_type, canon
                 )
 
                 processed_count += 1
 
             # Process text filesets
-            for text_detail in lang_data["text_details"]:
+            for text_detail in lang_data.get("text_details") or []:
                 fileset_id = text_detail["fileset"]["id"]
 
-                fileset_key = f"{iso}/{fileset_id}"
+                # For expanded FULL filesets, include canon in key to allow duplicate processing
+                canon_for_key = text_detail.get("canon", "")
+                original_canon = text_detail.get("original_canon", canon_for_key)
+                if original_canon == "FULL":
+                    fileset_key = f"{iso}/{fileset_id}/{canon_for_key}"
+                else:
+                    fileset_key = f"{iso}/{fileset_id}"
+
                 if fileset_key in self.processed_filesets:
                     continue
 
                 self.processed_filesets.add(fileset_key)
 
                 metadata = self.create_metadata(iso, text_detail, syncable_pairs)
-                self.save_metadata(iso, fileset_id, metadata)
+                canon = metadata.get("canon")
+                original_canon = text_detail.get("original_canon", canon)
+                self.save_metadata(iso, fileset_id, metadata, canon, original_canon)
 
                 # Track exclusions
                 bible = text_detail.get("bible", {})
                 fileset = text_detail.get("fileset", {})
                 fileset_type = fileset.get("type", "")
-                book_set = metadata["categorization"]["book_set"]
+                canon = metadata["canon"]
                 self.track_exclusions(
-                    iso, bible, fileset, fileset_id, fileset_type, book_set
+                    iso, bible, fileset, fileset_id, fileset_type, canon
                 )
 
                 processed_count += 1
@@ -688,13 +1004,15 @@ class IndependentCacheDataSorter:
             syncable_pairs = self.compute_syncable_pairs(iso)
             syncable_count += len(syncable_pairs)
 
-            for audio_detail in lang_data["audio_details"]:
+            for audio_detail in lang_data.get("audio_details") or []:
                 audio_count += 1
                 fileset_id = audio_detail["fileset"]["id"]
                 if self.normalize_fileset_id(fileset_id) in self.timing_filesets:
                     timing_count += 1
 
-            text_count += len(lang_data["text_details"])
+            text_details = lang_data.get("text_details")
+            if text_details:
+                text_count += len(text_details)
 
         summary["syncable_pairs"] = syncable_count
         summary["filesets_with_timing"] = timing_count
@@ -705,7 +1023,7 @@ class IndependentCacheDataSorter:
         with open(summary_file, "w", encoding="utf-8") as f:
             json.dump(summary, f, indent=2, ensure_ascii=False)
 
-        print(f"\nSummary:")
+        print("\nSummary:")
         print(f"  - Total languages: {summary['total_languages']}")
         print(f"  - Total filesets: {summary['total_filesets']}")
         print(f"  - Audio filesets: {summary['audio_filesets']}")
@@ -718,33 +1036,28 @@ class IndependentCacheDataSorter:
         print("=" * 70)
         print("INDEPENDENT Cache Data Sorter")
         print("=" * 70)
-        print()
-        print("✓ NO dependency on stats/ directory")
-        print("✓ Direct transformation: api-cache/ → sorted/")
-        print("✓ All categorization computed on-the-fly")
-        print()
 
-        print("Step 1: Loading timing filesets...")
-        self.load_timing_filesets()
+        steps = [
+            ("Loading timing filesets", self.load_timing_filesets),
+            (
+                "Loading extended metadata from timing bibles",
+                self.load_timing_bibles_metadata,
+            ),
+            ("Loading all Bibles", self.load_all_bibles),
+            ("Organizing language data", self.organize_language_data),
+            ("Processing filesets and creating metadata", self.process_all_languages),
+            ("Generating summary", self.generate_summary),
+        ]
 
-        print("\nStep 2: Loading all Bibles...")
-        self.load_all_bibles()
-
-        print("\nStep 3: Organizing by language...")
-        self.organize_language_data()
-
-        print("\nStep 4: Processing and creating metadata...")
-        self.process_all_languages()
-
-        print("\nStep 5: Generating summary...")
-        self.generate_summary()
+        for i, (desc, func) in enumerate(steps, 1):
+            print(f"\nStep {i}: {desc}...")
+            func()
 
         print("\n" + "=" * 70)
-        print("✓ Independent sorting complete!")
+        print("Sorting complete!")
         print("=" * 70)
         print()
         print("All categorization was computed directly from api-cache.")
-        print("No stats/ files were used or required.")
         print()
         print(f"Output: {self.output_dir}/")
 

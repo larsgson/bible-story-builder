@@ -1,0 +1,26 @@
+{
+  "language": "tte",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TTEWBT",
+  "filesets": {
+    "audio": {
+      "TTEWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTEWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TTEWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTEWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

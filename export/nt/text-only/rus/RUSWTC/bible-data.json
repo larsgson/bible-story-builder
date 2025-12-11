@@ -1,0 +1,19 @@
+{
+  "language": "rus",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "RUSWTC",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "RUSWTC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RUSWTC.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

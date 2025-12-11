@@ -1,0 +1,24 @@
+{
+  "language": "iba",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "IBATIV",
+  "filesets": {
+    "audio": {
+      "IBATIVN2DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "IBATIV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IBATIV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

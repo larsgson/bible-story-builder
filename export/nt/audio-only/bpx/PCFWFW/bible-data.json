@@ -1,0 +1,24 @@
+{
+  "language": "bpx",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "PCFWFW",
+  "filesets": {
+    "audio": {
+      "PCFWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PCFWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PCFWFWN_ET-usx": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

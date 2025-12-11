@@ -1,0 +1,26 @@
+{
+  "language": "rmy",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "RMYCVV",
+  "filesets": {
+    "audio": {
+      "RMYCVVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RMYCVVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RMYCVV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RMYCVV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

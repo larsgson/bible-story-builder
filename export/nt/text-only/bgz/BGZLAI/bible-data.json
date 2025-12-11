@@ -1,0 +1,19 @@
+{
+  "language": "bgz",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BGZLAI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BGZLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGZLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

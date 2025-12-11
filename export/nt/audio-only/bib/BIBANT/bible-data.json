@@ -1,0 +1,19 @@
+{
+  "language": "bib",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BIBANT",
+  "filesets": {
+    "audio": {
+      "BIBANTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BIBANTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

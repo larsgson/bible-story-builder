@@ -1,0 +1,24 @@
+{
+  "language": "plt",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "MLGRCV",
+  "filesets": {
+    "audio": {
+      "MLGRCVN2DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "MLGRCV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MLGRCV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

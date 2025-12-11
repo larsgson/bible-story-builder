@@ -1,0 +1,19 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ENGASV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ENGASV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGASV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

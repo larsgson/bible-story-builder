@@ -1,0 +1,17 @@
+{
+  "language": "suz",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "SUZWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SUZWBT": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

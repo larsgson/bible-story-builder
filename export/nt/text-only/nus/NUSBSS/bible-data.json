@@ -1,0 +1,24 @@
+{
+  "language": "nus",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "NUSBSS",
+  "filesets": {
+    "audio": {
+      "NUSBSSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "NUSBSSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NUSBSSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

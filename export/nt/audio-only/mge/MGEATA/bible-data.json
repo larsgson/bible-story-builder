@@ -1,0 +1,19 @@
+{
+  "language": "mge",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "MGEATA",
+  "filesets": {
+    "audio": {
+      "MGEATAN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MGEATAN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

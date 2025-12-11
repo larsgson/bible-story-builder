@@ -1,0 +1,24 @@
+{
+  "language": "ben",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "BENCLV",
+  "filesets": {
+    "audio": {
+      "BNGCLVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGCLVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BNGCLV": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

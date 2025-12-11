@@ -1,0 +1,26 @@
+{
+  "language": "stn",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "STNBSP",
+  "filesets": {
+    "audio": {
+      "STNBSPN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_STNBSPN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "STNBSPN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_STNBSPN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

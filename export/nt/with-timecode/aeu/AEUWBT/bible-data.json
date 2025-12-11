@@ -1,0 +1,33 @@
+{
+  "language": "aeu",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "AEUWBT",
+  "filesets": {
+    "audio": {
+      "AEUWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AEUWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AEUWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AEUWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "AEUWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AEUWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

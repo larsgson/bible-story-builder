@@ -1,0 +1,33 @@
+{
+  "language": "tcy",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TCYNL1",
+  "filesets": {
+    "audio": {
+      "TCYNL1N1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TCYNL1N1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TCYNL1N": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TCYNL1N_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TCYNL1N1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TCYNL1N1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

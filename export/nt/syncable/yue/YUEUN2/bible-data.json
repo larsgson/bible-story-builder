@@ -1,0 +1,26 @@
+{
+  "language": "yue",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "YUEUN2",
+  "filesets": {
+    "audio": {
+      "YUHUN2N1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YUHUN2N1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "YUHUN2": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YUHUN2.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

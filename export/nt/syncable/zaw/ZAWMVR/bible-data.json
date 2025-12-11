@@ -1,0 +1,26 @@
+{
+  "language": "zaw",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZAWMVR",
+  "filesets": {
+    "audio": {
+      "ZAWMVRN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAWMVRN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZAWMVRN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAWMVRN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

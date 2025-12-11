@@ -1,0 +1,33 @@
+{
+  "language": "lob",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LOBBSB",
+  "filesets": {
+    "audio": {
+      "LOBBSBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LOBBSBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LOBBSBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LOBBSBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LOBBSBN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LOBBSBN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

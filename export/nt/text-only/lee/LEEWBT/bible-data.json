@@ -1,0 +1,24 @@
+{
+  "language": "lee",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "LEEWBT",
+  "filesets": {
+    "audio": {
+      "LEEWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "LEEWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LEEWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

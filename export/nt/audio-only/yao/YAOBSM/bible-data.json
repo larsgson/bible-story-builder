@@ -1,0 +1,19 @@
+{
+  "language": "yao",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "YAOBSM",
+  "filesets": {
+    "audio": {
+      "YAOBSMN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YAOBSMN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

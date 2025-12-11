@@ -1,0 +1,19 @@
+{
+  "language": "pah",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PAHTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PAHTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PAHTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "som",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SOMSIM",
+  "filesets": {
+    "audio": {
+      "SOMSIMO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SOMSIMO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SOMSIM": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SOMSIM.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

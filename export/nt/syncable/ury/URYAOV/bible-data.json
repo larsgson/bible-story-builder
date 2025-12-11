@@ -1,0 +1,26 @@
+{
+  "language": "ury",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "URYAOV",
+  "filesets": {
+    "audio": {
+      "URYAOVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_URYAOVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "URYAOVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_URYAOVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

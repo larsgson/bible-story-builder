@@ -1,0 +1,33 @@
+{
+  "language": "eng",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "EN1ESV",
+  "filesets": {
+    "audio": {
+      "ENGESHN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGESHN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ENGESH": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGESH.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ENGESHN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGESHN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

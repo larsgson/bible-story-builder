@@ -1,0 +1,19 @@
+{
+  "language": "cuh",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "CUHTBL",
+  "filesets": {
+    "audio": {
+      "CUHTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CUHTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

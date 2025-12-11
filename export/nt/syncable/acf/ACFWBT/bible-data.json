@@ -1,0 +1,26 @@
+{
+  "language": "acf",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ACFWBT",
+  "filesets": {
+    "audio": {
+      "DOMBECN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DOMBECN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DOMBECN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DOMBECN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

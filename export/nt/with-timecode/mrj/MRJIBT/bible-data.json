@@ -1,0 +1,33 @@
+{
+  "language": "mrj",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MRJIBT",
+  "filesets": {
+    "audio": {
+      "MRJIBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MRJIBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MRJIBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MRJIBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MRJIBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MRJIBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "kfz",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KFZANT",
+  "filesets": {
+    "audio": {
+      "KFZANTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFZANTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

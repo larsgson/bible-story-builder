@@ -1,0 +1,19 @@
+{
+  "language": "bhw",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BHWLAI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BHWLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BHWLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

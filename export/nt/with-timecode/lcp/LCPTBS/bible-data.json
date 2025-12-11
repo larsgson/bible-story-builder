@@ -1,0 +1,33 @@
+{
+  "language": "lcp",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LCPTBS",
+  "filesets": {
+    "audio": {
+      "LCPTBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LCPTBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LCPTBS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LCPTBS.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LCPTBSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LCPTBSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

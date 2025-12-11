@@ -1,0 +1,26 @@
+{
+  "language": "lbm",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LBMWFW",
+  "filesets": {
+    "audio": {
+      "LBMWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBMWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LBMWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBMWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

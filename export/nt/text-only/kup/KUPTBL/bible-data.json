@@ -1,0 +1,19 @@
+{
+  "language": "kup",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KUPTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KUPTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KUPTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

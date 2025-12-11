@@ -1,0 +1,26 @@
+{
+  "language": "som",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SOMSIM",
+  "filesets": {
+    "audio": {
+      "SOMSIMN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SOMSIMN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SOMSIM": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SOMSIM.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

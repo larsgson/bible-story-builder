@@ -1,0 +1,19 @@
+{
+  "language": "bsn",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BSNTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BSNTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BSNTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

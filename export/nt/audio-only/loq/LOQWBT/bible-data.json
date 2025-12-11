@@ -1,0 +1,19 @@
+{
+  "language": "loq",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "LOQWBT",
+  "filesets": {
+    "audio": {
+      "LOQWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LOQWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "spa",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SPAERV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SPNERV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SPNERV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "lbj",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LBJDPI",
+  "filesets": {
+    "audio": {
+      "LBJDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBJDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LBJDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBJDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LBJDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBJDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

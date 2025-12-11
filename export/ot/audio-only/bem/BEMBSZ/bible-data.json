@@ -1,0 +1,19 @@
+{
+  "language": "bem",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BEMBSZ",
+  "filesets": {
+    "audio": {
+      "BEMBSZO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BEMBSZO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "ngl",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "NGLLNT",
+  "filesets": {
+    "audio": {
+      "NGLBSSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NGLBSSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "NGLBSSN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NGLBSSN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

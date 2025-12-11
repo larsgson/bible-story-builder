@@ -1,0 +1,24 @@
+{
+  "language": "kht",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "KHTWBT",
+  "filesets": {
+    "audio": {
+      "KHTWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KHTWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KHTWBTN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

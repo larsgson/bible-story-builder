@@ -1,0 +1,19 @@
+{
+  "language": "mps",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MPSTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MPSWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MPSWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

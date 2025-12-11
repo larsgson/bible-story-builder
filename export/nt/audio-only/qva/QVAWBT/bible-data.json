@@ -1,0 +1,19 @@
+{
+  "language": "qva",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QVAWBT",
+  "filesets": {
+    "audio": {
+      "QVAWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QVAWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

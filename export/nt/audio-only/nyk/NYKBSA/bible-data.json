@@ -1,0 +1,19 @@
+{
+  "language": "nyk",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "NYKBSA",
+  "filesets": {
+    "audio": {
+      "NYKBSAN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NYKBSAN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

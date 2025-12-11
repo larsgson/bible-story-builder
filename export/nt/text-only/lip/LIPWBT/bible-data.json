@@ -1,0 +1,24 @@
+{
+  "language": "lip",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "LIPWBT",
+  "filesets": {
+    "audio": {
+      "LIPWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "LIPWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LIPWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

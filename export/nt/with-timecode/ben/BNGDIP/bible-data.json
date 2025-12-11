@@ -1,0 +1,33 @@
+{
+  "language": "ben",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BNGDIP",
+  "filesets": {
+    "audio": {
+      "BNGDIPN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGDIPN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BNGDIPN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGDIPN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BNGDIPN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGDIPN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

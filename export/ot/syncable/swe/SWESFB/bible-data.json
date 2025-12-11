@@ -1,0 +1,26 @@
+{
+  "language": "swe",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SWESFB",
+  "filesets": {
+    "audio": {
+      "SWESFBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SWESFBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SWESFBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SWESFBO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

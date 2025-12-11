@@ -1,0 +1,19 @@
+{
+  "language": "khg",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KHGNTB",
+  "filesets": {
+    "audio": {
+      "KHGNTBO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KHGNTBO2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "zae",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZAEWBT",
+  "filesets": {
+    "audio": {
+      "ZAEWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAEWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZAEWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAEWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

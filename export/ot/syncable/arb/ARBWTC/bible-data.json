@@ -1,0 +1,30 @@
+{
+  "language": "arb",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ARBWTC",
+  "filesets": {
+    "audio": {
+      "ARBWTCO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ARBWTCO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ARBWTCO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ARBWTCO_ET.txt"
+        ]
+      },
+      "ARBWTC": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "amh",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "AMHSDV",
+  "filesets": {
+    "audio": {
+      "AMHSDVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AMHSDVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AMHSDV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AMHSDV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

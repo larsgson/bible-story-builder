@@ -1,0 +1,26 @@
+{
+  "language": "mgh",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MGHWBT",
+  "filesets": {
+    "audio": {
+      "MGHWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MGHWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MGHWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MGHWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

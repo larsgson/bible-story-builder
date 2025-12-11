@@ -1,0 +1,19 @@
+{
+  "language": "jac",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "JACSBG",
+  "filesets": {
+    "audio": {
+      "JAISBGN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JAISBGN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

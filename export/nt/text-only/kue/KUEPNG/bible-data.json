@@ -1,0 +1,24 @@
+{
+  "language": "kue",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "KUEPNG",
+  "filesets": {
+    "audio": {
+      "KUEPNGN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "KUEPNGN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KUEPNGN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

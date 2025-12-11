@@ -1,0 +1,26 @@
+{
+  "language": "rav",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "RAVFUL",
+  "filesets": {
+    "audio": {
+      "RAVNLPN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RAVNLPN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RAVNLP": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RAVNLP.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

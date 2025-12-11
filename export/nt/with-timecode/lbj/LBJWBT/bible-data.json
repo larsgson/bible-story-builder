@@ -1,0 +1,33 @@
+{
+  "language": "lbj",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LBJWBT",
+  "filesets": {
+    "audio": {
+      "LBJWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBJWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LBJWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBJWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LBJWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBJWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "lbr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LBRWBT",
+  "filesets": {
+    "audio": {
+      "LBRWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBRWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LBRWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBRWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

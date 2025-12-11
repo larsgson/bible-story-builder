@@ -1,0 +1,22 @@
+{
+  "language": "ixl",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "IXLSWB",
+  "filesets": {
+    "audio": {
+      "IXLWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "IXLWBTN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

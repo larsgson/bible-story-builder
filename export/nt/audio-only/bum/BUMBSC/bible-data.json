@@ -1,0 +1,19 @@
+{
+  "language": "bum",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BUMBSC",
+  "filesets": {
+    "audio": {
+      "BUMABCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BUMABCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

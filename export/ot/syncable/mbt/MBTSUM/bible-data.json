@@ -1,0 +1,26 @@
+{
+  "language": "mbt",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MBTSUM",
+  "filesets": {
+    "audio": {
+      "MBTSUMO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MBTSUMO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MBTSUMO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MBTSUMO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

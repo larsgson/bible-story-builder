@@ -1,0 +1,26 @@
+{
+  "language": "tur",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "TURBLI",
+  "filesets": {
+    "audio": {
+      "TRKWTCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TRKWTCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TRKWTC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TRKWTC.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

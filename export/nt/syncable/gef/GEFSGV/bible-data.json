@@ -1,0 +1,26 @@
+{
+  "language": "gef",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "GEFSGV",
+  "filesets": {
+    "audio": {
+      "GEFSGVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GEFSGVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GEFSGV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GEFSGV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

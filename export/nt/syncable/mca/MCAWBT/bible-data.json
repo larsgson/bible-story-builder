@@ -1,0 +1,26 @@
+{
+  "language": "mca",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MCAWBT",
+  "filesets": {
+    "audio": {
+      "MCAWYIN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MCAWYIN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MCAWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MCAWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

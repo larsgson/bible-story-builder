@@ -1,0 +1,26 @@
+{
+  "language": "pid",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "PIDIPI",
+  "filesets": {
+    "audio": {
+      "PIDIPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PIDIPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PIDIPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PIDIPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "mbt",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MBTWBT",
+  "filesets": {
+    "audio": {
+      "MBTWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MBTWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MBTWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

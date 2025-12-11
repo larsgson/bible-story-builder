@@ -1,0 +1,19 @@
+{
+  "language": "ndc",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "NDCBSZ",
+  "filesets": {
+    "audio": {
+      "NDCBSZN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NDCBSZN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

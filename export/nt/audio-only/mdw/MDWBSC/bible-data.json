@@ -1,0 +1,19 @@
+{
+  "language": "mdw",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MDWBSC",
+  "filesets": {
+    "audio": {
+      "MDWBSCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MDWBSCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

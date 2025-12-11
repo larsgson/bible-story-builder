@@ -1,0 +1,24 @@
+{
+  "language": "gmv",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "GMVTBL",
+  "filesets": {
+    "audio": {
+      "GMVTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "GMVTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GMVTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

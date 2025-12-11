@@ -1,0 +1,26 @@
+{
+  "language": "kyz",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KYZWBT",
+  "filesets": {
+    "audio": {
+      "KYZWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KYZWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KYZWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KYZWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

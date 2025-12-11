@@ -1,0 +1,33 @@
+{
+  "language": "hin",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "HINDPI",
+  "filesets": {
+    "audio": {
+      "HINBCSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HINBCSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HINBCSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HINBCSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "HINBCSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HINBCSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

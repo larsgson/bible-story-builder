@@ -1,0 +1,19 @@
+{
+  "language": "hye",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "HYEBSA",
+  "filesets": {
+    "audio": {
+      "HYEBSAN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HYEBSAN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

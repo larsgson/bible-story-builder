@@ -1,0 +1,17 @@
+{
+  "language": "fra",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "FRNO96",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FRNO96": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

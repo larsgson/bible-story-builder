@@ -1,0 +1,26 @@
+{
+  "language": "mal",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MALBIB",
+  "filesets": {
+    "audio": {
+      "MALBIBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MALBIBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MALBIBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MALBIBO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "language": "tur",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "TURBST",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TRKBSTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TRKBSTO_ET.txt"
+        ]
+      },
+      "TRKBST": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

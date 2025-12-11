@@ -1,0 +1,19 @@
+{
+  "language": "mpt",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MPTWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MPTWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MPTWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

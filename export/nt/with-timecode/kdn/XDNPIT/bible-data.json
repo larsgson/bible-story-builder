@@ -1,0 +1,33 @@
+{
+  "language": "kdn",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "XDNPIT",
+  "filesets": {
+    "audio": {
+      "XDNPITN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XDNPITN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "XDNPITN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XDNPITN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "XDNPITN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XDNPITN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

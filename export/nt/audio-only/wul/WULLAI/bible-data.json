@@ -1,0 +1,19 @@
+{
+  "language": "wul",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "WULLAI",
+  "filesets": {
+    "audio": {
+      "WULLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WULLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

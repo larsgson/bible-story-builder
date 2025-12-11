@@ -1,0 +1,19 @@
+{
+  "language": "sue",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SUEWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SUEWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SUEWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

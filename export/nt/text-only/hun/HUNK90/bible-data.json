@@ -1,0 +1,19 @@
+{
+  "language": "hun",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "HUNK90",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "HUNK90": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HUNK90.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

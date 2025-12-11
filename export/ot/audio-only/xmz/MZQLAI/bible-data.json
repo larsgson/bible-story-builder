@@ -1,0 +1,19 @@
+{
+  "language": "xmz",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MZQLAI",
+  "filesets": {
+    "audio": {
+      "MZQLAIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MZQLAIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

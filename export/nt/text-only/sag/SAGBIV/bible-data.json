@@ -1,0 +1,19 @@
+{
+  "language": "sag",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SAGBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SAGBIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SAGBIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

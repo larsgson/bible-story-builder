@@ -1,0 +1,19 @@
+{
+  "language": "aoj",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "AOJFIL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "AO1FIL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AO1FIL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

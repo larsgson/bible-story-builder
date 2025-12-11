@@ -1,0 +1,19 @@
+{
+  "language": "ban",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BANIBS",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BANIBSO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BANIBSO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

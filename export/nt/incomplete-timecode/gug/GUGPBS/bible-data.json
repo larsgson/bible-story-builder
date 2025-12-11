@@ -1,0 +1,26 @@
+{
+  "language": "gug",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "GUGPBS",
+  "filesets": {
+    "audio": {
+      "GUGRPVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUGRPVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "GUGRPVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUGRPVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

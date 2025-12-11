@@ -1,0 +1,33 @@
+{
+  "language": "mmy",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MMYWYI",
+  "filesets": {
+    "audio": {
+      "MMYWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MMYWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MMYWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MMYWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MMYWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MMYWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

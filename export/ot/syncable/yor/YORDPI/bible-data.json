@@ -1,0 +1,26 @@
+{
+  "language": "yor",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "YORDPI",
+  "filesets": {
+    "audio": {
+      "YORDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_YORDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "YORDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_YORDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "language": "qvi",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "audio-only",
+  "distinct_id": "QVIIHB",
+  "filesets": {
+    "audio": {
+      "QVIIHBN2SA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

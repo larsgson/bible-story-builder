@@ -1,0 +1,19 @@
+{
+  "language": "kto",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KTOWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KTOWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KTOWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

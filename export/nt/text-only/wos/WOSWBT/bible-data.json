@@ -1,0 +1,19 @@
+{
+  "language": "wos",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "WOSWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "WOSWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WOSWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

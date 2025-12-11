@@ -1,0 +1,19 @@
+{
+  "language": "aka",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "AKAFAN",
+  "filesets": {
+    "audio": {
+      "AK3FANN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AK3FANN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

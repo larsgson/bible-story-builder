@@ -1,0 +1,19 @@
+{
+  "language": "dow",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "DOWABC",
+  "filesets": {
+    "audio": {
+      "DOWABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DOWABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

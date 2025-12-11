@@ -1,0 +1,26 @@
+{
+  "language": "caa",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CAAWBT",
+  "filesets": {
+    "audio": {
+      "CAAWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CAAWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CAAWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CAAWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

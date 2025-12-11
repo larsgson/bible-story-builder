@@ -1,0 +1,19 @@
+{
+  "language": "xnn",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "XNNWBT",
+  "filesets": {
+    "audio": {
+      "XNNWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XNNWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

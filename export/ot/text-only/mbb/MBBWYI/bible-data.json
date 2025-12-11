@@ -1,0 +1,19 @@
+{
+  "language": "mbb",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MBBWYI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MBBWYIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MBBWYIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

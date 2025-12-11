@@ -1,0 +1,19 @@
+{
+  "language": "idu",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "IDUBSN",
+  "filesets": {
+    "audio": {
+      "IDUBSNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IDUBSNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

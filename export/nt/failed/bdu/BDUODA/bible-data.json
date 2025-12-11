@@ -1,0 +1,22 @@
+{
+  "language": "bdu",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "BDUODA",
+  "filesets": {
+    "audio": {
+      "BDUODAN1DA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "BDUODAN_ET-usx": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

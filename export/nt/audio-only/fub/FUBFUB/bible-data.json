@@ -1,0 +1,19 @@
+{
+  "language": "fub",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "FUBFUB",
+  "filesets": {
+    "audio": {
+      "FU1ABCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FU1ABCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

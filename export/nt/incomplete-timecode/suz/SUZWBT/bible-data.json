@@ -1,0 +1,31 @@
+{
+  "language": "suz",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "SUZWBT",
+  "filesets": {
+    "audio": {
+      "SUZWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SUZWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SUZWBT": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {
+      "SUZWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SUZWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

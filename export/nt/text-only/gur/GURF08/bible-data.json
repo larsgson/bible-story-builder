@@ -1,0 +1,24 @@
+{
+  "language": "gur",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "GURF08",
+  "filesets": {
+    "audio": {
+      "GURIBSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "GURIBSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GURIBSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

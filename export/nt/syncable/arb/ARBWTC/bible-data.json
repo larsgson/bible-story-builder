@@ -1,0 +1,26 @@
+{
+  "language": "arb",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ARBWTC",
+  "filesets": {
+    "audio": {
+      "ARBWTCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ARBWTCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ARBWTC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ARBWTC.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

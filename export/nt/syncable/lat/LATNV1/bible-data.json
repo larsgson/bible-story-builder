@@ -1,0 +1,26 @@
+{
+  "language": "lat",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LATNV1",
+  "filesets": {
+    "audio": {
+      "LTNNVVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LTNNVVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LTNNVV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LTNNVV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

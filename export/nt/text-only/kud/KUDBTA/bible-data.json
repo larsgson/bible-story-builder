@@ -1,0 +1,19 @@
+{
+  "language": "kud",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KUDBTA",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KUDBTA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KUDBTA.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

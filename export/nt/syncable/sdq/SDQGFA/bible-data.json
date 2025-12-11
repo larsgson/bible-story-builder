@@ -1,0 +1,26 @@
+{
+  "language": "sdq",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SDQGFA",
+  "filesets": {
+    "audio": {
+      "SDQGFAN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SDQGFAN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SDQGFAN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SDQGFAN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

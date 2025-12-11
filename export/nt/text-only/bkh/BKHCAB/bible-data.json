@@ -1,0 +1,19 @@
+{
+  "language": "bkh",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BKHCAB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BKHCABN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BKHCABN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

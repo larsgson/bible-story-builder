@@ -1,0 +1,33 @@
+{
+  "language": "cso",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CSOTBL",
+  "filesets": {
+    "audio": {
+      "CSOTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CSOTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CSOTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CSOTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CSOTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CSOTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

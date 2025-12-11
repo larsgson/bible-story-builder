@@ -1,0 +1,19 @@
+{
+  "language": "ngb",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "NGBDRC",
+  "filesets": {
+    "audio": {
+      "NGBDRCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NGBDRCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

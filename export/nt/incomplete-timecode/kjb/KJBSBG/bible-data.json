@@ -1,0 +1,26 @@
+{
+  "language": "kjb",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "KJBSBG",
+  "filesets": {
+    "audio": {
+      "KJBSBGN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJBSBGN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "KJBSBGN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJBSBGN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

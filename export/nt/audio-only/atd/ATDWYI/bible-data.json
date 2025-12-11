@@ -1,0 +1,19 @@
+{
+  "language": "atd",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ATDWYI",
+  "filesets": {
+    "audio": {
+      "ATDWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ATDWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

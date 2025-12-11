@@ -1,0 +1,19 @@
+{
+  "language": "snp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SNPSLV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SN1SLV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SN1SLV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

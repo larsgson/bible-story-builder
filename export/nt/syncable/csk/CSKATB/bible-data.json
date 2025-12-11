@@ -1,0 +1,26 @@
+{
+  "language": "csk",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CSKATB",
+  "filesets": {
+    "audio": {
+      "CSKATBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CSKATBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CSKATBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CSKATBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

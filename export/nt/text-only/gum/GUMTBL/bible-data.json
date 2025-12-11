@@ -1,0 +1,24 @@
+{
+  "language": "gum",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "GUMTBL",
+  "filesets": {
+    "audio": {
+      "GUMTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "GUMTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUMTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "peg",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PEGDPI",
+  "filesets": {
+    "audio": {
+      "PEGDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEGDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PEGDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEGDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PEGDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PEGDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

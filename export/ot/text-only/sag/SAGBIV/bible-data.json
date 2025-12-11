@@ -1,0 +1,19 @@
+{
+  "language": "sag",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SAGBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SAGBIVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SAGBIVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

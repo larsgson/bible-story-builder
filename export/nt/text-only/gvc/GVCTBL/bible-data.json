@@ -1,0 +1,24 @@
+{
+  "language": "gvc",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "GVCTBL",
+  "filesets": {
+    "audio": {
+      "GVCTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "GVCTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GVCTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

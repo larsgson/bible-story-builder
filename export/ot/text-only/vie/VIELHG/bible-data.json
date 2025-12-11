@@ -1,0 +1,19 @@
+{
+  "language": "vie",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "VIELHG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "VIELHGO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_VIELHGO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

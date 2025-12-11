@@ -1,0 +1,19 @@
+{
+  "language": "ceg",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CEGNTP",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CEGNTPN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CEGNTPN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

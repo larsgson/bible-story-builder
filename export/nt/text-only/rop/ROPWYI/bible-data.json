@@ -1,0 +1,19 @@
+{
+  "language": "rop",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ROPWYI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ROPWYI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ROPWYI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

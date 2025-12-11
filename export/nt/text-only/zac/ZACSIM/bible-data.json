@@ -1,0 +1,19 @@
+{
+  "language": "zac",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ZACSIM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ZACSIMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZACSIMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

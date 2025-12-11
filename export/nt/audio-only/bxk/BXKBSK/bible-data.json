@@ -1,0 +1,19 @@
+{
+  "language": "bxk",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BXKBSK",
+  "filesets": {
+    "audio": {
+      "BXKBSKN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BXKBSKN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "hin",
+  "canon": "OT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "HINDPI",
+  "filesets": {
+    "audio": {
+      "HINDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HINDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HINDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HINDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "HINDPIO1DA_timing": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HINDPIO1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

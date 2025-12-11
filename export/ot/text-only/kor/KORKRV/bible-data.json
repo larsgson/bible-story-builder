@@ -1,0 +1,19 @@
+{
+  "language": "kor",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KORKRV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KORKRV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KORKRV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

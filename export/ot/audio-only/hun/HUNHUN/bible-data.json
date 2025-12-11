@@ -1,0 +1,19 @@
+{
+  "language": "hun",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "HUNHUN",
+  "filesets": {
+    "audio": {
+      "HUNRNTO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HUNRNTO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "gok",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GOKDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GOKDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GOKDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

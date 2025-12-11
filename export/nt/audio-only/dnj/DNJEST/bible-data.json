@@ -1,0 +1,24 @@
+{
+  "language": "dnj",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "DNJEST",
+  "filesets": {
+    "audio": {
+      "DA1ESTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DA1ESTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DNJESTN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

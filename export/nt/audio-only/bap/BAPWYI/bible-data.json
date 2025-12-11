@@ -1,0 +1,19 @@
+{
+  "language": "bap",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BAPWYI",
+  "filesets": {
+    "audio": {
+      "BAPWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BAPWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "nzb",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "NZBYSY",
+  "filesets": {
+    "audio": {
+      "NZBUBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NZBUBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

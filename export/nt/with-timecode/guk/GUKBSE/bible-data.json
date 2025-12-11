@@ -1,0 +1,33 @@
+{
+  "language": "guk",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "GUKBSE",
+  "filesets": {
+    "audio": {
+      "GUKBSEN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUKBSEN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GUKBSEN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUKBSEN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "GUKBSEN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUKBSEN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "ijc",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "IJCNEW",
+  "filesets": {
+    "audio": {
+      "IJCBSNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IJCBSNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

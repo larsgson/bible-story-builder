@@ -1,0 +1,19 @@
+{
+  "language": "ghs",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GHSPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GHSPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GHSPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "hau",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "HAUDPI",
+  "filesets": {
+    "audio": {
+      "HAUDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HAUDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HAUDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HAUDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

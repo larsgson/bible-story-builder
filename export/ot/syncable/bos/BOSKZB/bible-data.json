@@ -1,0 +1,26 @@
+{
+  "language": "bos",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BOSKZB",
+  "filesets": {
+    "audio": {
+      "BOSKZBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BOSKZBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BOSKZBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BOSKZBO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

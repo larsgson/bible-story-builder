@@ -1,0 +1,19 @@
+{
+  "language": "ban",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BANDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BANDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BANDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

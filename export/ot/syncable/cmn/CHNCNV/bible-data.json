@@ -1,0 +1,26 @@
+{
+  "language": "cmn",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CHNCNV",
+  "filesets": {
+    "audio": {
+      "CH1CNVO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CH1CNVO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CH1CNVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CH1CNVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

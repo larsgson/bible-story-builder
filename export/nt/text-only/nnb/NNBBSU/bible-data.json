@@ -1,0 +1,24 @@
+{
+  "language": "nnb",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "NNBBSU",
+  "filesets": {
+    "audio": {
+      "NNBBSUN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "NNBBSU": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NNBBSU.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

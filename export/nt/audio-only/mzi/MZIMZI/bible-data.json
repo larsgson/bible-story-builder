@@ -1,0 +1,19 @@
+{
+  "language": "mzi",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MZIMZI",
+  "filesets": {
+    "audio": {
+      "MZIBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MZIBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

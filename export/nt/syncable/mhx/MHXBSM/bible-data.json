@@ -1,0 +1,26 @@
+{
+  "language": "mhx",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MHXBSM",
+  "filesets": {
+    "audio": {
+      "MHXBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MHXBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MHXBSM": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MHXBSM.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

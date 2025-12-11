@@ -1,0 +1,19 @@
+{
+  "language": "ces",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CESK13",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CZCK13": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CZCK13.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

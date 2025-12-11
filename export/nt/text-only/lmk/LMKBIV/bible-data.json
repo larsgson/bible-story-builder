@@ -1,0 +1,19 @@
+{
+  "language": "lmk",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "LMKBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "LMKBIV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LMKBIV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

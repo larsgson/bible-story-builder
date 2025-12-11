@@ -1,0 +1,19 @@
+{
+  "language": "tqo",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TQOTQO",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TQOPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TQOPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

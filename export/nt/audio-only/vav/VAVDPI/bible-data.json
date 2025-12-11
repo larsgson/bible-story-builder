@@ -1,0 +1,19 @@
+{
+  "language": "vav",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "VAVDPI",
+  "filesets": {
+    "audio": {
+      "VAVDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VAVDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

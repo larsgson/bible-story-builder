@@ -1,0 +1,19 @@
+{
+  "language": "kmo",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KMOWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KMOWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMOWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

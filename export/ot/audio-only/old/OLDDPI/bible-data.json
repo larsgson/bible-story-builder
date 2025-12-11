@@ -1,0 +1,19 @@
+{
+  "language": "old",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "OLDDPI",
+  "filesets": {
+    "audio": {
+      "OLDDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_OLDDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

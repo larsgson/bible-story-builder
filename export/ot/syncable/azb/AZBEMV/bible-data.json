@@ -1,0 +1,26 @@
+{
+  "language": "azb",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "AZBEMV",
+  "filesets": {
+    "audio": {
+      "AZBEMVO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_AZBEMVO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AZBEMV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_AZBEMV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

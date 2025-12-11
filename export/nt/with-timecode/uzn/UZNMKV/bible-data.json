@@ -1,0 +1,33 @@
+{
+  "language": "uzn",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "UZNMKV",
+  "filesets": {
+    "audio": {
+      "UZNMKVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UZNMKVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "UZNMKVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UZNMKVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "UZNMKVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UZNMKVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

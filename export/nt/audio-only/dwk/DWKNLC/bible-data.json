@@ -1,0 +1,19 @@
+{
+  "language": "dwk",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "DWKNLC",
+  "filesets": {
+    "audio": {
+      "DWKNLCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DWKNLCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

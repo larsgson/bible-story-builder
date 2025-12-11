@@ -1,0 +1,24 @@
+{
+  "language": "mfy",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MFYWBT",
+  "filesets": {
+    "audio": {
+      "MFYWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MFYWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MFYWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

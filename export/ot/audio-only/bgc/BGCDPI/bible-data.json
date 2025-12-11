@@ -1,0 +1,19 @@
+{
+  "language": "bgc",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BGCDPI",
+  "filesets": {
+    "audio": {
+      "BGCDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BGCDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

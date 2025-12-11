@@ -1,0 +1,26 @@
+{
+  "language": "hak",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "HAKTHV",
+  "filesets": {
+    "audio": {
+      "HAKTHVO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HAKTHVO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HAKTHVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HAKTHVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "sgw",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SGWBSE",
+  "filesets": {
+    "audio": {
+      "SGWBSEN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SGWBSEN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SGWBSEN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SGWBSEN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

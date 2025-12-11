@@ -1,0 +1,19 @@
+{
+  "language": "ton",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TONBAX",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TONRWT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TONRWT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

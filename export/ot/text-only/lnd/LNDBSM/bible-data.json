@@ -1,0 +1,19 @@
+{
+  "language": "lnd",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "LNDBSM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "LNDBSMO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_LNDBSMO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

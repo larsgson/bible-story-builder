@@ -1,0 +1,19 @@
+{
+  "language": "gub",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GUBWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GUBWBT": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GUBWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

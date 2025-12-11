@@ -1,0 +1,33 @@
+{
+  "language": "ksf",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KSFWBT",
+  "filesets": {
+    "audio": {
+      "KSFABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSFABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KSFABCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSFABCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KSFABCN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSFABCN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

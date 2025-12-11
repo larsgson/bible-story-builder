@@ -1,0 +1,33 @@
+{
+  "language": "sse",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "SSEWYI",
+  "filesets": {
+    "audio": {
+      "SSEWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SSEWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SSEWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SSEWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "SSEWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SSEWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

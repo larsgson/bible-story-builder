@@ -1,0 +1,26 @@
+{
+  "language": "cbr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CBRWBT",
+  "filesets": {
+    "audio": {
+      "CBRTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CBRTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CBRTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CBRTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

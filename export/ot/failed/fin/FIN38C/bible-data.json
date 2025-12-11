@@ -1,0 +1,17 @@
+{
+  "language": "fin",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "FIN38C",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FIN38VO_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

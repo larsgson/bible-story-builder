@@ -1,0 +1,19 @@
+{
+  "language": "ndj",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NDJPBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NDJPBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NDJPBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

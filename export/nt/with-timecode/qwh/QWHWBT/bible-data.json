@@ -1,0 +1,33 @@
+{
+  "language": "qwh",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "QWHWBT",
+  "filesets": {
+    "audio": {
+      "QWHWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QWHWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QWHWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QWHWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "QWHWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QWHWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

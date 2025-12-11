@@ -1,0 +1,19 @@
+{
+  "language": "kpw",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KPWPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KPWPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KPWPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

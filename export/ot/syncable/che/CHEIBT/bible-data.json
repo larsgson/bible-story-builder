@@ -1,0 +1,30 @@
+{
+  "language": "che",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CHEIBT",
+  "filesets": {
+    "audio": {
+      "CHEIBTO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CHEIBTO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CHEIBTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CHEIBTO_ET.txt"
+        ]
+      },
+      "CHEIBT": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

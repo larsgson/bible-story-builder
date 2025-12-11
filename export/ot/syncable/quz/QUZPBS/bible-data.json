@@ -1,0 +1,26 @@
+{
+  "language": "quz",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "QUZPBS",
+  "filesets": {
+    "audio": {
+      "QUZPBSO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_QUZPBSO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QUZPBSO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_QUZPBSO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

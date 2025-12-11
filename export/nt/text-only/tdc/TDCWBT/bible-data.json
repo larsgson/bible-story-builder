@@ -1,0 +1,19 @@
+{
+  "language": "tdc",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TDCWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TDCWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TDCWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

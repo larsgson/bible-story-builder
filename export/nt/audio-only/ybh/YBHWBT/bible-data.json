@@ -1,0 +1,19 @@
+{
+  "language": "ybh",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "YBHWBT",
+  "filesets": {
+    "audio": {
+      "YBHWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YBHWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

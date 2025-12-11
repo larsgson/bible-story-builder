@@ -1,0 +1,19 @@
+{
+  "language": "hun",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "HUNK90",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "HUNK90": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HUNK90.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

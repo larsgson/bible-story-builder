@@ -1,0 +1,19 @@
+{
+  "language": "ewe",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "EWEDPI",
+  "filesets": {
+    "audio": {
+      "EWEDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_EWEDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

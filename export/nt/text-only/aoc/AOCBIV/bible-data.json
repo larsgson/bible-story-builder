@@ -1,0 +1,19 @@
+{
+  "language": "aoc",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "AOCBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "AOCBIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AOCBIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

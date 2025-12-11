@@ -1,0 +1,19 @@
+{
+  "language": "sda",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SDADPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SDADPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SDADPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

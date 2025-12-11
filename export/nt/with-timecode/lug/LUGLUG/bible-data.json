@@ -1,0 +1,33 @@
+{
+  "language": "lug",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LUGLUG",
+  "filesets": {
+    "audio": {
+      "LUGBSUN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LUGBSUN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LUGBSUN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LUGBSUN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LUGBSUN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LUGBSUN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

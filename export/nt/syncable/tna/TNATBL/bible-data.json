@@ -1,0 +1,26 @@
+{
+  "language": "tna",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TNATBL",
+  "filesets": {
+    "audio": {
+      "TNATBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TNATBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TNATBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TNATBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

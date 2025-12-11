@@ -1,0 +1,19 @@
+{
+  "language": "slv",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SLVSSV",
+  "filesets": {
+    "audio": {
+      "SLVSBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SLVSBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

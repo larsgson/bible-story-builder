@@ -1,0 +1,26 @@
+{
+  "language": "srn",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SRNBSS",
+  "filesets": {
+    "audio": {
+      "SRNBSSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRNBSSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SRNBSSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRNBSSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

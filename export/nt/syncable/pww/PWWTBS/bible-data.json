@@ -1,0 +1,26 @@
+{
+  "language": "pww",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PWWTBS",
+  "filesets": {
+    "audio": {
+      "PWWTBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PWWTBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PWWTBS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PWWTBS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

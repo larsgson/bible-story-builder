@@ -1,0 +1,19 @@
+{
+  "language": "gug",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "GUGGGG",
+  "filesets": {
+    "audio": {
+      "GUGGGGO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GUGGGGO2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

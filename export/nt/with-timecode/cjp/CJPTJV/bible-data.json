@@ -1,0 +1,33 @@
+{
+  "language": "cjp",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CJPTJV",
+  "filesets": {
+    "audio": {
+      "CJPTJVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CJPTJVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CJPTJVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CJPTJVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CJPTJVN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CJPTJVN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "sim",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SIMPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SIMPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SIMPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

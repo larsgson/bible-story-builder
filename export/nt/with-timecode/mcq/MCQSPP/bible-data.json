@@ -1,0 +1,33 @@
+{
+  "language": "mcq",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MCQSPP",
+  "filesets": {
+    "audio": {
+      "MCQTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MCQTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MCQTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MCQTBL.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MCQTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MCQTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

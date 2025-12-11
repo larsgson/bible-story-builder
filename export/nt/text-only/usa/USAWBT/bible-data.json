@@ -1,0 +1,19 @@
+{
+  "language": "usa",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "USAWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "USAWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_USAWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

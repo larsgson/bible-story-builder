@@ -1,0 +1,19 @@
+{
+  "language": "pko",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "PKOPKO",
+  "filesets": {
+    "audio": {
+      "PKOBSKN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PKOBSKN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "ayr",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "AYMBSB",
+  "filesets": {
+    "audio": {
+      "AYMBSBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AYMBSBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AYMBSB": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AYMBSB.txt"
+        ]
+      }
+    },
+    "timing": {
+      "AYMBSBN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AYMBSBN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

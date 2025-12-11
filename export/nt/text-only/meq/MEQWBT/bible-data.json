@@ -1,0 +1,24 @@
+{
+  "language": "meq",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MEQWBT",
+  "filesets": {
+    "audio": {
+      "MEQWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MEQWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MEQWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

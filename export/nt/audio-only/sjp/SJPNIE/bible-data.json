@@ -1,0 +1,19 @@
+{
+  "language": "sjp",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SJPNIE",
+  "filesets": {
+    "audio": {
+      "SJPNIEN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SJPNIEN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

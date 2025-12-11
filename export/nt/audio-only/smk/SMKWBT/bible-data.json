@@ -1,0 +1,19 @@
+{
+  "language": "smk",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SMKWBT",
+  "filesets": {
+    "audio": {
+      "SMKWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SMKWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

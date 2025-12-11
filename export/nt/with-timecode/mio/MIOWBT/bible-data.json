@@ -1,0 +1,33 @@
+{
+  "language": "mio",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MIOWBT",
+  "filesets": {
+    "audio": {
+      "MIOWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIOWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MIOWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIOWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MIOWBTN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MIOWBTN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "nwi",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NWIWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NWIWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NWIWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

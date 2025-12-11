@@ -1,0 +1,19 @@
+{
+  "language": "wes",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "WESFUL",
+  "filesets": {
+    "audio": {
+      "WESBSCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WESBSCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

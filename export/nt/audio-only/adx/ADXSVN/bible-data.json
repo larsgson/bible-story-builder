@@ -1,0 +1,19 @@
+{
+  "language": "adx",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ADXSVN",
+  "filesets": {
+    "audio": {
+      "ADXSVNN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ADXSVNN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

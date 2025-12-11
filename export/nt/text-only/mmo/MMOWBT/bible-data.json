@@ -1,0 +1,19 @@
+{
+  "language": "mmo",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MMOWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MMOWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MMOWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

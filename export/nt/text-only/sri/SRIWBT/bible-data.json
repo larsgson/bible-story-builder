@@ -1,0 +1,24 @@
+{
+  "language": "sri",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "SRIWBT",
+  "filesets": {
+    "audio": {
+      "SRIWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "SRIWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRIWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

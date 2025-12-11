@@ -1,0 +1,24 @@
+{
+  "language": "cak",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "CAKK96",
+  "filesets": {
+    "audio": {
+      "CKWNVSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "CKWNVSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CKWNVSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

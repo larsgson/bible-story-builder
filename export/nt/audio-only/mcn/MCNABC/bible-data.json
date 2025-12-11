@@ -1,0 +1,19 @@
+{
+  "language": "mcn",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MCNABC",
+  "filesets": {
+    "audio": {
+      "MCNABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MCNABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

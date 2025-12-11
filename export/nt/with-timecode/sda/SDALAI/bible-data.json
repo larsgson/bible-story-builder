@@ -1,0 +1,33 @@
+{
+  "language": "sda",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "SDALAI",
+  "filesets": {
+    "audio": {
+      "SDALAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SDALAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SDALAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SDALAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "SDALAIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SDALAIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

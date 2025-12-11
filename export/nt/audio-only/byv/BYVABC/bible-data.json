@@ -1,0 +1,19 @@
+{
+  "language": "byv",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BYVABC",
+  "filesets": {
+    "audio": {
+      "BYVABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BYVABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

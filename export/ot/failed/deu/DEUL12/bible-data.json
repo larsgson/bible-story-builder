@@ -1,0 +1,17 @@
+{
+  "language": "deu",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "DEUL12",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GERL12": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

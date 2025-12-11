@@ -1,0 +1,19 @@
+{
+  "language": "quy",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QUYBSP",
+  "filesets": {
+    "audio": {
+      "QUYBSPO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_QUYBSPO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

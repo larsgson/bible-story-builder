@@ -1,0 +1,19 @@
+{
+  "language": "ifk",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "IFKDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "IFKDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_IFKDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

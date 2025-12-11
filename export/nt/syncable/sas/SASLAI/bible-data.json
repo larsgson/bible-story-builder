@@ -1,0 +1,26 @@
+{
+  "language": "sas",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SASLAI",
+  "filesets": {
+    "audio": {
+      "SASLAIN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SASLAIN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SASLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SASLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

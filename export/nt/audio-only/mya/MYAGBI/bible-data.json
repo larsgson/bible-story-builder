@@ -1,0 +1,19 @@
+{
+  "language": "mya",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "MYAGBI",
+  "filesets": {
+    "audio": {
+      "MYAGBIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYAGBIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

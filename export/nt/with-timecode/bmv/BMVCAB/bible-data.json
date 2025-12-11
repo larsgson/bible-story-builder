@@ -1,0 +1,33 @@
+{
+  "language": "bmv",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BMVCAB",
+  "filesets": {
+    "audio": {
+      "BMVCABN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BMVCABN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BMVCABN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BMVCABN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BMVCABN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BMVCABN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

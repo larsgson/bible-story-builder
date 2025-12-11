@@ -1,0 +1,26 @@
+{
+  "language": "tat",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TATDPI",
+  "filesets": {
+    "audio": {
+      "TATIBTO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TATIBTO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TATIBT": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TATIBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

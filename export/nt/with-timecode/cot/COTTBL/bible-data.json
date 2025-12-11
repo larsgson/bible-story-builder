@@ -1,0 +1,33 @@
+{
+  "language": "cot",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "COTTBL",
+  "filesets": {
+    "audio": {
+      "COTTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_COTTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "COTTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_COTTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "COTTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_COTTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

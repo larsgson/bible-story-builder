@@ -1,0 +1,19 @@
+{
+  "language": "khm",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KHMBSC",
+  "filesets": {
+    "audio": {
+      "KMHBSCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMHBSCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

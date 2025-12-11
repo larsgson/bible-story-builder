@@ -1,0 +1,24 @@
+{
+  "language": "jbu",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "JBUIBS",
+  "filesets": {
+    "audio": {
+      "JBUIBSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "JBUIBSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JBUIBSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

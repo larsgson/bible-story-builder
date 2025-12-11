@@ -1,0 +1,33 @@
+{
+  "language": "myu",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MYUWBT",
+  "filesets": {
+    "audio": {
+      "MYUWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYUWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MYUWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYUWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MYUWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYUWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "ptp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PTPWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PTPWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PTPWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

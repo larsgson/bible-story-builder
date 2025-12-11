@@ -1,0 +1,33 @@
+{
+  "language": "tnk",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TNKWBT",
+  "filesets": {
+    "audio": {
+      "TNKWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TNKWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TNKWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TNKWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TNKWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TNKWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

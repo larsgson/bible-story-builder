@@ -1,0 +1,19 @@
+{
+  "language": "rus",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "RUSMPK",
+  "filesets": {
+    "audio": {
+      "RUSMPKO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_RUSMPKO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

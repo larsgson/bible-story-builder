@@ -1,0 +1,33 @@
+{
+  "language": "pui",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PUIABC",
+  "filesets": {
+    "audio": {
+      "PUISMVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PUISMVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PUISMVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PUISMVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PUISMVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PUISMVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

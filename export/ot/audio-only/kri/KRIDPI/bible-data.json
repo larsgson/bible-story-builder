@@ -1,0 +1,19 @@
+{
+  "language": "kri",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KRIDPI",
+  "filesets": {
+    "audio": {
+      "KRIDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KRIDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "nde",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "NDEDPI",
+  "filesets": {
+    "audio": {
+      "NDEDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NDEDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

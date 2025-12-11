@@ -1,0 +1,26 @@
+{
+  "language": "nch",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NCHTBL",
+  "filesets": {
+    "audio": {
+      "NCHTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NCHTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NCHTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NCHTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "language": "kby",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "KBYWBT",
+  "filesets": {
+    "audio": {
+      "KBYWBAN1DA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "KBYWBAN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

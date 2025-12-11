@@ -1,0 +1,19 @@
+{
+  "language": "ron",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "RONC28",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "RONC28": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RONC28.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

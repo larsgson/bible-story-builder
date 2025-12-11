@@ -1,0 +1,19 @@
+{
+  "language": "dga",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DGABIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "DGABIV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DGABIV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

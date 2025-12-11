@@ -1,0 +1,33 @@
+{
+  "language": "bbc",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BBCLAI",
+  "filesets": {
+    "audio": {
+      "BBCLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BBCLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BBCLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BBCLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BBCLAIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BBCLAIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

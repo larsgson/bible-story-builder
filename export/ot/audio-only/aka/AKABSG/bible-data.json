@@ -1,0 +1,19 @@
+{
+  "language": "aka",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "AKABSG",
+  "filesets": {
+    "audio": {
+      "AKABSGO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_AKABSGO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

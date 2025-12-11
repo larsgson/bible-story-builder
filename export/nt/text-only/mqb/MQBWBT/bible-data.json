@@ -1,0 +1,24 @@
+{
+  "language": "mqb",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "MQBWBT",
+  "filesets": {
+    "audio": {
+      "MQBWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "MQBWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MQBWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

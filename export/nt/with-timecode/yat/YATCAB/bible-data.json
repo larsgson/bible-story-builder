@@ -1,0 +1,33 @@
+{
+  "language": "yat",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "YATCAB",
+  "filesets": {
+    "audio": {
+      "YATCABN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YATCABN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "YATCAB": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YATCAB.txt"
+        ]
+      }
+    },
+    "timing": {
+      "YATCABN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YATCABN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

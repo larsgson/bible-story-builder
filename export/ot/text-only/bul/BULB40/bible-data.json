@@ -1,0 +1,19 @@
+{
+  "language": "bul",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BULB40",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BULB40": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BULB40.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

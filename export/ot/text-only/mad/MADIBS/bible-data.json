@@ -1,0 +1,19 @@
+{
+  "language": "mad",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MADIBS",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MADIBSO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MADIBSO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

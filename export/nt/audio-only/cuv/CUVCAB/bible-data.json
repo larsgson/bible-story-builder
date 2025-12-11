@@ -1,0 +1,19 @@
+{
+  "language": "cuv",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "CUVCAB",
+  "filesets": {
+    "audio": {
+      "CUVCABN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CUVCABN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

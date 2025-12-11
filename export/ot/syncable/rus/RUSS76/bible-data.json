@@ -1,0 +1,26 @@
+{
+  "language": "rus",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "RUSS76",
+  "filesets": {
+    "audio": {
+      "RUSS76O2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_RUSS76O2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RUSS76": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_RUSS76.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "jra",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "JRAJBA",
+  "filesets": {
+    "audio": {
+      "JRAJBAN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JRAJBAN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "JRAJBAN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JRAJBAN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "JRAJBAN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JRAJBAN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

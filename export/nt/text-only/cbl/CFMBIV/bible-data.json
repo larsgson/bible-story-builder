@@ -1,0 +1,19 @@
+{
+  "language": "cbl",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CFMBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CFMBIV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CFMBIV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

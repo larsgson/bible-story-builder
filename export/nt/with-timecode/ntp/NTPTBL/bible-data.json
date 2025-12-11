@@ -1,0 +1,33 @@
+{
+  "language": "ntp",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "NTPTBL",
+  "filesets": {
+    "audio": {
+      "NTPTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NTPTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NTPTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NTPTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "NTPTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NTPTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

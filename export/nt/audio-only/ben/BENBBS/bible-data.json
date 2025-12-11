@@ -1,0 +1,19 @@
+{
+  "language": "ben",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BENBBS",
+  "filesets": {
+    "audio": {
+      "BNGBBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGBBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

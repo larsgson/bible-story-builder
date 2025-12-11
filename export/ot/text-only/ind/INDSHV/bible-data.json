@@ -1,0 +1,19 @@
+{
+  "language": "ind",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "INDSHV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "INDSHV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_INDSHV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

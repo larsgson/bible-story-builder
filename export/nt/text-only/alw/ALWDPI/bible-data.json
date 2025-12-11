@@ -1,0 +1,19 @@
+{
+  "language": "alw",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ALWDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ALWDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ALWDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

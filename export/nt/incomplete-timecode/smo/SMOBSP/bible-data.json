@@ -1,0 +1,26 @@
+{
+  "language": "smo",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "SMOBSP",
+  "filesets": {
+    "audio": {
+      "SMOBSPN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SMOBSPN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "SMOBSPN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SMOBSPN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

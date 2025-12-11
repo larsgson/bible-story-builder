@@ -1,0 +1,17 @@
+{
+  "language": "hin",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "HINBIB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "HINBIB": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

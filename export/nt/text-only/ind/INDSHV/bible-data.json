@@ -1,0 +1,19 @@
+{
+  "language": "ind",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "INDSHV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "INDSHV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_INDSHV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

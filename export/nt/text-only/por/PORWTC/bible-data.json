@@ -1,0 +1,19 @@
+{
+  "language": "por",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PORWTC",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PORWTC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PORWTC.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

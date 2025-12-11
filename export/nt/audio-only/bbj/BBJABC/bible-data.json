@@ -1,0 +1,19 @@
+{
+  "language": "bbj",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BBJABC",
+  "filesets": {
+    "audio": {
+      "BBJABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BBJABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

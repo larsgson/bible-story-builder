@@ -1,0 +1,33 @@
+{
+  "language": "bfa",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BFABSS",
+  "filesets": {
+    "audio": {
+      "BFABSSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BFABSSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BFABSSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BFABSSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BFABSSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BFABSSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

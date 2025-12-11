@@ -1,0 +1,33 @@
+{
+  "language": "tat",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TATIBT",
+  "filesets": {
+    "audio": {
+      "TTRIBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTRIBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TTRIBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTRIBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TTRIBTN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTRIBTN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

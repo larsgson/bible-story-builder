@@ -1,0 +1,19 @@
+{
+  "language": "etu",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ETUBSC",
+  "filesets": {
+    "audio": {
+      "ETUBSCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ETUBSCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "bdv",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BDVWFW",
+  "filesets": {
+    "audio": {
+      "BDVWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BDVWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BDVWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BDVWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BDVWFWN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BDVWFWN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

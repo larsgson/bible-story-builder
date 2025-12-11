@@ -1,0 +1,19 @@
+{
+  "language": "msm",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MSMWPS",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MSMWPSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MSMWPSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

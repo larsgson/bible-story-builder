@@ -1,0 +1,33 @@
+{
+  "language": "fuh",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "FUHSIM",
+  "filesets": {
+    "audio": {
+      "FUHSIMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FUHSIMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "FUHSIMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FUHSIMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "FUHSIMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FUHSIMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

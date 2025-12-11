@@ -1,0 +1,26 @@
+{
+  "language": "tvw",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "TVWLAI",
+  "filesets": {
+    "audio": {
+      "TVWLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TVWLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TVWLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TVWLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "ben",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BENBIB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BENBIB": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BENBIB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

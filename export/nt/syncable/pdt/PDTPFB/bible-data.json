@@ -1,0 +1,26 @@
+{
+  "language": "pdt",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PDTPFB",
+  "filesets": {
+    "audio": {
+      "GRNNVSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GRNNVSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GRNNVS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GRNNVS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

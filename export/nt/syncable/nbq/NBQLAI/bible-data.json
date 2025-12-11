@@ -1,0 +1,26 @@
+{
+  "language": "nbq",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NBQLAI",
+  "filesets": {
+    "audio": {
+      "NBQLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NBQLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NBQLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NBQLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

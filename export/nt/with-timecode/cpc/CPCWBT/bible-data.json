@@ -1,0 +1,33 @@
+{
+  "language": "cpc",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CPCWBT",
+  "filesets": {
+    "audio": {
+      "CPCWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CPCWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CPCWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CPCWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CPCWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CPCWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

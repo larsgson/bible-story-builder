@@ -1,0 +1,26 @@
+{
+  "language": "shb",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SHBMEV",
+  "filesets": {
+    "audio": {
+      "SHBMEVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SHBMEVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SHBMEVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SHBMEVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

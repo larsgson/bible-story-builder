@@ -1,0 +1,33 @@
+{
+  "language": "quz",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "QUZPBS",
+  "filesets": {
+    "audio": {
+      "QUZPBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUZPBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QUZPBSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUZPBSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "QUZPBSN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUZPBSN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "tnp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TNPWYI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TNPWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TNPWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

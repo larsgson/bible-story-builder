@@ -1,0 +1,33 @@
+{
+  "language": "mnk",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MNKBSG",
+  "filesets": {
+    "audio": {
+      "MNKBSGN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNKBSGN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MNKBSGN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNKBSGN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MNKBSGN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MNKBSGN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

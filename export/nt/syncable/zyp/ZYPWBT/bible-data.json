@@ -1,0 +1,26 @@
+{
+  "language": "zyp",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "ZYPWBT",
+  "filesets": {
+    "audio": {
+      "ZYPWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZYPWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZYPWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZYPWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

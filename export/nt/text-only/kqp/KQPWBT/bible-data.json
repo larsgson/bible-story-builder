@@ -1,0 +1,24 @@
+{
+  "language": "kqp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "KQPWBT",
+  "filesets": {
+    "audio": {
+      "KQPWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "KQPWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KQPWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

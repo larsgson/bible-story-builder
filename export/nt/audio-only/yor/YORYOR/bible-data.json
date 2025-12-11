@@ -1,0 +1,19 @@
+{
+  "language": "yor",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "YORYOR",
+  "filesets": {
+    "audio": {
+      "YORUBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YORUBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

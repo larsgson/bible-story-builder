@@ -1,0 +1,19 @@
+{
+  "language": "ybi",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "YBIWBT",
+  "filesets": {
+    "audio": {
+      "YBIWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YBIWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

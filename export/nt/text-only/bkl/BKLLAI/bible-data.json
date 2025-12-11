@@ -1,0 +1,19 @@
+{
+  "language": "bkl",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BKLLAI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BKLLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BKLLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

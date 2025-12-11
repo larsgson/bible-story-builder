@@ -1,0 +1,33 @@
+{
+  "language": "ess",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "ESSWYI",
+  "filesets": {
+    "audio": {
+      "ESSWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ESSWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ESSWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ESSWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ESSWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ESSWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

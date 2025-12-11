@@ -1,0 +1,33 @@
+{
+  "language": "kak",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KAKNTM",
+  "filesets": {
+    "audio": {
+      "KAKNTMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KAKNTMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KAKNTMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KAKNTMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KAKNTMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KAKNTMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

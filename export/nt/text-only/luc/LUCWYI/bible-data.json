@@ -1,0 +1,19 @@
+{
+  "language": "luc",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "LUCWYI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "LUCWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LUCWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

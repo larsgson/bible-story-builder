@@ -1,0 +1,26 @@
+{
+  "language": "gri",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "GRIBSP",
+  "filesets": {
+    "audio": {
+      "GRIBSPN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GRIBSPN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "GRIBSPN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GRIBSPN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

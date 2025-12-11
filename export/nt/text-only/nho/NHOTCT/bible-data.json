@@ -1,0 +1,19 @@
+{
+  "language": "nho",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NHOTCT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NHOTCT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NHOTCT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

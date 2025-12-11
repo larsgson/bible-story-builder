@@ -1,0 +1,33 @@
+{
+  "language": "rus",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "RUSS76",
+  "filesets": {
+    "audio": {
+      "RUSS76N2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RUSS76N2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RUSS76": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RUSS76.txt"
+        ]
+      }
+    },
+    "timing": {
+      "RUSS76N2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RUSS76N2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

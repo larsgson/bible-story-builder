@@ -1,0 +1,26 @@
+{
+  "language": "pib",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PIBWBT",
+  "filesets": {
+    "audio": {
+      "PIBWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PIBWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PIBWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PIBWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

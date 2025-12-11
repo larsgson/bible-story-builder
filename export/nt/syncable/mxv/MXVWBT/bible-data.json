@@ -1,0 +1,26 @@
+{
+  "language": "mxv",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MXVWBT",
+  "filesets": {
+    "audio": {
+      "MXVWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MXVWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MXVWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MXVWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "tgl",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TGLBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TGLBIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TGLBIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

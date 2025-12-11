@@ -1,0 +1,19 @@
+{
+  "language": "cco",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "CCOWBT",
+  "filesets": {
+    "audio": {
+      "CCOWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CCOWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

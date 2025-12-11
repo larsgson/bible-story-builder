@@ -1,0 +1,19 @@
+{
+  "language": "haq",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "HAQBST",
+  "filesets": {
+    "audio": {
+      "HAQBSTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HAQBSTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

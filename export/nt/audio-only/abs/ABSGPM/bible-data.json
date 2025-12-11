@@ -1,0 +1,19 @@
+{
+  "language": "abs",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ABSGPM",
+  "filesets": {
+    "audio": {
+      "ABSGPMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ABSGPMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

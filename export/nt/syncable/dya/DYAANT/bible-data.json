@@ -1,0 +1,26 @@
+{
+  "language": "dya",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "DYAANT",
+  "filesets": {
+    "audio": {
+      "DYAANTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DYAANTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DYAANTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DYAANTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

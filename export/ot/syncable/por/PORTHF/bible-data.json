@@ -1,0 +1,26 @@
+{
+  "language": "por",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PORTHF",
+  "filesets": {
+    "audio": {
+      "PORTHFO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PORTHFO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PORTHFO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PORTHFO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

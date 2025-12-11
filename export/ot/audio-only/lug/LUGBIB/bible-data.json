@@ -1,0 +1,19 @@
+{
+  "language": "lug",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LUGBIB",
+  "filesets": {
+    "audio": {
+      "LUGBIBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_LUGBIBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

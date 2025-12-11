@@ -1,0 +1,17 @@
+{
+  "language": "swe",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "SWES17",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SWES17": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

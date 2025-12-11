@@ -1,0 +1,33 @@
+{
+  "language": "pao",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "PAONAB",
+  "filesets": {
+    "audio": {
+      "PAONABN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PAONABN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PAONABN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PAONABN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "PAONABN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PAONABN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

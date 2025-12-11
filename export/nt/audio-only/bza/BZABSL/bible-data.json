@@ -1,0 +1,19 @@
+{
+  "language": "bza",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BZABSL",
+  "filesets": {
+    "audio": {
+      "BZABSLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BZABSLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

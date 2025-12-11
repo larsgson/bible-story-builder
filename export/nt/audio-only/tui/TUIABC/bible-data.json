@@ -1,0 +1,19 @@
+{
+  "language": "tui",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "TUIABC",
+  "filesets": {
+    "audio": {
+      "TUIABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TUIABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

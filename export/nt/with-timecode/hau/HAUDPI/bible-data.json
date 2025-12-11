@@ -1,0 +1,33 @@
+{
+  "language": "hau",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "HAUDPI",
+  "filesets": {
+    "audio": {
+      "HAUDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HAUDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HAUDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HAUDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "HAUDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HAUDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

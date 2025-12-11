@@ -1,0 +1,26 @@
+{
+  "language": "maz",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MAZTBL",
+  "filesets": {
+    "audio": {
+      "MAZTBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MAZTBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MAZTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MAZTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

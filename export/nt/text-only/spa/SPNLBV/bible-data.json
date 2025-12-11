@@ -1,0 +1,19 @@
+{
+  "language": "spa",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SPNLBV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SPNLBV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SPNLBV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

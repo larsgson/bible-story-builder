@@ -1,0 +1,33 @@
+{
+  "language": "cmr",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CMRWBT",
+  "filesets": {
+    "audio": {
+      "CMRWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CMRWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CMRWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CMRWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CMRWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CMRWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

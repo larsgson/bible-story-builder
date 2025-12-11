@@ -1,0 +1,19 @@
+{
+  "language": "naf",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NAFWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NAFWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NAFWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

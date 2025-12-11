@@ -1,0 +1,19 @@
+{
+  "language": "dyi",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DYIDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "DYIDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_DYIDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

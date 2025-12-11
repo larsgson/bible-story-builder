@@ -1,0 +1,19 @@
+{
+  "language": "mhl",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MHLPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MHLPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MHLPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

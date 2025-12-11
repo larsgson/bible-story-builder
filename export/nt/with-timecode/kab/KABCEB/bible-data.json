@@ -1,0 +1,33 @@
+{
+  "language": "kab",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KABCEB",
+  "filesets": {
+    "audio": {
+      "KABCEBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KABCEBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KABCEBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KABCEBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KABCEBN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KABCEBN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

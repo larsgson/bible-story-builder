@@ -1,0 +1,33 @@
+{
+  "language": "kfx",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KFXBIV",
+  "filesets": {
+    "audio": {
+      "KFXBIVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFXBIVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KFXBIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFXBIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KFXBIVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFXBIVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "mas",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MASMAS",
+  "filesets": {
+    "audio": {
+      "METBSVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_METBSVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

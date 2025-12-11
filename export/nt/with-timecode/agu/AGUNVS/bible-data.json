@@ -1,0 +1,33 @@
+{
+  "language": "agu",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "AGUNVS",
+  "filesets": {
+    "audio": {
+      "AGUNVSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AGUNVSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AGUNVSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AGUNVSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "AGUNVSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AGUNVSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "nlx",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "NLXWFW",
+  "filesets": {
+    "audio": {
+      "NLXWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NLXWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NLXWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NLXWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "NLXWFWN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NLXWFWN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

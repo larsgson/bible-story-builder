@@ -1,0 +1,19 @@
+{
+  "language": "fra",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "FRALSN",
+  "filesets": {
+    "audio": {
+      "FRNLSNO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_FRNLSNO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

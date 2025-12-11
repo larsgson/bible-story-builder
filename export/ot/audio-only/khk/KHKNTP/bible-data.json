@@ -1,0 +1,24 @@
+{
+  "language": "khk",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "KHKNTP",
+  "filesets": {
+    "audio": {
+      "KHKMUBO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KHKMUBO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KHKNTPO_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

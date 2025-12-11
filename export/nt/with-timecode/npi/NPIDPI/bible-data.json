@@ -1,0 +1,33 @@
+{
+  "language": "npi",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "NPIDPI",
+  "filesets": {
+    "audio": {
+      "NPIDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NPIDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NPIDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NPIDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "NPIDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NPIDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

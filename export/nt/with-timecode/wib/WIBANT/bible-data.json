@@ -1,0 +1,33 @@
+{
+  "language": "wib",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "WIBANT",
+  "filesets": {
+    "audio": {
+      "WIBANTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WIBANTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "WIBANTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WIBANTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "WIBANTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WIBANTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

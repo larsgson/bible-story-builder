@@ -1,0 +1,19 @@
+{
+  "language": "kfc",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KFCKSS",
+  "filesets": {
+    "audio": {
+      "KFCKSSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFCKSSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

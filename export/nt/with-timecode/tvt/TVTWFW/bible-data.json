@@ -1,0 +1,33 @@
+{
+  "language": "tvt",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TVTWFW",
+  "filesets": {
+    "audio": {
+      "TVTWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TVTWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TVTWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TVTWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TVTWFWN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TVTWFWN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

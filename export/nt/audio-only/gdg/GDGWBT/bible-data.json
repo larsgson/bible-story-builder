@@ -1,0 +1,19 @@
+{
+  "language": "gdg",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "GDGWBT",
+  "filesets": {
+    "audio": {
+      "GDGWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GDGWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

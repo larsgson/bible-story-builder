@@ -1,0 +1,26 @@
+{
+  "language": "shu",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SHUATA",
+  "filesets": {
+    "audio": {
+      "SHUABTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SHUABTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SHUABTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SHUABTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

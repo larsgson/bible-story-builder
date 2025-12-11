@@ -1,0 +1,19 @@
+{
+  "language": "vie",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "VIEBDV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "VIEBDV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VIEBDV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

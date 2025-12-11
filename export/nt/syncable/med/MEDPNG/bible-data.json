@@ -1,0 +1,26 @@
+{
+  "language": "med",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MEDPNG",
+  "filesets": {
+    "audio": {
+      "MEDPNGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MEDPNGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MEDPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MEDPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

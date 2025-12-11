@@ -1,0 +1,26 @@
+{
+  "language": "lin",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LINDPI",
+  "filesets": {
+    "audio": {
+      "LINDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_LINDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LINDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_LINDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

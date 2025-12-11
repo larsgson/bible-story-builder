@@ -1,0 +1,19 @@
+{
+  "language": "mer",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MERUBS",
+  "filesets": {
+    "audio": {
+      "MERUBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MERUBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

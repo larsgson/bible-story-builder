@@ -1,0 +1,26 @@
+{
+  "language": "lac",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LACTBL",
+  "filesets": {
+    "audio": {
+      "LACTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LACTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LACTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LACTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

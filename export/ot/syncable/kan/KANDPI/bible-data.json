@@ -1,0 +1,26 @@
+{
+  "language": "kan",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KANDPI",
+  "filesets": {
+    "audio": {
+      "KANDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KANDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KANDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KANDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

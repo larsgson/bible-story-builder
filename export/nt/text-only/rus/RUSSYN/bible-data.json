@@ -1,0 +1,24 @@
+{
+  "language": "rus",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "RUSSYN",
+  "filesets": {
+    "audio": {
+      "RUSSYNN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "RUSSYN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RUSSYN.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

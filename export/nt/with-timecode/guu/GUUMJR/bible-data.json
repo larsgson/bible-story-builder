@@ -1,0 +1,33 @@
+{
+  "language": "guu",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "GUUMJR",
+  "filesets": {
+    "audio": {
+      "GUUMJRN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUUMJRN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GUUMJRN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUUMJRN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "GUUMJRN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GUUMJRN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

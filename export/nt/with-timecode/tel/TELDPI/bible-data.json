@@ -1,0 +1,33 @@
+{
+  "language": "tel",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "TELDPI",
+  "filesets": {
+    "audio": {
+      "TELDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TELDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TELDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TELDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "TELDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TELDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

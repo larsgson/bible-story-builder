@@ -1,0 +1,24 @@
+{
+  "language": "lsm",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "LSMBSU",
+  "filesets": {
+    "audio": {
+      "LSMBSUN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "LSMBSUN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LSMBSUN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

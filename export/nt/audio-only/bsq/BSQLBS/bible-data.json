@@ -1,0 +1,19 @@
+{
+  "language": "bsq",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BSQLBS",
+  "filesets": {
+    "audio": {
+      "BSQLBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BSQLBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

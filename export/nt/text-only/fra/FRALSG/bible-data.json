@@ -1,0 +1,19 @@
+{
+  "language": "fra",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "FRALSG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FRNLSV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FRNLSV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

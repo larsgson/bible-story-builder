@@ -1,0 +1,33 @@
+{
+  "language": "jmd",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "JMDYPM",
+  "filesets": {
+    "audio": {
+      "JMDYPMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JMDYPMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "JMDYPMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JMDYPMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "JMDYPMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JMDYPMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

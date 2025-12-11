@@ -1,0 +1,19 @@
+{
+  "language": "mse",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MSEBSC",
+  "filesets": {
+    "audio": {
+      "MSEBSCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MSEBSCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

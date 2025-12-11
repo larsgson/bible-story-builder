@@ -1,0 +1,22 @@
+{
+  "language": "ptu",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "PTULAI",
+  "filesets": {
+    "audio": {
+      "PTULAIN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "PTULAIN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "vid",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "VIDWFW",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "VIDPBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VIDPBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

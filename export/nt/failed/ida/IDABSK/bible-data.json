@@ -1,0 +1,17 @@
+{
+  "language": "ida",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "audio-only",
+  "distinct_id": "IDABSK",
+  "filesets": {
+    "audio": {
+      "IDABSKN2DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

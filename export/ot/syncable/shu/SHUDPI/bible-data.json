@@ -1,0 +1,26 @@
+{
+  "language": "shu",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SHUDPI",
+  "filesets": {
+    "audio": {
+      "SHUDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SHUDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SHUDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SHUDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

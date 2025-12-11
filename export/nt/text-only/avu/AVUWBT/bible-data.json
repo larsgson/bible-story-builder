@@ -1,0 +1,24 @@
+{
+  "language": "avu",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "AVUWBT",
+  "filesets": {
+    "audio": {
+      "AVUWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "AVUWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AVUWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

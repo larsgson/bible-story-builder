@@ -1,0 +1,26 @@
+{
+  "language": "dnj",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "DNJWST",
+  "filesets": {
+    "audio": {
+      "DA2WSTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DA2WSTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DA2WSTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DA2WSTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

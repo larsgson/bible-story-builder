@@ -1,0 +1,24 @@
+{
+  "language": "ann",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "ANNWBT",
+  "filesets": {
+    "audio": {
+      "ANNWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "ANNWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ANNWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

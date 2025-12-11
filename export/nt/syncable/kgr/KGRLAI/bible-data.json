@@ -1,0 +1,26 @@
+{
+  "language": "kgr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KGRLAI",
+  "filesets": {
+    "audio": {
+      "KGRLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KGRLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KGRLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KGRLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "myw",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MYWPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MYWPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYWPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

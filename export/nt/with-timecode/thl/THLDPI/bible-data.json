@@ -1,0 +1,33 @@
+{
+  "language": "thl",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "THLDPI",
+  "filesets": {
+    "audio": {
+      "THLDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_THLDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "THLDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_THLDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "THLDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_THLDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

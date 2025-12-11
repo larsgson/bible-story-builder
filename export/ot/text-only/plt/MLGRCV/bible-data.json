@@ -1,0 +1,19 @@
+{
+  "language": "plt",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MLGRCV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MLGRCV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MLGRCV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

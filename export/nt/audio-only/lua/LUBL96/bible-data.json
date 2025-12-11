@@ -1,0 +1,19 @@
+{
+  "language": "lua",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LUBL96",
+  "filesets": {
+    "audio": {
+      "LU1ABUN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LU1ABUN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

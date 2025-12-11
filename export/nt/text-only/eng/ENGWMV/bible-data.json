@@ -1,0 +1,19 @@
+{
+  "language": "eng",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ENGWMV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ENGWMV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGWMV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

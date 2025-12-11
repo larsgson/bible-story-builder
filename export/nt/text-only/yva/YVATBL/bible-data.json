@@ -1,0 +1,24 @@
+{
+  "language": "yva",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "YVATBL",
+  "filesets": {
+    "audio": {
+      "YVATBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "YVATBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YVATBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

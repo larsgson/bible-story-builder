@@ -1,0 +1,19 @@
+{
+  "language": "pol",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "POLPBG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "POLPBG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_POLPBG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

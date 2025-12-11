@@ -1,0 +1,33 @@
+{
+  "language": "cnl",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CNLTBI",
+  "filesets": {
+    "audio": {
+      "CNLTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CNLTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CNLTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CNLTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CNLTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CNLTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

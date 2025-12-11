@@ -1,0 +1,19 @@
+{
+  "language": "yaq",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "YAQTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "YAQTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YAQTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

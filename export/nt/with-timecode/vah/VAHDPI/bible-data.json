@@ -1,0 +1,33 @@
+{
+  "language": "vah",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "VAHDPI",
+  "filesets": {
+    "audio": {
+      "VAHDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VAHDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "VAHDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VAHDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "VAHDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VAHDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

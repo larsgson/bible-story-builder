@@ -1,0 +1,17 @@
+{
+  "language": "tha",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "THATSV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "THATSV": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

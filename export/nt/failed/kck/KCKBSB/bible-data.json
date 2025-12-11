@@ -1,0 +1,17 @@
+{
+  "language": "kck",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "KCKBSB",
+  "filesets": {
+    "audio": {
+      "KCKBSBN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

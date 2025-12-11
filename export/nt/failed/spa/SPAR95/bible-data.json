@@ -1,0 +1,17 @@
+{
+  "language": "spa",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "SPAR95",
+  "filesets": {
+    "audio": {
+      "SPNR95N2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

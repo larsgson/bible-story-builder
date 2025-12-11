@@ -1,0 +1,33 @@
+{
+  "language": "met",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "ME1PNG",
+  "filesets": {
+    "audio": {
+      "ME1PNGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ME1PNGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ME1PNGN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ME1PNGN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ME1PNGN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ME1PNGN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

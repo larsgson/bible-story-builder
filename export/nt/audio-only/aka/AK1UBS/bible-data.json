@@ -1,0 +1,19 @@
+{
+  "language": "aka",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "AK1UBS",
+  "filesets": {
+    "audio": {
+      "AK1UBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AK1UBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

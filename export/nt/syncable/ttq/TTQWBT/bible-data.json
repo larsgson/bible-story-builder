@@ -1,0 +1,26 @@
+{
+  "language": "ttq",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TTQWBT",
+  "filesets": {
+    "audio": {
+      "TTQWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTQWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TTQWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TTQWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

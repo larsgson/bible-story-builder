@@ -1,0 +1,33 @@
+{
+  "language": "ffm",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "FFMWBT",
+  "filesets": {
+    "audio": {
+      "FFMTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FFMTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "FFMTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FFMTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "FFMTBLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FFMTBLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

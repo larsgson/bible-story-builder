@@ -1,0 +1,19 @@
+{
+  "language": "kyj",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KYJWBT",
+  "filesets": {
+    "audio": {
+      "KYJWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KYJWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

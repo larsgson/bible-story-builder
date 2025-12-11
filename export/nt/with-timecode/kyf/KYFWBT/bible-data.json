@@ -1,0 +1,33 @@
+{
+  "language": "kyf",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KYFWBT",
+  "filesets": {
+    "audio": {
+      "KYFWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KYFWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KYFWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KYFWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KYFWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KYFWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

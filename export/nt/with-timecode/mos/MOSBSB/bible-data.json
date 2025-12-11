@@ -1,0 +1,33 @@
+{
+  "language": "mos",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MOSBSB",
+  "filesets": {
+    "audio": {
+      "MHMBSBN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MHMBSBN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MHMBSBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MHMBSBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MHMBSBN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MHMBSBN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

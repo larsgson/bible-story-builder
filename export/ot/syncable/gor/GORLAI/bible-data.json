@@ -1,0 +1,26 @@
+{
+  "language": "gor",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "GORLAI",
+  "filesets": {
+    "audio": {
+      "GORLAIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GORLAIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GORLAIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GORLAIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

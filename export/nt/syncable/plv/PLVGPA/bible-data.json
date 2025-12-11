@@ -1,0 +1,26 @@
+{
+  "language": "plv",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PLVGPA",
+  "filesets": {
+    "audio": {
+      "PLVGPAN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PLVGPAN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PLVGPAN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PLVGPAN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

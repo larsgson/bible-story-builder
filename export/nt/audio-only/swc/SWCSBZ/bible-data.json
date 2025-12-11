@@ -1,0 +1,19 @@
+{
+  "language": "swc",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SWCSBZ",
+  "filesets": {
+    "audio": {
+      "SWCSBZN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SWCSBZN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

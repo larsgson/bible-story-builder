@@ -1,0 +1,33 @@
+{
+  "language": "gai",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "GAIPBT",
+  "filesets": {
+    "audio": {
+      "GAIPBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAIPBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "GAIPBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAIPBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "GAIPBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GAIPBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

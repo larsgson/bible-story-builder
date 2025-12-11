@@ -1,0 +1,26 @@
+{
+  "language": "azb",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "AZBEMV",
+  "filesets": {
+    "audio": {
+      "AZBEMVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZBEMVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AZBEMV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZBEMV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

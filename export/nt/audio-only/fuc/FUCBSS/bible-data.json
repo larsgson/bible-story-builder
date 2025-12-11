@@ -1,0 +1,19 @@
+{
+  "language": "fuc",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "FUCBSS",
+  "filesets": {
+    "audio": {
+      "FUCBS1N2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FUCBS1N2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

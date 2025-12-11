@@ -1,0 +1,33 @@
+{
+  "language": "jaa",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "JAAJAM",
+  "filesets": {
+    "audio": {
+      "JAAJAMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JAAJAMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "JAAJAMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JAAJAMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "JAAJAMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JAAJAMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "mps",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MPSTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MPSWBTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MPSWBTO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "pav",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "PAVNTM",
+  "filesets": {
+    "audio": {
+      "PAVNTMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PAVNTMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

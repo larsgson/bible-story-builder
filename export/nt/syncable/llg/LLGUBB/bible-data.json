@@ -1,0 +1,26 @@
+{
+  "language": "llg",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "LLGUBB",
+  "filesets": {
+    "audio": {
+      "LLGUBBN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LLGUBBN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LLGUBBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LLGUBBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

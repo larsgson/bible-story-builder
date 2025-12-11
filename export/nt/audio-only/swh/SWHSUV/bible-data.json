@@ -1,0 +1,19 @@
+{
+  "language": "swh",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SWHSUV",
+  "filesets": {
+    "audio": {
+      "SWAHNVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SWAHNVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

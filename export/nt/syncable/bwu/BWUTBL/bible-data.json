@@ -1,0 +1,26 @@
+{
+  "language": "bwu",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BWUTBL",
+  "filesets": {
+    "audio": {
+      "BWUTBLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BWUTBLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BWUTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BWUTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

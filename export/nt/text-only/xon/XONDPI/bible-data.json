@@ -1,0 +1,19 @@
+{
+  "language": "xon",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "XONDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "XONDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XONDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "bwr",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BWRBSN",
+  "filesets": {
+    "audio": {
+      "BWRBSNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BWRBSNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

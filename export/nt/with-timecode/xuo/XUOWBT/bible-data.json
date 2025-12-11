@@ -1,0 +1,33 @@
+{
+  "language": "xuo",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "XUOWBT",
+  "filesets": {
+    "audio": {
+      "XUOWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XUOWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "XUOWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XUOWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "XUOWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XUOWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

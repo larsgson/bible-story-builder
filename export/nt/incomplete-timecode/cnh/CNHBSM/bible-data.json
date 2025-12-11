@@ -1,0 +1,26 @@
+{
+  "language": "cnh",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "CNHBSM",
+  "filesets": {
+    "audio": {
+      "CNHBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CNHBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "CNHBSMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CNHBSMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

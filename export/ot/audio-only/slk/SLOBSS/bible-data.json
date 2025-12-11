@@ -1,0 +1,19 @@
+{
+  "language": "slk",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SLOBSS",
+  "filesets": {
+    "audio": {
+      "SLOBSSO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SLOBSSO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

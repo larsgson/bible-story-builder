@@ -1,0 +1,19 @@
+{
+  "language": "mba",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MBAPAG",
+  "filesets": {
+    "audio": {
+      "MBAPAGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MBAPAGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "bug",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BUGLAI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BUGLAI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BUGLAI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

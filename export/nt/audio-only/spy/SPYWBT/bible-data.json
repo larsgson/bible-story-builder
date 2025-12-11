@@ -1,0 +1,24 @@
+{
+  "language": "spy",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "SPYWBT",
+  "filesets": {
+    "audio": {
+      "SPYWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SPYWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SPYWBTN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

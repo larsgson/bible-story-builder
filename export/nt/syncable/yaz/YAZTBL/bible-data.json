@@ -1,0 +1,26 @@
+{
+  "language": "yaz",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "YAZTBL",
+  "filesets": {
+    "audio": {
+      "YAZTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YAZTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "YAZTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_YAZTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

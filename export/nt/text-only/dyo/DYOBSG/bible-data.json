@@ -1,0 +1,24 @@
+{
+  "language": "dyo",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "DYOBSG",
+  "filesets": {
+    "audio": {
+      "DYOBSGN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "DYOBSGN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DYOBSGN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

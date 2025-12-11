@@ -1,0 +1,19 @@
+{
+  "language": "isl",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ISLICE",
+  "filesets": {
+    "audio": {
+      "ISLICEN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ISLICEN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

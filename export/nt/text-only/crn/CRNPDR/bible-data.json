@@ -1,0 +1,19 @@
+{
+  "language": "crn",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CRNPDR",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CR1PDR": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CR1PDR.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

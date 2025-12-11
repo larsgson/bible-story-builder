@@ -1,0 +1,19 @@
+{
+  "language": "tpz",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TPZWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TPZWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TPZWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

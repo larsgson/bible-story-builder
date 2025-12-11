@@ -1,0 +1,26 @@
+{
+  "language": "arb",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ARBBIB",
+  "filesets": {
+    "audio": {
+      "ARBBIBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ARBBIBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ARBBIB": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ARBBIB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

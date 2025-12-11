@@ -1,0 +1,19 @@
+{
+  "language": "mlp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MLPTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MLPTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MLPTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

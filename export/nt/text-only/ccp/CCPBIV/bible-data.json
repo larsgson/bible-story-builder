@@ -1,0 +1,19 @@
+{
+  "language": "ccp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CCPBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CCPBIV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CCPBIV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

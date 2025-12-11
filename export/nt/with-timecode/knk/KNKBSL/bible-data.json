@@ -1,0 +1,33 @@
+{
+  "language": "knk",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KNKBSL",
+  "filesets": {
+    "audio": {
+      "KNKBSLN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNKBSLN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KNKBSLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNKBSLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KNKBSLN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNKBSLN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

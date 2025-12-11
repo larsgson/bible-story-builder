@@ -1,0 +1,19 @@
+{
+  "language": "uvl",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "UVLWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "UVLWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UVLWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

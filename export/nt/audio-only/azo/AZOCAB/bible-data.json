@@ -1,0 +1,19 @@
+{
+  "language": "azo",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "AZOCAB",
+  "filesets": {
+    "audio": {
+      "AZOCABN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZOCABN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

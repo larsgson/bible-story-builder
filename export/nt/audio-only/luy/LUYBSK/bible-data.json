@@ -1,0 +1,19 @@
+{
+  "language": "luy",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LUYBSK",
+  "filesets": {
+    "audio": {
+      "LUYBSKN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LUYBSKN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

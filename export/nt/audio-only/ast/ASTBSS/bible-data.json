@@ -1,0 +1,19 @@
+{
+  "language": "ast",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ASTBSS",
+  "filesets": {
+    "audio": {
+      "ASTBSSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ASTBSSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

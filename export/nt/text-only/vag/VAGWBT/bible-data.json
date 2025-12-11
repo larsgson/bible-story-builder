@@ -1,0 +1,24 @@
+{
+  "language": "vag",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "VAGWBT",
+  "filesets": {
+    "audio": {
+      "VAGWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "VAGWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_VAGWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

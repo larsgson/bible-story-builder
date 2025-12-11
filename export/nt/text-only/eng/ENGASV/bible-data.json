@@ -1,0 +1,19 @@
+{
+  "language": "eng",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ENGASV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ENGASV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENGASV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

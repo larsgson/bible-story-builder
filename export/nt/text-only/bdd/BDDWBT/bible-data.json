@@ -1,0 +1,19 @@
+{
+  "language": "bdd",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BDDWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BDDWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BDDWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

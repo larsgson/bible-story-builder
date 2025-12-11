@@ -1,0 +1,19 @@
+{
+  "language": "ajg",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "AJGABB",
+  "filesets": {
+    "audio": {
+      "AJGABBN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AJGABBN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

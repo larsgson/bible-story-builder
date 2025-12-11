@@ -1,0 +1,24 @@
+{
+  "language": "ifu",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "IFUWPS",
+  "filesets": {
+    "audio": {
+      "IFUWPSN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "IFUWPSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IFUWPSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

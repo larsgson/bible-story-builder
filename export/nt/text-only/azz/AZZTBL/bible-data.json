@@ -1,0 +1,24 @@
+{
+  "language": "azz",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "AZZTBL",
+  "filesets": {
+    "audio": {
+      "AZZTBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "AZZTBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AZZTBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

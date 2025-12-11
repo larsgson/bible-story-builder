@@ -1,0 +1,19 @@
+{
+  "language": "prk",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "PRKBSM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "PRKBSM": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PRKBSM.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "npi",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NPIBIB",
+  "filesets": {
+    "audio": {
+      "NPIBIBN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NPIBIBN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NPIBIBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NPIBIBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

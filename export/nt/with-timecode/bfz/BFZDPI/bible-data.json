@@ -1,0 +1,33 @@
+{
+  "language": "bfz",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BFZDPI",
+  "filesets": {
+    "audio": {
+      "BFZDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BFZDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BFZDPI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BFZDPI.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BFZDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BFZDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

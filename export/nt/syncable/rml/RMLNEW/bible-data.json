@@ -1,0 +1,26 @@
+{
+  "language": "rml",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "RMLNEW",
+  "filesets": {
+    "audio": {
+      "RMLNVSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RMLNVSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RMLNVSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RMLNVSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

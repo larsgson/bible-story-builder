@@ -1,0 +1,19 @@
+{
+  "language": "eng",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "EN1ESV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ENGESH": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ENGESH.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

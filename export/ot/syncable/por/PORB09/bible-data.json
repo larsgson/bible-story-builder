@@ -1,0 +1,26 @@
+{
+  "language": "por",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "PORB09",
+  "filesets": {
+    "audio": {
+      "PORBSPO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PORBSPO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "PORBSPO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PORBSPO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

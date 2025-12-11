@@ -1,0 +1,17 @@
+{
+  "language": "dyu",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "audio-only",
+  "distinct_id": "DYUBSB",
+  "filesets": {
+    "audio": {
+      "DYUBSBO1SA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

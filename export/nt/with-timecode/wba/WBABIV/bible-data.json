@@ -1,0 +1,33 @@
+{
+  "language": "wba",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "WBABIV",
+  "filesets": {
+    "audio": {
+      "WBABIVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WBABIVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "WBABIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WBABIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "WBABIVN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WBABIVN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

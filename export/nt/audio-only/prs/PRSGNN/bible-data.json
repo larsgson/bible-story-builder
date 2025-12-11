@@ -1,0 +1,19 @@
+{
+  "language": "prs",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "PRSGNN",
+  "filesets": {
+    "audio": {
+      "PRSGNNN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PRSGNNN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

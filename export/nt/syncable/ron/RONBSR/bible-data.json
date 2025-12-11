@@ -1,0 +1,26 @@
+{
+  "language": "ron",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "RONBSR",
+  "filesets": {
+    "audio": {
+      "RONBSRN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RONBSRN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "RONBSRN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RONBSRN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

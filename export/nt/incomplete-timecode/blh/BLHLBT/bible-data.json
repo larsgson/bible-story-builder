@@ -1,0 +1,31 @@
+{
+  "language": "blh",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BLHLBT",
+  "filesets": {
+    "audio": {
+      "BLHBSLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BLHBSLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BLHLBTN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {
+      "BLHBSLN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BLHBSLN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

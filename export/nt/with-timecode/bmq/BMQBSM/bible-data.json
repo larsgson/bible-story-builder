@@ -1,0 +1,33 @@
+{
+  "language": "bmq",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BMQBSM",
+  "filesets": {
+    "audio": {
+      "BMQBSMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BMQBSMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BMQBSMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BMQBSMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BMQBSMN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BMQBSMN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

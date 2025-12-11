@@ -1,0 +1,19 @@
+{
+  "language": "tha",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "THATBS",
+  "filesets": {
+    "audio": {
+      "THATBSO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_THATBSO2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "smt",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SMTBIV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SMTBIV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SMTBIV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

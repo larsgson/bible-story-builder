@@ -1,0 +1,17 @@
+{
+  "language": "mah",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "MAHNKR",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MAHWGMO_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

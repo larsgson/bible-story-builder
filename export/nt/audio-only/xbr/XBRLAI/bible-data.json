@@ -1,0 +1,19 @@
+{
+  "language": "xbr",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "XBRLAI",
+  "filesets": {
+    "audio": {
+      "XBRLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XBRLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

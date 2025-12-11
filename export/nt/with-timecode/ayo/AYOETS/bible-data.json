@@ -1,0 +1,33 @@
+{
+  "language": "ayo",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "AYOETS",
+  "filesets": {
+    "audio": {
+      "AYOETSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AYOETSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "AYOETS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AYOETS.txt"
+        ]
+      }
+    },
+    "timing": {
+      "AYOETSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_AYOETSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "tbz",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TBZBSB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TBZBSB": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_TBZBSB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

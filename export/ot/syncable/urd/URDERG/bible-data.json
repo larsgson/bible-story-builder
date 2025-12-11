@@ -1,0 +1,26 @@
+{
+  "language": "urd",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "URDERG",
+  "filesets": {
+    "audio": {
+      "URDERGO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_URDERGO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "URDERG": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_URDERG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

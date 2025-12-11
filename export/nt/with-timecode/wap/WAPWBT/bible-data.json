@@ -1,0 +1,33 @@
+{
+  "language": "wap",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "WAPWBT",
+  "filesets": {
+    "audio": {
+      "WAPWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WAPWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "WAPWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WAPWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "WAPWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_WAPWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

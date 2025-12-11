@@ -1,0 +1,19 @@
+{
+  "language": "poy",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "POYPNT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "POYPBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_POYPBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

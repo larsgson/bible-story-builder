@@ -1,0 +1,26 @@
+{
+  "language": "tsz",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "TSZPNT",
+  "filesets": {
+    "audio": {
+      "TSZBSMN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TSZBSMN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "TSZBSMN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TSZBSMN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "kbm",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KBMTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KBMTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KBMTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

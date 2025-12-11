@@ -1,0 +1,19 @@
+{
+  "language": "bkd",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BKDLMC",
+  "filesets": {
+    "audio": {
+      "BKDLMCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BKDLMCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "arb",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "ARBVDV",
+  "filesets": {
+    "audio": {
+      "ARZVDVO1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "ARBVDV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ARBVDV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

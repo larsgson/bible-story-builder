@@ -1,0 +1,19 @@
+{
+  "language": "zsr",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ZSRWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ZSRWYI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZSRWYI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

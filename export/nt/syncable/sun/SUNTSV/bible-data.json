@@ -1,0 +1,26 @@
+{
+  "language": "sun",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SUNTSV",
+  "filesets": {
+    "audio": {
+      "SUNTSVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SUNTSVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SUNTSVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SUNTSVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

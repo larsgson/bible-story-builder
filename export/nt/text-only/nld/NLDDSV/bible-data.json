@@ -1,0 +1,19 @@
+{
+  "language": "nld",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NLDDSV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NLDDSV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NLDDSV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

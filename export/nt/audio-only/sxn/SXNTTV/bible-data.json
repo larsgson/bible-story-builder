@@ -1,0 +1,19 @@
+{
+  "language": "sxn",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SXNTTV",
+  "filesets": {
+    "audio": {
+      "SXNTTVN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SXNTTVN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

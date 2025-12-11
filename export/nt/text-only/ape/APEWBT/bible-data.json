@@ -1,0 +1,19 @@
+{
+  "language": "ape",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "APEWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "APEWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_APEWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

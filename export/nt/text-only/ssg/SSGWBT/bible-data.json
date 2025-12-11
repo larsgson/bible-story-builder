@@ -1,0 +1,19 @@
+{
+  "language": "ssg",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SSGWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SSGWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SSGWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "language": "fin",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "FIN38C",
+  "filesets": {
+    "audio": {
+      "FIN38VN1DA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "FIN38VN_ET": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

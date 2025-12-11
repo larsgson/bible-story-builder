@@ -1,0 +1,24 @@
+{
+  "language": "snn",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "SNNWBT",
+  "filesets": {
+    "audio": {
+      "SNNWBTN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "SNNWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SNNWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

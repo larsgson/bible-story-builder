@@ -1,0 +1,19 @@
+{
+  "language": "grt",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "GRTBBS",
+  "filesets": {
+    "audio": {
+      "GRTBBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GRTBBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

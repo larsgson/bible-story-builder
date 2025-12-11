@@ -1,0 +1,19 @@
+{
+  "language": "ibo",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ENIMLT",
+  "filesets": {
+    "audio": {
+      "ENIMLTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ENIMLTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "language": "dnt",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "DNTLAI",
+  "filesets": {
+    "audio": {
+      "DNTLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DNTLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "DNTLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DNTLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

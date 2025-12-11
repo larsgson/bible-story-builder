@@ -1,0 +1,19 @@
+{
+  "language": "bzd",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BZDWBT",
+  "filesets": {
+    "audio": {
+      "BZDUBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BZDUBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "top",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "TOPTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "TOPTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TOPTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

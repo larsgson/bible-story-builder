@@ -1,0 +1,19 @@
+{
+  "language": "xdy",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "XDYLAI",
+  "filesets": {
+    "audio": {
+      "XDYLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XDYLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

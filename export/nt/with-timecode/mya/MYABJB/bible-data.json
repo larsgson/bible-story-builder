@@ -1,0 +1,33 @@
+{
+  "language": "mya",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "MYABJB",
+  "filesets": {
+    "audio": {
+      "MYAOJVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYAOJVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MYAOJVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYAOJVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "MYAOJVN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYAOJVN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

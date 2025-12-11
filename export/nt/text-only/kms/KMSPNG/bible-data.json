@@ -1,0 +1,19 @@
+{
+  "language": "kms",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KMSPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KMSPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMSPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

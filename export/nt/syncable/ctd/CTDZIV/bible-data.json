@@ -1,0 +1,26 @@
+{
+  "language": "ctd",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "CTDZIV",
+  "filesets": {
+    "audio": {
+      "CTDZIVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CTDZIVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CTDZIVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CTDZIVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

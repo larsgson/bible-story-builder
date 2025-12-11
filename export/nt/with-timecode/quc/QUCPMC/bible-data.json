@@ -1,0 +1,33 @@
+{
+  "language": "quc",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "QUCPMC",
+  "filesets": {
+    "audio": {
+      "QUJPMCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUJPMCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "QUJPMCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUJPMCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "QUJPMCN2DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUJPMCN2DA_timing.json"
+        ]
+      }
+    }
+  }
+}

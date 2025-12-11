@@ -1,0 +1,22 @@
+{
+  "language": "cwa",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "syncable",
+  "distinct_id": "CWAWYI",
+  "filesets": {
+    "audio": {
+      "CWAWYIN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "CWAWYIN_ET-usx": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

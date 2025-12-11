@@ -1,0 +1,19 @@
+{
+  "language": "ded",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DEDWYI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "DEDWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DEDWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

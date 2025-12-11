@@ -1,0 +1,19 @@
+{
+  "language": "som",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SOMM20",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SOMM20": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SOMM20.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

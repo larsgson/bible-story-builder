@@ -1,0 +1,33 @@
+{
+  "language": "kjc",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KJCACC",
+  "filesets": {
+    "audio": {
+      "KJCACCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJCACCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KJCACCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJCACCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KJCACCN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KJCACCN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

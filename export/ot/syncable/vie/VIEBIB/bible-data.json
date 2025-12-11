@@ -1,0 +1,30 @@
+{
+  "language": "vie",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "VIEBIB",
+  "filesets": {
+    "audio": {
+      "VIEBIBO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_VIEBIBO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "VIEBIBO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_VIEBIBO_ET.txt"
+        ]
+      },
+      "VIEBIB": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

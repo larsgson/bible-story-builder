@@ -1,0 +1,26 @@
+{
+  "language": "nhi",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NHIWBT",
+  "filesets": {
+    "audio": {
+      "NHIWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NHIWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NHIWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NHIWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

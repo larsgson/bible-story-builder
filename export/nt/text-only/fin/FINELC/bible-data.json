@@ -1,0 +1,19 @@
+{
+  "language": "fin",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "FINELC",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FINELCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FINELCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

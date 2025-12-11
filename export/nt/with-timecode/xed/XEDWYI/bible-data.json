@@ -1,0 +1,33 @@
+{
+  "language": "xed",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "XEDWYI",
+  "filesets": {
+    "audio": {
+      "XEDWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XEDWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "XEDWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XEDWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "XEDWYIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_XEDWYIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

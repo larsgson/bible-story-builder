@@ -1,0 +1,19 @@
+{
+  "language": "dje",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "DJEBSC",
+  "filesets": {
+    "audio": {
+      "DJEABCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DJEABCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

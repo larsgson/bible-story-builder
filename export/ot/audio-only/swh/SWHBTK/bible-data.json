@@ -1,0 +1,19 @@
+{
+  "language": "swh",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SWHBTK",
+  "filesets": {
+    "audio": {
+      "SWHBTKO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SWHBTKO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

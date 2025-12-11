@@ -1,0 +1,19 @@
+{
+  "language": "ita",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ITALND",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ITALND": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ITALND.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "lam",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LAMUBS",
+  "filesets": {
+    "audio": {
+      "LAMBSZN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LAMBSZN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

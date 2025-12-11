@@ -1,0 +1,33 @@
+{
+  "language": "bos",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BOSKZB",
+  "filesets": {
+    "audio": {
+      "BOSKZBN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BOSKZBN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BOSKZBN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BOSKZBN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BOSKZBN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BOSKZBN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

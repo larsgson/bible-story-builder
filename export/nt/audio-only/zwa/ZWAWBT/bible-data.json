@@ -1,0 +1,19 @@
+{
+  "language": "zwa",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "ZWAWBT",
+  "filesets": {
+    "audio": {
+      "ZWAWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZWAWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "cag",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "CAGSBP",
+  "filesets": {
+    "audio": {
+      "CAGSBPN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CAGSBPN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

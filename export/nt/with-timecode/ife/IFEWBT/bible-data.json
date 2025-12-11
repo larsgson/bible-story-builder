@@ -1,0 +1,33 @@
+{
+  "language": "ife",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "IFEWBT",
+  "filesets": {
+    "audio": {
+      "IFEWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IFEWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "IFEWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IFEWBT.txt"
+        ]
+      }
+    },
+    "timing": {
+      "IFEWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_IFEWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

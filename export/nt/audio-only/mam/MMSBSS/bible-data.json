@@ -1,0 +1,19 @@
+{
+  "language": "mam",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MMSBSS",
+  "filesets": {
+    "audio": {
+      "MMSBSSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MMSBSSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

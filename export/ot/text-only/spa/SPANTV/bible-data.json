@@ -1,0 +1,19 @@
+{
+  "language": "spa",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SPANTV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SPANTVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_SPANTVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "mnw",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MNWPDV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MNWPDVO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MNWPDVO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

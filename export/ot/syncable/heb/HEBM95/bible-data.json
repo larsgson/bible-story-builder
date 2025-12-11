@@ -1,0 +1,26 @@
+{
+  "language": "heb",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "HEBM95",
+  "filesets": {
+    "audio": {
+      "HBRHMTO2DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HBRHMTO2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HBRHMTO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_HBRHMTO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

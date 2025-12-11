@@ -1,0 +1,19 @@
+{
+  "language": "thr",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "THRDPI",
+  "filesets": {
+    "audio": {
+      "THRDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_THRDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

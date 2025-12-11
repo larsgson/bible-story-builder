@@ -1,0 +1,26 @@
+{
+  "language": "syb",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "SYBTAP",
+  "filesets": {
+    "audio": {
+      "SYBTAPN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SYBTAPN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SYBTAPN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SYBTAPN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

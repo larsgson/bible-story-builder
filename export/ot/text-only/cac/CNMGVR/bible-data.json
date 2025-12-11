@@ -1,0 +1,19 @@
+{
+  "language": "cac",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CNMGVR",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CNMGVR": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_CNMGVR.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "language": "kfp",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "KFPWIN",
+  "filesets": {
+    "audio": {
+      "KFPWINN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFPWINN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KFPWINN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFPWINN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "KFPWINN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KFPWINN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

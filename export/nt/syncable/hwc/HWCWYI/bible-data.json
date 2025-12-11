@@ -1,0 +1,26 @@
+{
+  "language": "hwc",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "HWCWYI",
+  "filesets": {
+    "audio": {
+      "HWCWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HWCWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "HWCWYI": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_HWCWYI.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

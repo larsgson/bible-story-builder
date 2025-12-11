@@ -1,0 +1,19 @@
+{
+  "language": "gax",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "GAXBSK",
+  "filesets": {
+    "audio": {
+      "GA1BSKN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GA1BSKN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

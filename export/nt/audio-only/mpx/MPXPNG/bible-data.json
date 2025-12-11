@@ -1,0 +1,19 @@
+{
+  "language": "mpx",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "syncable",
+  "distinct_id": "MPXPNG",
+  "filesets": {
+    "audio": {
+      "MPXPNGN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MPXPNGN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

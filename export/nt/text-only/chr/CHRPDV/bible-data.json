@@ -1,0 +1,19 @@
+{
+  "language": "chr",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "CHRPDV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "CHRPDV": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CHRPDV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

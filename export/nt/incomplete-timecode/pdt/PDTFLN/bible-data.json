@@ -1,0 +1,26 @@
+{
+  "language": "pdt",
+  "canon": "NT",
+  "category": "incomplete-timecode",
+  "original_category": "incomplete-timecode",
+  "distinct_id": "PDTFLN",
+  "filesets": {
+    "audio": {
+      "PDTFLNN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PDTFLNN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {
+      "PDTFLNN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PDTFLNN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

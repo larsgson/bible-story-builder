@@ -1,0 +1,26 @@
+{
+  "language": "ben",
+  "canon": "OT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BNGDIP",
+  "filesets": {
+    "audio": {
+      "BNGDIPO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BNGDIPO1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BNGDIPO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_BNGDIPO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

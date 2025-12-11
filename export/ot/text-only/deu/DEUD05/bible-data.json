@@ -1,0 +1,19 @@
+{
+  "language": "deu",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DEUD05",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GERD05": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GERD05.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

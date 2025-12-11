@@ -1,0 +1,19 @@
+{
+  "language": "mek",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MEKPNG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MEKPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MEKPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

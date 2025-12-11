@@ -1,0 +1,26 @@
+{
+  "language": "tbl",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "with-timecode",
+  "distinct_id": "TBLWBT",
+  "filesets": {
+    "audio": {
+      "TBLWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TBLWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TBLWYIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TBLWYIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

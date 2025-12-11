@@ -1,0 +1,26 @@
+{
+  "language": "mar",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MARWTC",
+  "filesets": {
+    "audio": {
+      "MARWTCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MARWTCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MARWTC": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MARWTC.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

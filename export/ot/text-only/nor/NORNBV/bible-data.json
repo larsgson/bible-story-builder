@@ -1,0 +1,19 @@
+{
+  "language": "nor",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NORNBV",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NORNBV": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_NORNBV.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

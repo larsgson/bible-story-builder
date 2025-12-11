@@ -1,0 +1,19 @@
+{
+  "language": "fra",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "FRNO96",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "FRNO96": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_FRNO96.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "language": "azj",
+  "canon": "OT",
+  "category": "failed",
+  "original_category": "text-only",
+  "distinct_id": "AZEBSA",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "AZ1BSA": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

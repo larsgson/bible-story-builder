@@ -1,0 +1,19 @@
+{
+  "language": "quc",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "QUCBSG",
+  "filesets": {
+    "audio": {
+      "QUCBSGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_QUCBSGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

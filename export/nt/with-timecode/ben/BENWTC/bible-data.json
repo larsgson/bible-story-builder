@@ -1,0 +1,33 @@
+{
+  "language": "ben",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BENWTC",
+  "filesets": {
+    "audio": {
+      "BNGWTCN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGWTCN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BNGWTCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGWTCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BNGWTCN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BNGWTCN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

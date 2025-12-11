@@ -1,0 +1,33 @@
+{
+  "language": "acr",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "ACCIBS",
+  "filesets": {
+    "audio": {
+      "ACCIBSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ACCIBSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ACCIBSN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ACCIBSN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "ACCIBSN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ACCIBSN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

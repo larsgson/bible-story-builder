@@ -1,0 +1,19 @@
+{
+  "language": "kir",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KIRWBT",
+  "filesets": {
+    "audio": {
+      "KIRBSKN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KIRBSKN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

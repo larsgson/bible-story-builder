@@ -1,0 +1,24 @@
+{
+  "language": "zai",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "ZAITBL",
+  "filesets": {
+    "audio": {
+      "ZAITBLN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "ZAITBLN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZAITBLN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

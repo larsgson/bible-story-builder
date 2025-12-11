@@ -1,0 +1,19 @@
+{
+  "language": "jow",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "JOWWYI",
+  "filesets": {
+    "audio": {
+      "JOWWYIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JOWWYIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

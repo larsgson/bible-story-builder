@@ -1,0 +1,24 @@
+{
+  "language": "pir",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "PIRWBT",
+  "filesets": {
+    "audio": {
+      "PIRWBTN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "PIRWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PIRWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

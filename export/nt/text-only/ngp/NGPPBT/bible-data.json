@@ -1,0 +1,19 @@
+{
+  "language": "ngp",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "NGPPBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "NGPPBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NGPPBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

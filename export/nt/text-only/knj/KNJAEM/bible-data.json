@@ -1,0 +1,19 @@
+{
+  "language": "knj",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "KNJAEM",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "KNJAEM": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KNJAEM.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

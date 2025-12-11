@@ -1,0 +1,19 @@
+{
+  "language": "ino",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "INOTBL",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "INOTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_INOTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

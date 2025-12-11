@@ -1,0 +1,26 @@
+{
+  "language": "myb",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "MYBBSC",
+  "filesets": {
+    "audio": {
+      "MYBABTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYBABTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "MYBABT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MYBABT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

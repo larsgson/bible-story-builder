@@ -1,0 +1,19 @@
+{
+  "language": "xon",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "XONDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "XONDPIO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_XONDPIO_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

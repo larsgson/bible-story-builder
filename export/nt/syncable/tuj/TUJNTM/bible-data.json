@@ -1,0 +1,26 @@
+{
+  "language": "tuj",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "TUJNTM",
+  "filesets": {
+    "audio": {
+      "TUJNTMN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TUJNTMN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "TUJNTMN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_TUJNTMN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

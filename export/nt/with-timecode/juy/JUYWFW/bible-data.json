@@ -1,0 +1,33 @@
+{
+  "language": "juy",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "JUYWFW",
+  "filesets": {
+    "audio": {
+      "JUYWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JUYWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "JUYWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JUYWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "JUYWFWN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_JUYWFWN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

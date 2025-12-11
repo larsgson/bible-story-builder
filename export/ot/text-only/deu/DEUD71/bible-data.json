@@ -1,0 +1,19 @@
+{
+  "language": "deu",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DEUD71",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GERD71": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_GERD71.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

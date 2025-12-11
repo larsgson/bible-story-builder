@@ -1,0 +1,19 @@
+{
+  "language": "rmy",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "RMYWFT",
+  "filesets": {
+    "audio": {
+      "RMYWFTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RMYWFTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

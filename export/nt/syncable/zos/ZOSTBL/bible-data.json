@@ -1,0 +1,26 @@
+{
+  "language": "zos",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZOSTBL",
+  "filesets": {
+    "audio": {
+      "ZOSTBLN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZOSTBLN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZOSTBL": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZOSTBL.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

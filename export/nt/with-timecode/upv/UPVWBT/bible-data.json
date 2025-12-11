@@ -1,0 +1,33 @@
+{
+  "language": "upv",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "UPVWBT",
+  "filesets": {
+    "audio": {
+      "UPVWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UPVWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "UPVWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UPVWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "UPVWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_UPVWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

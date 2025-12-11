@@ -1,0 +1,19 @@
+{
+  "language": "dtb",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "DTBWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "DTBWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_DTBWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

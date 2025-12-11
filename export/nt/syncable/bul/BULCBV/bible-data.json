@@ -1,0 +1,26 @@
+{
+  "language": "bul",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "BULCBV",
+  "filesets": {
+    "audio": {
+      "BULCBVN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BULCBVN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BULCBVN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BULCBVN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

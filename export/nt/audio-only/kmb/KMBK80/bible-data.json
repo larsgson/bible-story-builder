@@ -1,0 +1,19 @@
+{
+  "language": "kmb",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "KMBK80",
+  "filesets": {
+    "audio": {
+      "KMBUBSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KMBUBSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

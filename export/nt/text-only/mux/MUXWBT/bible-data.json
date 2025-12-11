@@ -1,0 +1,19 @@
+{
+  "language": "mux",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "MUXWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "MUXWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_MUXWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

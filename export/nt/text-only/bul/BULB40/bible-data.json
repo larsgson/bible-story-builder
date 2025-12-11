@@ -1,0 +1,19 @@
+{
+  "language": "bul",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "BULB40",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "BULB40": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BULB40.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

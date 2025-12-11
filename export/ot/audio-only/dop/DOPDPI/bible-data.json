@@ -1,0 +1,19 @@
+{
+  "language": "dop",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "DOPDPI",
+  "filesets": {
+    "audio": {
+      "DOPDPIO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_DOPDPIO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

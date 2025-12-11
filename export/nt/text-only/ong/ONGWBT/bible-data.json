@@ -1,0 +1,19 @@
+{
+  "language": "ong",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "ONGWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ONGWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ONGWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

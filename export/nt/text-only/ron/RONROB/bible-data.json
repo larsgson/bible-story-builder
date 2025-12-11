@@ -1,0 +1,19 @@
+{
+  "language": "ron",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "RONROB",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "RONROB": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_RONROB.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

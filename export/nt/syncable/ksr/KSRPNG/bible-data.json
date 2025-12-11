@@ -1,0 +1,26 @@
+{
+  "language": "ksr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "KSRPNG",
+  "filesets": {
+    "audio": {
+      "KSRPNGN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSRPNGN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "KSRPNG": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_KSRPNG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

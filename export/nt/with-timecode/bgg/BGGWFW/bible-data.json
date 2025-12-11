@@ -1,0 +1,33 @@
+{
+  "language": "bgg",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BGGWFW",
+  "filesets": {
+    "audio": {
+      "BGGWFWN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGGWFWN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BGGWFWN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGGWFWN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BGGWFWN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BGGWFWN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

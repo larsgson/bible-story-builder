@@ -1,0 +1,22 @@
+{
+  "language": "sbp",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "syncable",
+  "distinct_id": "SBPWBT",
+  "filesets": {
+    "audio": {
+      "SBPWBTN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "SBPWBTN_ET-usx": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

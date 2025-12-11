@@ -1,0 +1,33 @@
+{
+  "language": "srx",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "SRXDPI",
+  "filesets": {
+    "audio": {
+      "SRXDPIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRXDPIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "SRXDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRXDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "SRXDPIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRXDPIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

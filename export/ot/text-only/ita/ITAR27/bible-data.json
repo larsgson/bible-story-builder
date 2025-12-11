@@ -1,0 +1,19 @@
+{
+  "language": "ita",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "ITAR27",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "ITAR27": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_ITAR27.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

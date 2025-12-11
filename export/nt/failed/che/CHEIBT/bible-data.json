@@ -1,0 +1,22 @@
+{
+  "language": "che",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "with-timecode",
+  "distinct_id": "CHEIBT",
+  "filesets": {
+    "audio": {
+      "CHEIBTN1DA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "CHEIBT": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

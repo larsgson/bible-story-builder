@@ -1,0 +1,19 @@
+{
+  "language": "bdt",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "BDTACA",
+  "filesets": {
+    "audio": {
+      "BDTACAN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BDTACAN1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

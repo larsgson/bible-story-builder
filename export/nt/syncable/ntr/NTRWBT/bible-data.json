@@ -1,0 +1,26 @@
+{
+  "language": "ntr",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "NTRWBT",
+  "filesets": {
+    "audio": {
+      "NTRWBTN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NTRWBTN2DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "NTRWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_NTRWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "language": "pdt",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "PDTFLN",
+  "filesets": {
+    "audio": {
+      "PDTFLNO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_PDTFLNO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

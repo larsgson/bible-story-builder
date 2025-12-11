@@ -1,0 +1,33 @@
+{
+  "language": "cmi",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "CMIWBT",
+  "filesets": {
+    "audio": {
+      "CMIWBTN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CMIWBTN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "CMIWBTN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CMIWBTN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "CMIWBTN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_CMIWBTN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

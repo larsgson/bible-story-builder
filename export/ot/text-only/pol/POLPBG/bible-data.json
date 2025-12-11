@@ -1,0 +1,19 @@
+{
+  "language": "pol",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "POLPBG",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "POLPBG": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_POLPBG.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

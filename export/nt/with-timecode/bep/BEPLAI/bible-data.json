@@ -1,0 +1,33 @@
+{
+  "language": "bep",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "BEPLAI",
+  "filesets": {
+    "audio": {
+      "BEPLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BEPLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "BEPLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BEPLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "BEPLAIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_BEPLAIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

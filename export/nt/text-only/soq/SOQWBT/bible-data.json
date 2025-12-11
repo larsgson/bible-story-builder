@@ -1,0 +1,19 @@
+{
+  "language": "soq",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "SOQWBT",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "SOQWBT": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SOQWBT.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

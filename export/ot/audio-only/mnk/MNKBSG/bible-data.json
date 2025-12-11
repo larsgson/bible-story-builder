@@ -1,0 +1,19 @@
+{
+  "language": "mnk",
+  "canon": "OT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "MNKBSG",
+  "filesets": {
+    "audio": {
+      "MNKBSGO1DA": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_MNKBSGO1DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

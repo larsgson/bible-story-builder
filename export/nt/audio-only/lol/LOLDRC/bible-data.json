@@ -1,0 +1,19 @@
+{
+  "language": "lol",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "LOLDRC",
+  "filesets": {
+    "audio": {
+      "LOLDRCN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LOLDRCN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "language": "pcm",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "with-timecode",
+  "distinct_id": "PCMTSC",
+  "filesets": {
+    "audio": {
+      "PCMTSCN2SA": {
+        "status": "failed",
+        "error": "no_timing_available"
+      }
+    },
+    "text": {
+      "PCMTSCN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_PCMTSCN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

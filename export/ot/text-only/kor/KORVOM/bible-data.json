@@ -1,0 +1,28 @@
+{
+  "language": "kor",
+  "canon": "OT",
+  "category": "text-only",
+  "original_category": "syncable",
+  "distinct_id": "KORVOM",
+  "filesets": {
+    "audio": {
+      "KO2VOMO1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {
+      "KO2VOMO": {
+        "status": "available",
+        "files": [
+          "PSA/PSA_117_KO2VOMO_ET.txt"
+        ]
+      },
+      "KO2VOM": {
+        "status": "failed",
+        "error": "no_text_available"
+      }
+    },
+    "timing": {}
+  }
+}

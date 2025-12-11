@@ -1,0 +1,26 @@
+{
+  "language": "zne",
+  "canon": "NT",
+  "category": "syncable",
+  "original_category": "syncable",
+  "distinct_id": "ZNEZNE",
+  "filesets": {
+    "audio": {
+      "ZNEBSSN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZNEBSSN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "ZNEBSS": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_ZNEBSS.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

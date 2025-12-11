@@ -1,0 +1,19 @@
+{
+  "language": "srr",
+  "canon": "NT",
+  "category": "audio-only",
+  "original_category": "audio-only",
+  "distinct_id": "SRRFUL",
+  "filesets": {
+    "audio": {
+      "SRRBSSN2DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_SRRBSSN2DA.mp3"
+        ]
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}

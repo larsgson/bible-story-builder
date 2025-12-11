@@ -1,0 +1,33 @@
+{
+  "language": "lbw",
+  "canon": "NT",
+  "category": "with-timecode",
+  "original_category": "with-timecode",
+  "distinct_id": "LBWLAI",
+  "filesets": {
+    "audio": {
+      "LBWLAIN1DA": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBWLAIN1DA.mp3"
+        ]
+      }
+    },
+    "text": {
+      "LBWLAIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBWLAIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {
+      "LBWLAIN1DA_timing": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_LBWLAIN1DA_timing.json"
+        ]
+      }
+    }
+  }
+}

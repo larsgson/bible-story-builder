@@ -1,0 +1,19 @@
+{
+  "language": "gjn",
+  "canon": "NT",
+  "category": "text-only",
+  "original_category": "text-only",
+  "distinct_id": "GJNDPI",
+  "filesets": {
+    "audio": {},
+    "text": {
+      "GJNDPIN": {
+        "status": "available",
+        "files": [
+          "REV/REV_015_GJNDPIN_ET.txt"
+        ]
+      }
+    },
+    "timing": {}
+  }
+}

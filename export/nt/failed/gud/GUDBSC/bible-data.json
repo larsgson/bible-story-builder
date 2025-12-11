@@ -1,0 +1,17 @@
+{
+  "language": "gud",
+  "canon": "NT",
+  "category": "failed",
+  "original_category": "audio-only",
+  "distinct_id": "GUDBSC",
+  "filesets": {
+    "audio": {
+      "GUDBSCN1DA": {
+        "status": "failed",
+        "error": "no_audio_available"
+      }
+    },
+    "text": {},
+    "timing": {}
+  }
+}
