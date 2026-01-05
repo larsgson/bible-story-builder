@@ -1,0 +1,1128 @@
+{
+  "template_id": "OBS",
+  "summary": {
+    "total_errors": 0,
+    "total_warnings": 180,
+    "languages_with_errors": 0,
+    "languages_with_warnings": 97
+  },
+  "errors": {},
+  "warnings": {
+    "ace": {
+      "ACEIBS/AC1IBSN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "adj": {
+      "ADJWBT/ADJWBTN2SA": [
+        {
+          "ref": "LUK1:8",
+          "details": "no verses in range, using verses 7 and 10 as boundary approximation"
+        }
+      ]
+    },
+    "akp": {
+      "AKPWBT/AKPWBTN1DA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "avu": {
+      "AVUWBT/AVUWBTN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 22 timestamp"
+        }
+      ]
+    },
+    "bbb": {
+      "BBBWBT/BBBWBTN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 14 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 14 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 14 timestamp"
+        }
+      ]
+    },
+    "bgg": {
+      "BGGWFW/BGGWFWN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "bgr": {
+      "BGRBBS/BGRBBSN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 11 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 11 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 11 timestamp"
+        }
+      ]
+    },
+    "bis": {
+      "BISBSP/BISBSPN2SA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "bkq": {
+      "BKQWYI/BKQWYIN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "boj": {
+      "BOJWBT/BOJWBTN1DA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "missing verses: 7, timestamps repeated"
+        }
+      ]
+    },
+    "bor": {
+      "BORWYI/BORWYIN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "bov": {
+      "BOVWBT/BOVWBTN1DA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "btd": {
+      "BTDLAI/BTDLAIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "cab": {
+      "CABNVS/CABNVSN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "cap": {
+      "CAPSBB/CAPSBBN2DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "cbs": {
+      "CBSBSP/CBSBSPN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 23 timestamp"
+        }
+      ]
+    },
+    "cbu": {
+      "CBUWBT/CBUTBLN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 21 timestamp"
+        }
+      ]
+    },
+    "ceb": {
+      "CEBRPV/CEBRPVN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "cul": {
+      "CULWBT/CULWBTN1DA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "missing verses: 7, timestamps repeated"
+        }
+      ]
+    },
+    "dnw": {
+      "DNWOWM/DNWLAIN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "dtp": {
+      "DTPBSM/DTPBSMN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "dug": {
+      "DUGBTL/DUGBTLN2SA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "missing verses: 7, timestamps repeated"
+        }
+      ]
+    },
+    "enq": {
+      "ENQPNG/ENQPNGN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "gmv": {
+      "GMVTBL/GMVTBLN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "gwi": {
+      "GWIG11/GWIWBTN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "hla": {
+      "HLAPNG/HLAPNGN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "huu": {
+      "HUUTBL/HUUTBLN1DA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "missing verses: 7, timestamps repeated"
+        }
+      ]
+    },
+    "ife": {
+      "IFEWBT/IFEWBTN1DA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "ify": {
+      "IFYWBT/IFYWBTN2SA": [
+        {
+          "ref": "LUK2:8-11",
+          "details": "missing verses: 10,11, timestamps repeated"
+        }
+      ]
+    },
+    "ilo": {
+      "ILONGN/ILORPVN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "ind": {
+      "INDTSI/INZTSIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "ipi": {
+      "IPIPNG/IPIPNGN2SA": [
+        {
+          "ref": "LUK1:57",
+          "details": "no verses in range, no verses after range, repeating verse 55 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "ixl": {
+      "IXLCWB/IX1WBTN1DA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "missing verses: 6, timestamps repeated"
+        }
+      ]
+    },
+    "jiv": {
+      "JIVAIE/JIVAIEN2SA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "jvn": {
+      "JVNTBL/JVNTBLN2DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 23 timestamp"
+        }
+      ]
+    },
+    "kan": {
+      "KANDPI/KANDPIN1DA": [
+        {
+          "ref": "LUK2:12-14",
+          "details": "missing verses: 14, timestamps repeated"
+        }
+      ]
+    },
+    "kbr": {
+      "KBRSIM/KBRSIMN2DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "kfx": {
+      "KFXKOS/KFXKOSN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "kkl": {
+      "KKLYPM/KKLYPMN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "kmu": {
+      "KMUTBL/KMUTBLN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 23 timestamp"
+        }
+      ]
+    },
+    "kzf": {
+      "KZFLAI/KZFLAIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        }
+      ]
+    },
+    "lao": {
+      "LAOUBS/LAOUBSN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "lhu": {
+      "LHUTBS/LHUTBSN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "lip": {
+      "LIPWBT/LIPWBTN2SA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "lns": {
+      "LNSCAB/LNSCABN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        }
+      ]
+    },
+    "mad": {
+      "MADIBS/MADIBSN2SA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "mak": {
+      "MAKLAI/MAKLAIN2SA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "no verses in range, using verses 5 and 8 as boundary approximation"
+        }
+      ]
+    },
+    "mal": {
+      "MALBIB/MALBIBN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ],
+      "MALDIP/MALDIPN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ],
+      "MALNIV/MJSNIVN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "mar": {
+      "MARDPI/MARDPIO1DA": [
+        {
+          "ref": "GEN1:14-18",
+          "details": "missing verses: 18, timestamps repeated"
+        }
+      ]
+    },
+    "mbc": {
+      "MBCWBT/MBCMVAN1DA": [
+        {
+          "ref": "LUK1:8",
+          "details": "no verses in range, using verses 7 and 9 as boundary approximation"
+        }
+      ]
+    },
+    "mbj": {
+      "MBJWBT/MBJWBTN1DA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 39, timestamps repeated"
+        }
+      ]
+    },
+    "mda": {
+      "MDAWBT/MDAWBTN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "mfz": {
+      "MFZBSS/MFZBSSN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "mir": {
+      "MIRTBL/MIRTBLN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 22 timestamp"
+        }
+      ]
+    },
+    "mit": {
+      "MITTBL/MITTBLN2SA": [
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "mjv": {
+      "MJVNLC/MJVNLCN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "mog": {
+      "MOGLAI/MOGLAIN2SA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "mqf": {
+      "MQFLAI/MQFLAIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "muh": {
+      "MUHWBT/MUHWBTN2SA": [
+        {
+          "ref": "LUK1:26",
+          "details": "no verses in range, using verses 25 and 27 as boundary approximation"
+        },
+        {
+          "ref": "LUK1:39-41",
+          "details": "missing verses: 41, timestamps repeated"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 24, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:1-2",
+          "details": "missing verses: 1, timestamps repeated"
+        }
+      ]
+    },
+    "muv": {
+      "MUVNLC/MUVNLCN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "myu": {
+      "MYUWBT/MYUWBTN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "mzw": {
+      "MZWNVS/MZWNVSN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 11 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 11 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 11 timestamp"
+        }
+      ]
+    },
+    "ncj": {
+      "NCJTBL/NCJTBLN2SA": [
+        {
+          "ref": "LUK2:6-7",
+          "details": "missing verses: 7, timestamps repeated"
+        }
+      ]
+    },
+    "npy": {
+      "NPYLAI/NPYLAIN2SA": [
+        {
+          "ref": "LUK2:8-11",
+          "details": "missing verses: 8, timestamps repeated"
+        }
+      ]
+    },
+    "pao": {
+      "PAONAB/PAONABN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "pjt": {
+      "PJTBSA/PJTBSAN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "pkr": {
+      "PKRNLC/PKRNLCN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "pwm": {
+      "PWMGPA/PWMGPAN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "rgu": {
+      "RGUUBB/RGUUBBN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 15 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 15 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 15 timestamp"
+        }
+      ]
+    },
+    "rmo": {
+      "RMORAM/RMORAMN2SA": [
+        {
+          "ref": "LUK1:8",
+          "details": "no verses in range, using verses 7 and 9 as boundary approximation"
+        },
+        {
+          "ref": "LUK1:26",
+          "details": "no verses in range, using verses 25 and 27 as boundary approximation"
+        }
+      ]
+    },
+    "saj": {
+      "SAJBSI/SAJLAIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "sch": {
+      "SCHWFW/SCHWFWN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "sne": {
+      "SNECAK/SNECAKN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "stb": {
+      "STBTAP/STBTAPN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "tbc": {
+      "TBCPNG/TBCPNGN2SA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "tbk": {
+      "TBKWBT/TBKWBTN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "tel": {
+      "TELDPI/TELDPIN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ],
+      "TELWTC/TCWWTCN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "tfr": {
+      "TFRWBT/TFRWBTN2SA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "tgj": {
+      "TGJWFW/TGJWFWN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "tgk": {
+      "TGKWBT/TGKWBTN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "tld": {
+      "TLDLAI/TLDLAIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "tnr": {
+      "TNRNTM/TNRNTMN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "tob": {
+      "TOBBSA/TOBBSAN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 22 timestamp"
+        }
+      ]
+    },
+    "toj": {
+      "TOJBSM/TOJBSMN1DA": [
+        {
+          "ref": "MAT1:20-21",
+          "details": "missing verses: 21, timestamps repeated"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 20 timestamp"
+        }
+      ]
+    },
+    "tuk": {
+      "TUKIBT/TUKIBTN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ],
+      "TUKTTV/TUKTTVN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "tur": {
+      "TURBST/TRKBSTN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "tvt": {
+      "TVTWFW/TVTWFWN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "txq": {
+      "TXQWYI/TXQWYIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 15 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 15 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 15 timestamp"
+        }
+      ]
+    },
+    "tyv": {
+      "TYVIBT/TYVIBTN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "udg": {
+      "UDGNLC/UDGNLCN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "urb": {
+      "URBWBT/URBWBTN1DA": [
+        {
+          "ref": "LUK1:8",
+          "details": "no verses in range, using verses 7 and 9 as boundary approximation"
+        },
+        {
+          "ref": "LUK2:1",
+          "details": "no verses in range, no verses before range, using timestamp 0 and verse 3"
+        }
+      ]
+    },
+    "wal": {
+      "WALSIM/WA1SIMN2DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "xal": {
+      "XALIBT/XALIBTN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "xsu": {
+      "XSUMEV/XSUMEVN2DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "yea": {
+      "YEANLC/YEANLCN1DA": [
+        {
+          "ref": "MAT1:24-25",
+          "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "yka": {
+      "YKAYKA/YKAWYIN1DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "zlm": {
+      "ZLMTMV/MLYBSMN2DA": [
+        {
+          "ref": "MAT1:18-19",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:20-21",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        },
+        {
+          "ref": "MAT1:24-25",
+          "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    }
+  }
+}

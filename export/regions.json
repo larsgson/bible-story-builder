@@ -1,0 +1,2504 @@
+{
+  "Afghanistan": {
+    "l": [
+      "bal",
+      "bgp",
+      "bsh",
+      "haz",
+      "kho",
+      "pbu",
+      "prd",
+      "prs",
+      "tgk",
+      "tuk",
+      "uzn",
+      "ydd"
+    ],
+    "trade": [
+      "prs",
+      "pbu"
+    ],
+    "regional": [
+      "uzn",
+      "tuk"
+    ]
+  },
+  "Algeria": {
+    "l": [
+      "arb",
+      "arq",
+      "fra",
+      "kab",
+      "shy"
+    ],
+    "trade": [
+      "arb",
+      "fra"
+    ],
+    "regional": [
+      "arq"
+    ]
+  },
+  "Amharic_Region": {
+    "l": [
+      "aar",
+      "amh",
+      "gax",
+      "gaz",
+      "gmv",
+      "hae",
+      "hdy",
+      "orm",
+      "sgw",
+      "som",
+      "tir"
+    ],
+    "trade": [
+      "amh"
+    ],
+    "regional": [
+      "orm",
+      "tir"
+    ]
+  },
+  "Angola": {
+    "l": [
+      "kmb",
+      "kon",
+      "lun",
+      "ndo",
+      "por",
+      "umb"
+    ],
+    "trade": [
+      "por"
+    ],
+    "regional": [
+      "umb",
+      "kmb"
+    ]
+  },
+  "Arabic_Region": {
+    "l": [
+      "acm",
+      "aii",
+      "apc",
+      "apd",
+      "arb",
+      "arq",
+      "ary",
+      "grr",
+      "irk",
+      "tzm"
+    ],
+    "trade": [
+      "arb"
+    ],
+    "regional": [
+      "ary",
+      "arz",
+      "apc"
+    ]
+  },
+  "Arabic_World": {
+    "l": [
+      "aao",
+      "abh",
+      "aeb",
+      "afb",
+      "ajp",
+      "apc",
+      "apd",
+      "arb",
+      "arq",
+      "ary",
+      "ars",
+      "arz",
+      "ayl",
+      "ayp",
+      "bbz",
+      "mey",
+      "pga",
+      "shv",
+      "shy",
+      "ssh",
+      "shu"
+    ],
+    "trade": [
+      "arb"
+    ],
+    "regional": [
+      "ary",
+      "arz",
+      "apc",
+      "ajp",
+      "aeb",
+      "acm"
+    ]
+  },
+  "Argentina": {
+    "l": [
+      "crt",
+      "gug",
+      "qul",
+      "spa"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "gug"
+    ]
+  },
+  "Armenia": {
+    "l": [
+      "hye",
+      "kur",
+      "rus"
+    ],
+    "trade": [
+      "hye"
+    ],
+    "regional": [
+      "rus"
+    ]
+  },
+  "Azerbaijan": {
+    "l": [
+      "azj",
+      "aii",
+      "ava",
+      "kur",
+      "tat",
+      "tly"
+    ],
+    "trade": [
+      "azj"
+    ]
+  },
+  "Bangladesh": {
+    "l": [
+      "asm",
+      "ben",
+      "cnh",
+      "rhg"
+    ],
+    "trade": [
+      "ben",
+      "eng"
+    ]
+  },
+  "Belgium": {
+    "l": [
+      "deu",
+      "fra",
+      "nld"
+    ],
+    "trade": [
+      "nld",
+      "fra"
+    ],
+    "educational": [
+      "nld",
+      "fra",
+      "deu"
+    ]
+  },
+  "Bengali_Region": {
+    "l": [
+      "ben",
+      "mbc",
+      "pbc",
+      "rhg",
+      "unr",
+      "wap"
+    ],
+    "trade": [
+      "ben"
+    ],
+    "regional": [
+      "asm"
+    ]
+  },
+  "Bhutan": {
+    "l": [
+      "dzo",
+      "lep",
+      "npi",
+      "tsj"
+    ],
+    "trade": [
+      "dzo",
+      "eng"
+    ]
+  },
+  "Bolivia": {
+    "l": [
+      "cax",
+      "gnw",
+      "gug",
+      "gui",
+      "gyr",
+      "ign",
+      "quh",
+      "qul",
+      "quz",
+      "tna",
+      "trn",
+      "yuz"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "qul",
+      "quz"
+    ]
+  },
+  "Botswana": {
+    "l": [
+      "afr",
+      "eng",
+      "ndc",
+      "tsn"
+    ],
+    "trade": [
+      "eng",
+      "tsn"
+    ],
+    "regional": [
+      "tsn"
+    ]
+  },
+  "Brazil": {
+    "l": [
+      "apu",
+      "bor",
+      "cul",
+      "gug",
+      "kay",
+      "kyz",
+      "myu",
+      "pab",
+      "pah",
+      "por",
+      "ter",
+      "tuo",
+      "xav",
+      "yrl"
+    ],
+    "trade": [
+      "por"
+    ],
+    "regional": [
+      "gug"
+    ]
+  },
+  "Brunei": {
+    "l": [
+      "eng",
+      "zsm"
+    ],
+    "trade": [
+      "zsm",
+      "eng"
+    ]
+  },
+  "Burkina_Faso": {
+    "l": [
+      "bm-bm",
+      "bwq",
+      "dyu",
+      "fra",
+      "ful",
+      "mos"
+    ],
+    "trade": [
+      "fra"
+    ],
+    "regional": [
+      "mos"
+    ]
+  },
+  "Burundi": {
+    "l": [
+      "fra",
+      "run",
+      "swh"
+    ],
+    "trade": [
+      "run",
+      "fra"
+    ],
+    "regional": [
+      "swh"
+    ]
+  },
+  "Cambodia": {
+    "l": [
+      "cja",
+      "kdt",
+      "khm",
+      "mnw"
+    ],
+    "trade": [
+      "khm"
+    ]
+  },
+  "Cameroon": {
+    "l": [
+      "bbj",
+      "bfd",
+      "bss",
+      "bum",
+      "bvb",
+      "byv",
+      "cak",
+      "dua",
+      "eng",
+      "ewo",
+      "fan",
+      "fra",
+      "ful",
+      "kkj",
+      "maf",
+      "mgo",
+      "mua",
+      "nnh",
+      "yav"
+    ],
+    "trade": [
+      "fra",
+      "eng"
+    ],
+    "regional": [
+      "ful"
+    ]
+  },
+  "Chile": {
+    "l": [
+      "arn",
+      "qul",
+      "rap",
+      "spa"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "China": {
+    "l": [
+      "cmn",
+      "yue",
+      "nan",
+      "hak",
+      "wuu",
+      "iii",
+      "kaz",
+      "kor",
+      "lzh",
+      "mnc",
+      "mon",
+      "uig",
+      "zha"
+    ],
+    "trade": [
+      "cmn",
+      "yue"
+    ]
+  },
+  "Chinese_Languages": {
+    "l": [
+      "cdo",
+      "cjy",
+      "cmn",
+      "cpx",
+      "czh",
+      "czo",
+      "gan",
+      "hak",
+      "hsn",
+      "lzh",
+      "mnp",
+      "nan",
+      "wuu",
+      "yue"
+    ],
+    "trade": [
+      "cmn",
+      "yue"
+    ],
+    "regional": [
+      "nan",
+      "hak",
+      "wuu"
+    ]
+  },
+  "Colombia": {
+    "l": [
+      "aca",
+      "arh",
+      "bsn",
+      "coe",
+      "cui",
+      "des",
+      "guc",
+      "guh",
+      "gum",
+      "gvc",
+      "ikk",
+      "inb",
+      "kog",
+      "kpc",
+      "pbb",
+      "pio",
+      "pir",
+      "sri",
+      "tnc"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Cuba": {
+    "l": [
+      "spa"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "DRC_Democratic_Republic_of_Congo": {
+    "l": [
+      "fra",
+      "kng",
+      "kon",
+      "lin",
+      "lol",
+      "lua",
+      "swh"
+    ],
+    "trade": [
+      "fra",
+      "lin",
+      "swh"
+    ],
+    "regional": [
+      "lin",
+      "swh",
+      "lua",
+      "kon"
+    ]
+  },
+  "Djibouti": {
+    "l": [
+      "aar",
+      "arb",
+      "fra",
+      "som"
+    ],
+    "trade": [
+      "fra",
+      "arb",
+      "som"
+    ],
+    "regional": [
+      "aar",
+      "som"
+    ]
+  },
+  "Dominican_Republic": {
+    "l": [
+      "spa"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Ecuador": {
+    "l": [
+      "acu",
+      "auc",
+      "cbi",
+      "jiv",
+      "kwi",
+      "qug",
+      "qxl"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "qug"
+    ]
+  },
+  "Egypt": {
+    "l": [
+      "arb",
+      "arz"
+    ],
+    "trade": [
+      "arz"
+    ]
+  },
+  "Eritrea": {
+    "l": [
+      "aar",
+      "arb",
+      "byn",
+      "ssy",
+      "tig",
+      "tir"
+    ],
+    "trade": [
+      "tir",
+      "arb"
+    ],
+    "regional": [
+      "tir",
+      "tig",
+      "aar"
+    ]
+  },
+  "Ethiopia": {
+    "l": [
+      "aar",
+      "agw",
+      "amh",
+      "bcq",
+      "bst",
+      "gax",
+      "gaz",
+      "gmv",
+      "gru",
+      "guq",
+      "hae",
+      "har",
+      "hdy",
+      "kbr",
+      "kcx",
+      "kxc",
+      "mdx",
+      "muz",
+      "orm",
+      "sgw",
+      "sid",
+      "sko",
+      "som",
+      "suq",
+      "tir",
+      "wal",
+      "xan"
+    ],
+    "trade": [
+      "amh"
+    ],
+    "regional": [
+      "orm",
+      "tir"
+    ]
+  },
+  "Fiji": {
+    "l": [
+      "eng",
+      "fij",
+      "hif"
+    ],
+    "trade": [
+      "eng",
+      "fij"
+    ]
+  },
+  "France": {
+    "l": [
+      "bre",
+      "cat",
+      "cos",
+      "eus",
+      "fra",
+      "oci"
+    ],
+    "trade": [
+      "fra"
+    ],
+    "regional": [
+      "bre",
+      "cat",
+      "cos",
+      "eus",
+      "oci"
+    ]
+  },
+  "French_Guiana": {
+    "l": [
+      "fra",
+      "gcr"
+    ],
+    "trade": [
+      "fra"
+    ],
+    "regional": [
+      "gcr"
+    ]
+  },
+  "French_Region": {
+    "l": [
+      "fon",
+      "fra",
+      "fuh",
+      "fuq",
+      "gkp",
+      "hat",
+      "kab",
+      "kng",
+      "ktu",
+      "kwy",
+      "las",
+      "mgq",
+      "mnk",
+      "pov",
+      "sag",
+      "shu",
+      "swc",
+      "wol"
+    ],
+    "trade": [
+      "fra"
+    ]
+  },
+  "Germany": {
+    "l": [
+      "deu",
+      "dsb",
+      "frr",
+      "frs",
+      "hsb",
+      "nds"
+    ],
+    "trade": [
+      "deu"
+    ]
+  },
+  "Ghana": {
+    "l": [
+      "ada",
+      "aka",
+      "eng",
+      "ewe",
+      "gaa"
+    ],
+    "trade": [
+      "eng"
+    ],
+    "regional": [
+      "aka",
+      "ewe"
+    ]
+  },
+  "Guatemala": {
+    "l": [
+      "acr",
+      "cak",
+      "cbi",
+      "kac",
+      "mam",
+      "mcb",
+      "mpd",
+      "tpt"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "cak"
+    ]
+  },
+  "Guyana": {
+    "l": [
+      "eng",
+      "wap"
+    ],
+    "trade": [
+      "eng"
+    ]
+  },
+  "Haiti": {
+    "l": [
+      "fra",
+      "hat"
+    ],
+    "trade": [
+      "hat",
+      "fra"
+    ]
+  },
+  "Hausa_Region": {
+    "l": [
+      "hau",
+      "jbu",
+      "kby",
+      "knc",
+      "nup",
+      "tiv"
+    ],
+    "trade": [
+      "hau"
+    ]
+  },
+  "Igbo_Region": {
+    "l": [
+      "ibo",
+      "iso",
+      "urh"
+    ],
+    "trade": [
+      "ibo"
+    ]
+  },
+  "India_Bengali-Assamese": {
+    "l": [
+      "adj",
+      "ald",
+      "asm",
+      "bdv",
+      "ben",
+      "btg",
+      "buu",
+      "gas",
+      "grg",
+      "grt",
+      "ike",
+      "kbc",
+      "kha",
+      "kxp",
+      "lus",
+      "mhu",
+      "mps",
+      "mrr",
+      "myx",
+      "npi",
+      "rah",
+      "rhg",
+      "unr",
+      "vah"
+    ],
+    "trade": [
+      "ben",
+      "asm"
+    ],
+    "literacy": [
+      "ben"
+    ]
+  },
+  "India_Chin-Kuki-Mizo": {
+    "l": [
+      "cbl",
+      "cek",
+      "cfm",
+      "cmr",
+      "cnw",
+      "ctd",
+      "cwe",
+      "hlt",
+      "lus",
+      "mni",
+      "ndh",
+      "pce",
+      "pck"
+    ],
+    "trade": [
+      "lus",
+      "mni"
+    ]
+  },
+  "India_Gujarati-Rajasthani": {
+    "l": [
+      "bgq",
+      "guj",
+      "mtr",
+      "mup",
+      "rwr"
+    ],
+    "trade": [
+      "guj"
+    ]
+  },
+  "India_Hindi_Belt": {
+    "l": [
+      "arp",
+      "awa",
+      "bfy",
+      "bgc",
+      "bho",
+      "bra",
+      "hif",
+      "hin",
+      "hoc",
+      "ikh",
+      "kpm",
+      "mag",
+      "mai",
+      "mjt",
+      "mni",
+      "mwq",
+      "nag",
+      "npi",
+      "njh",
+      "njo",
+      "nkf",
+      "nsm",
+      "pci"
+    ],
+    "trade": [
+      "hin"
+    ]
+  },
+  "India_Kannada": {
+    "l": [
+      "kan",
+      "tcy"
+    ],
+    "trade": [
+      "kan"
+    ]
+  },
+  "India_Malayalam": {
+    "l": [
+      "mal"
+    ],
+    "trade": [
+      "mal"
+    ]
+  },
+  "India_Marathi-Konkani": {
+    "l": [
+      "kfb",
+      "mar"
+    ],
+    "trade": [
+      "mar"
+    ]
+  },
+  "India_Nepali_Belt": {
+    "l": [
+      "gbm",
+      "kfy",
+      "npi"
+    ],
+    "trade": [
+      "npi"
+    ]
+  },
+  "India_Odia": {
+    "l": [
+      "bfw",
+      "ckb",
+      "dwk",
+      "jun",
+      "kdt",
+      "kxv",
+      "ory",
+      "uki"
+    ],
+    "trade": [
+      "ory"
+    ]
+  },
+  "India_Punjabi-Sindhi": {
+    "l": [
+      "pan",
+      "pnb",
+      "skr",
+      "snd"
+    ],
+    "trade": [
+      "pan",
+      "pnb"
+    ]
+  },
+  "India_Tamil": {
+    "l": [
+      "tam"
+    ],
+    "trade": [
+      "tam"
+    ]
+  },
+  "India_Telugu": {
+    "l": [
+      "kfc",
+      "kff",
+      "nka",
+      "tel",
+      "wsg"
+    ],
+    "trade": [
+      "tel"
+    ]
+  },
+  "India_Tribal_Cannot_be_regionally_sorted": {
+    "l": [
+      "adi",
+      "dbv",
+      "tsv"
+    ]
+  },
+  "Indonesian_Region": {
+    "l": [
+      "abs",
+      "ace",
+      "ban",
+      "bbc",
+      "btd",
+      "bts",
+      "btx",
+      "bug",
+      "ind",
+      "jav",
+      "mad",
+      "max",
+      "mhs",
+      "mhy",
+      "mkn",
+      "pse",
+      "sas",
+      "sri",
+      "sun",
+      "tpp",
+      "zlm",
+      "zsm"
+    ],
+    "trade": [
+      "ind",
+      "zsm"
+    ]
+  },
+  "Iran": {
+    "l": [
+      "aii",
+      "ary",
+      "azb",
+      "bqi",
+      "fas",
+      "gbz",
+      "glk",
+      "haz",
+      "kur",
+      "lki",
+      "lrc",
+      "luz",
+      "mzn",
+      "prd",
+      "sdh",
+      "tgk",
+      "tuk"
+    ],
+    "trade": [
+      "fas"
+    ],
+    "regional": [
+      "azb",
+      "kur"
+    ]
+  },
+  "Iraq": {
+    "l": [
+      "acm",
+      "apc",
+      "arb",
+      "azb",
+      "ckb",
+      "kur",
+      "sdh"
+    ],
+    "trade": [
+      "arb"
+    ],
+    "regional": [
+      "kur"
+    ]
+  },
+  "Israel": {
+    "l": [
+      "ajp",
+      "apc",
+      "arb",
+      "heb",
+      "jrb",
+      "lad",
+      "rus",
+      "yid"
+    ],
+    "trade": [
+      "heb",
+      "arb"
+    ],
+    "educational": [
+      "heb",
+      "arb",
+      "eng"
+    ]
+  },
+  "Italy": {
+    "l": [
+      "ita",
+      "lij",
+      "lmo",
+      "nap",
+      "scn",
+      "vec"
+    ],
+    "trade": [
+      "ita"
+    ]
+  },
+  "Ivory_Coast_Côte_dIvoire": {
+    "l": [
+      "abi",
+      "bci",
+      "bqv",
+      "fra",
+      "god",
+      "kfo",
+      "sef"
+    ],
+    "trade": [
+      "fra"
+    ],
+    "regional": [
+      "dyu"
+    ]
+  },
+  "Jamaica": {
+    "l": [
+      "eng",
+      "jam"
+    ],
+    "trade": [
+      "eng",
+      "jam"
+    ]
+  },
+  "Japan": {
+    "l": [
+      "ain",
+      "jpn",
+      "ryu"
+    ],
+    "trade": [
+      "jpn"
+    ]
+  },
+  "Jordan": {
+    "l": [
+      "ajp",
+      "arb"
+    ],
+    "trade": [
+      "arb"
+    ]
+  },
+  "Kazakhstan": {
+    "l": [
+      "kaz",
+      "rus",
+      "uig"
+    ],
+    "trade": [
+      "kaz",
+      "rus"
+    ],
+    "regional": [
+      "rus"
+    ]
+  },
+  "Kenya": {
+    "l": [
+      "dhi",
+      "ebu",
+      "eng",
+      "guz",
+      "kam",
+      "kde",
+      "kln",
+      "luo",
+      "luy",
+      "mas",
+      "mer",
+      "niq",
+      "orm",
+      "saq",
+      "sby",
+      "som",
+      "suk",
+      "swh",
+      "tec"
+    ],
+    "trade": [
+      "swa",
+      "eng"
+    ],
+    "educational": [
+      "eng",
+      "swa"
+    ]
+  },
+  "Korea": {
+    "l": [
+      "kor"
+    ],
+    "trade": [
+      "kor"
+    ]
+  },
+  "Kyrgyzstan": {
+    "l": [
+      "kir",
+      "rus",
+      "uzn"
+    ],
+    "trade": [
+      "kir",
+      "rus"
+    ],
+    "regional": [
+      "rus"
+    ]
+  },
+  "Laos": {
+    "l": [
+      "bgk",
+      "bru",
+      "hmn",
+      "hnj",
+      "kjg",
+      "khb",
+      "lao",
+      "mww",
+      "prt",
+      "ium"
+    ],
+    "trade": [
+      "lao"
+    ]
+  },
+  "Lebanon": {
+    "l": [
+      "apc",
+      "arb",
+      "fra",
+      "hye"
+    ],
+    "trade": [
+      "arb"
+    ],
+    "regional": [
+      "fra"
+    ]
+  },
+  "Lesotho": {
+    "l": [
+      "eng",
+      "sot",
+      "xho",
+      "zul"
+    ],
+    "trade": [
+      "sot",
+      "eng"
+    ]
+  },
+  "Libya": {
+    "l": [
+      "arb"
+    ],
+    "trade": [
+      "arb"
+    ]
+  },
+  "Madagascar": {
+    "l": [
+      "fra",
+      "mlg",
+      "plt"
+    ],
+    "trade": [
+      "mlg",
+      "fra"
+    ]
+  },
+  "Malaysia": {
+    "l": [
+      "bjn",
+      "bug",
+      "cmn",
+      "dtp",
+      "eng",
+      "iba",
+      "ind",
+      "jav",
+      "kxd",
+      "tam",
+      "zlm",
+      "zsm"
+    ],
+    "trade": [
+      "zsm",
+      "eng"
+    ],
+    "regional": [
+      "zsm"
+    ]
+  },
+  "Mali": {
+    "l": [
+      "bam",
+      "bm-bm",
+      "bmq",
+      "bze",
+      "dtm",
+      "ffm",
+      "fra",
+      "fuh",
+      "khq",
+      "ses",
+      "snk"
+    ],
+    "trade": [
+      "fra"
+    ],
+    "regional": [
+      "bam"
+    ]
+  },
+  "Mandarin_Chinese_Region": {
+    "l": [
+      "aai",
+      "afu",
+      "any",
+      "ape",
+      "bov",
+      "brv",
+      "byr",
+      "cmn",
+      "coh",
+      "csy",
+      "gej",
+      "gek",
+      "hak",
+      "hvn",
+      "ifu",
+      "jow",
+      "kaz",
+      "kmh",
+      "min",
+      "mmf",
+      "nkv",
+      "nuy",
+      "omw",
+      "opm",
+      "pib",
+      "pny",
+      "rob",
+      "spp",
+      "tig",
+      "uig",
+      "ulb",
+      "wuv",
+      "yre",
+      "yss",
+      "yue"
+    ],
+    "trade": [
+      "cmn",
+      "yue",
+      "hak"
+    ]
+  },
+  "Mexico_Mayan": {
+    "l": [
+      "ach",
+      "bcn",
+      "ctu",
+      "guu",
+      "hch",
+      "hus",
+      "kdf",
+      "kdi",
+      "mam",
+      "maw",
+      "mgr",
+      "mop",
+      "mqj",
+      "myk",
+      "sym",
+      "tzh",
+      "tzo",
+      "wer",
+      "yua"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Mixe-Zoque": {
+    "l": [
+      "mco",
+      "mir",
+      "mto",
+      "mzl"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Other": {
+    "l": [
+      "cto",
+      "spa"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Oto-Manguean_Mazatec": {
+    "l": [
+      "maa",
+      "maj",
+      "maq",
+      "mzi",
+      "vmp",
+      "vmy"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Oto-Manguean_Mixtec": {
+    "l": [
+      "jmx",
+      "mbz",
+      "mdv",
+      "meh",
+      "mib",
+      "mie",
+      "mig",
+      "mih",
+      "mil",
+      "mim",
+      "mio",
+      "mip",
+      "mit",
+      "miy",
+      "miz",
+      "mjc",
+      "mks",
+      "mpm",
+      "mqh",
+      "mza",
+      "vmj",
+      "xta"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Oto-Manguean_Other": {
+    "l": [
+      "cco",
+      "chj",
+      "chz",
+      "cle",
+      "cnl",
+      "cnt",
+      "cpa",
+      "cso",
+      "ctl",
+      "cuc"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Oto-Manguean_Otomi-Pame": {
+    "l": [
+      "ote",
+      "otn"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Oto-Manguean_Zapotec": {
+    "l": [
+      "zaa",
+      "zab",
+      "zac",
+      "zad",
+      "zae",
+      "zai",
+      "zam",
+      "zao",
+      "zaq",
+      "zar",
+      "zas",
+      "zav",
+      "zaw",
+      "zca",
+      "zcd",
+      "zpc",
+      "zpg",
+      "zpi",
+      "zpl",
+      "zpm",
+      "zpo",
+      "zpq",
+      "zpt",
+      "zpu",
+      "zpv",
+      "zpz"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mexico_Uto-Aztecan_Nahuatl": {
+    "l": [
+      "azz",
+      "nlv",
+      "npl",
+      "nsu",
+      "nuz"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Mongolia": {
+    "l": [
+      "khk",
+      "kca",
+      "kpy",
+      "mvf",
+      "tuv"
+    ],
+    "trade": [
+      "khk"
+    ]
+  },
+  "Morocco": {
+    "l": [
+      "arb",
+      "ary",
+      "fra",
+      "rif",
+      "shi",
+      "tzm"
+    ],
+    "trade": [
+      "arb",
+      "fra"
+    ],
+    "regional": [
+      "ary"
+    ]
+  },
+  "Mozambique": {
+    "l": [
+      "ndc",
+      "ngh",
+      "ngl",
+      "nya",
+      "por",
+      "rng",
+      "seh",
+      "sna",
+      "swh",
+      "toh",
+      "tsw",
+      "vmw",
+      "yao",
+      "zib"
+    ],
+    "trade": [
+      "por"
+    ],
+    "regional": [
+      "nym",
+      "swh"
+    ]
+  },
+  "Myanmar_Burmese-Mon": {
+    "l": [
+      "mnw",
+      "mya"
+    ],
+    "trade": [
+      "mya"
+    ]
+  },
+  "Myanmar_Chin": {
+    "l": [
+      "cbl",
+      "cek",
+      "cfm",
+      "cmr",
+      "cnw",
+      "ctd",
+      "cwe",
+      "hlt",
+      "ndh",
+      "pce",
+      "pck"
+    ],
+    "trade": [
+      "mya"
+    ]
+  },
+  "Myanmar_Karen-Kayah": {
+    "l": [
+      "kyu",
+      "rhg"
+    ],
+    "trade": [
+      "mya"
+    ]
+  },
+  "Namibia": {
+    "l": [
+      "afr",
+      "diu",
+      "eng",
+      "her",
+      "ktz",
+      "kwn",
+      "loz",
+      "naq"
+    ],
+    "trade": [
+      "afr",
+      "eng"
+    ],
+    "educational": [
+      "eng"
+    ]
+  },
+  "Nepal": {
+    "l": [
+      "bap",
+      "gbm",
+      "kfy",
+      "mai",
+      "mwq",
+      "npi",
+      "taj",
+      "tdg",
+      "thl",
+      "tsf"
+    ],
+    "trade": [
+      "npi",
+      "eng"
+    ]
+  },
+  "Netherlands": {
+    "l": [
+      "nld"
+    ],
+    "trade": [
+      "nld"
+    ],
+    "educational": [
+      "nld",
+      "eng"
+    ]
+  },
+  "New_Caledonia": {
+    "l": [
+      "fra"
+    ],
+    "trade": [
+      "fra"
+    ]
+  },
+  "Nigeria": {
+    "l": [
+      "bin",
+      "efi",
+      "eng",
+      "ful",
+      "hau",
+      "ibo",
+      "igl",
+      "iso",
+      "kaj",
+      "kcg",
+      "knc",
+      "mkd",
+      "nup",
+      "tiv",
+      "tvw",
+      "urh",
+      "yor"
+    ],
+    "trade": [
+      "eng",
+      "hau"
+    ],
+    "regional": [
+      "yor",
+      "ibo"
+    ]
+  },
+  "Oman": {
+    "l": [
+      "acx",
+      "ajp",
+      "arb",
+      "bal"
+    ],
+    "trade": [
+      "arb"
+    ]
+  },
+  "Pakistan": {
+    "l": [
+      "bal",
+      "bft",
+      "brh",
+      "btk",
+      "gjk",
+      "hno",
+      "hnd",
+      "kvx",
+      "lah",
+      "pan",
+      "pbt",
+      "pbu",
+      "pnb",
+      "prd",
+      "psh",
+      "sck",
+      "skr",
+      "snd",
+      "thl",
+      "urd"
+    ],
+    "trade": [
+      "urd",
+      "eng"
+    ],
+    "regional": [
+      "pan",
+      "pnb",
+      "snd",
+      "pbt"
+    ]
+  },
+  "Papua_New_Guinea_Melanesia": {
+    "l": [
+      "eng",
+      "tpi"
+    ],
+    "trade": [
+      "eng",
+      "tpi"
+    ],
+    "regional": [
+      "tpi"
+    ]
+  },
+  "Paraguay": {
+    "l": [
+      "cag",
+      "ceg",
+      "enl",
+      "gug",
+      "spa",
+      "tmf"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "gug"
+    ]
+  },
+  "Peru": {
+    "l": [
+      "agr",
+      "ame",
+      "amr",
+      "boa",
+      "cbr",
+      "cbs",
+      "cbu",
+      "cjo",
+      "cpb",
+      "cpc",
+      "cpu",
+      "cpy",
+      "cul",
+      "hub",
+      "huu",
+      "mcb",
+      "mcd",
+      "not",
+      "qub",
+      "quf",
+      "quh",
+      "qul",
+      "qup",
+      "quy",
+      "quz",
+      "qva",
+      "qvc",
+      "qve",
+      "qvh",
+      "qvm",
+      "qvn",
+      "qvs",
+      "qvw",
+      "qwh",
+      "qxh",
+      "qxn",
+      "qxo",
+      "shp",
+      "yaa",
+      "yad"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "quz"
+    ]
+  },
+  "Philippines": {
+    "l": [
+      "akl",
+      "bcl",
+      "bto",
+      "ceb",
+      "eng",
+      "gyr",
+      "hil",
+      "ibl",
+      "ifa",
+      "ifb",
+      "ifk",
+      "ify",
+      "ilo",
+      "knb",
+      "kne",
+      "kyb",
+      "mrw",
+      "pag",
+      "pam",
+      "tgl",
+      "war"
+    ],
+    "trade": [
+      "tgl",
+      "ceb",
+      "eng"
+    ],
+    "regional": [
+      "ilo"
+    ]
+  },
+  "Poland": {
+    "l": [
+      "csb",
+      "pol",
+      "szl"
+    ],
+    "trade": [
+      "pol"
+    ]
+  },
+  "Portugal": {
+    "l": [
+      "por"
+    ],
+    "trade": [
+      "por"
+    ]
+  },
+  "Portuguese_Region": {
+    "l": [
+      "apu",
+      "bor",
+      "cul",
+      "gug",
+      "kay",
+      "kyz",
+      "mgh",
+      "myu",
+      "mzr",
+      "pab",
+      "pah",
+      "por",
+      "ter",
+      "tgp",
+      "tso",
+      "tuo",
+      "umb",
+      "xav"
+    ],
+    "trade": [
+      "por"
+    ]
+  },
+  "Puerto_Rico": {
+    "l": [
+      "eng",
+      "spa"
+    ],
+    "trade": [
+      "spa",
+      "eng"
+    ]
+  },
+  "Romania": {
+    "l": [
+      "deu",
+      "hun",
+      "rmc",
+      "rml",
+      "rmn",
+      "rmo",
+      "rmy",
+      "rol",
+      "ron",
+      "rup",
+      "ukr"
+    ],
+    "trade": [
+      "ron"
+    ]
+  },
+  "Russian_Region": {
+    "l": [
+      "azj",
+      "bak",
+      "bel",
+      "bjr",
+      "bxr",
+      "che",
+      "chv",
+      "crh",
+      "hye",
+      "hyw",
+      "kaz",
+      "mhr",
+      "mrj",
+      "rus",
+      "sty",
+      "tat",
+      "tgk",
+      "tuk",
+      "udm",
+      "ukr",
+      "uzn"
+    ],
+    "trade": [
+      "rus"
+    ]
+  },
+  "Rwanda": {
+    "l": [
+      "eng",
+      "fra",
+      "kin",
+      "swh"
+    ],
+    "trade": [
+      "kin",
+      "fra",
+      "eng"
+    ],
+    "educational": [
+      "kin"
+    ]
+  },
+  "Samoa": {
+    "l": [
+      "eng",
+      "smo"
+    ],
+    "trade": [
+      "smo",
+      "eng"
+    ]
+  },
+  "Saudi_Arabia": {
+    "l": [
+      "acx",
+      "arb",
+      "ars"
+    ],
+    "trade": [
+      "arb"
+    ]
+  },
+  "Senegal": {
+    "l": [
+      "dyo",
+      "fra",
+      "knf",
+      "mfv",
+      "snk",
+      "srr",
+      "wol"
+    ],
+    "trade": [
+      "fra"
+    ],
+    "regional": [
+      "wol"
+    ]
+  },
+  "Singapore": {
+    "l": [
+      "cmn",
+      "eng",
+      "tam",
+      "zsm"
+    ],
+    "trade": [
+      "eng",
+      "cmn",
+      "zsm",
+      "tam"
+    ]
+  },
+  "Solomon_Islands": {
+    "l": [
+      "eng",
+      "pis"
+    ],
+    "trade": [
+      "eng",
+      "pis"
+    ],
+    "regional": [
+      "pis"
+    ]
+  },
+  "Somalia": {
+    "l": [
+      "arb",
+      "so-so",
+      "som",
+      "swh"
+    ],
+    "trade": [
+      "som",
+      "arb"
+    ],
+    "regional": [
+      "som"
+    ]
+  },
+  "South_Africa": {
+    "l": [
+      "afr",
+      "eng",
+      "nso",
+      "sot",
+      "ssw",
+      "tsn",
+      "tso",
+      "ven",
+      "xho",
+      "zul"
+    ],
+    "trade": [
+      "eng",
+      "afr"
+    ],
+    "educational": [
+      "eng"
+    ]
+  },
+  "Spain": {
+    "l": [
+      "ast",
+      "cat",
+      "eus",
+      "glg",
+      "spa"
+    ],
+    "trade": [
+      "spa"
+    ],
+    "regional": [
+      "cat",
+      "eus",
+      "glg"
+    ]
+  },
+  "Sri_Lanka": {
+    "l": [
+      "sin",
+      "tam"
+    ],
+    "trade": [
+      "sin",
+      "tam",
+      "eng"
+    ]
+  },
+  "Suriname": {
+    "l": [
+      "jvn",
+      "nld",
+      "srn",
+      "srm"
+    ],
+    "trade": [
+      "nld",
+      "srn"
+    ],
+    "regional": [
+      "srn"
+    ]
+  },
+  "Swahili_Region": {
+    "l": [
+      "cbt",
+      "gsl",
+      "guz",
+      "hay",
+      "kde",
+      "ktb",
+      "lug",
+      "luo",
+      "nym",
+      "run",
+      "som",
+      "suk",
+      "swh"
+    ],
+    "trade": [
+      "swh"
+    ]
+  },
+  "Swaziland_Eswatini": {
+    "l": [
+      "eng",
+      "ssw",
+      "tsn",
+      "zul"
+    ],
+    "trade": [
+      "ssw",
+      "eng"
+    ]
+  },
+  "Switzerland": {
+    "l": [
+      "deu",
+      "fra",
+      "ita",
+      "roh"
+    ],
+    "trade": [
+      "deu",
+      "fra",
+      "ita"
+    ]
+  },
+  "Syria": {
+    "l": [
+      "apc",
+      "arb",
+      "aii",
+      "hye",
+      "kur",
+      "syr"
+    ],
+    "trade": [
+      "arb"
+    ],
+    "regional": [
+      "kur"
+    ]
+  },
+  "Tagalog_Region": {
+    "l": [
+      "bcl",
+      "bto",
+      "ceb",
+      "gyr",
+      "hil",
+      "ibl",
+      "ifa",
+      "ifb",
+      "ifk",
+      "ify",
+      "ilo",
+      "knb",
+      "kne",
+      "kyb",
+      "mrw",
+      "pag",
+      "pam",
+      "tgl",
+      "war"
+    ],
+    "trade": [
+      "tgl",
+      "ceb"
+    ],
+    "regional": [
+      "ilo"
+    ]
+  },
+  "Taiwan": {
+    "l": [
+      "ami",
+      "cmn",
+      "hak",
+      "nan",
+      "pwn",
+      "tao",
+      "trv"
+    ],
+    "trade": [
+      "cmn",
+      "nan"
+    ],
+    "regional": [
+      "nan"
+    ]
+  },
+  "Tajikistan": {
+    "l": [
+      "rus",
+      "tgk",
+      "uzn",
+      "yid"
+    ],
+    "trade": [
+      "tgk",
+      "rus"
+    ],
+    "regional": [
+      "rus"
+    ]
+  },
+  "Tanzania": {
+    "l": [
+      "asa",
+      "bez",
+      "heh",
+      "jmc",
+      "kam",
+      "kde",
+      "kki",
+      "ksb",
+      "lag",
+      "mas",
+      "mgr",
+      "mgy",
+      "nym",
+      "nyy",
+      "rof",
+      "rwo",
+      "sbk",
+      "swh",
+      "uke",
+      "vun"
+    ],
+    "trade": [
+      "swh",
+      "eng"
+    ],
+    "educational": [
+      "swh"
+    ]
+  },
+  "Thai_Region": {
+    "l": [
+      "ahk",
+      "bci",
+      "cnh",
+      "cni",
+      "hnj",
+      "ium",
+      "ksw",
+      "kyu",
+      "kvq",
+      "kxm",
+      "lao",
+      "lbf",
+      "nod",
+      "nst",
+      "sah",
+      "sho",
+      "tha",
+      "wti",
+      "xis"
+    ],
+    "trade": [
+      "tha",
+      "lao"
+    ]
+  },
+  "Thailand": {
+    "l": [
+      "kyu",
+      "lao",
+      "mnw",
+      "nod",
+      "rki",
+      "shn",
+      "tha"
+    ],
+    "trade": [
+      "tha"
+    ]
+  },
+  "Tonga": {
+    "l": [
+      "eng",
+      "ton"
+    ],
+    "trade": [
+      "ton",
+      "eng"
+    ]
+  },
+  "Trinidad_and_Tobago": {
+    "l": [
+      "eng",
+      "trf"
+    ],
+    "trade": [
+      "eng"
+    ]
+  },
+  "Tunisia": {
+    "l": [
+      "aeb",
+      "arb",
+      "fra"
+    ],
+    "trade": [
+      "arb",
+      "fra"
+    ],
+    "regional": [
+      "aeb"
+    ]
+  },
+  "Turkey": {
+    "l": [
+      "abq",
+      "ady",
+      "aii",
+      "kbd",
+      "kiu",
+      "kur",
+      "lzz",
+      "tur",
+      "zza"
+    ],
+    "trade": [
+      "tur"
+    ],
+    "regional": [
+      "kur"
+    ]
+  },
+  "Turkmenistan": {
+    "l": [
+      "rus",
+      "tuk",
+      "uzn"
+    ],
+    "trade": [
+      "tuk",
+      "rus"
+    ],
+    "regional": [
+      "rus"
+    ]
+  },
+  "Uganda": {
+    "l": [
+      "ach",
+      "eng",
+      "lgg",
+      "lug",
+      "nyn",
+      "swh",
+      "teo",
+      "ttj",
+      "xog"
+    ],
+    "trade": [
+      "eng",
+      "swh"
+    ],
+    "regional": [
+      "lug"
+    ]
+  },
+  "United_Arab_Emirates": {
+    "l": [
+      "acx",
+      "arb",
+      "bal",
+      "fas"
+    ],
+    "trade": [
+      "arb"
+    ]
+  },
+  "Uzbekistan": {
+    "l": [
+      "kaa",
+      "tgk",
+      "uzn"
+    ],
+    "trade": [
+      "uzn",
+      "rus"
+    ],
+    "regional": [
+      "rus"
+    ]
+  },
+  "Vanuatu": {
+    "l": [
+      "bis",
+      "eng",
+      "fra"
+    ],
+    "trade": [
+      "bis",
+      "eng",
+      "fra"
+    ]
+  },
+  "Venezuela": {
+    "l": [
+      "ake",
+      "guu",
+      "pid",
+      "shb",
+      "wba",
+      "yrl",
+      "yup"
+    ],
+    "trade": [
+      "spa"
+    ]
+  },
+  "Vietnam": {
+    "l": [
+      "agn",
+      "bru",
+      "bud",
+      "cdh",
+      "ceg",
+      "cja",
+      "cmi",
+      "cwt",
+      "hnj",
+      "ige",
+      "jra",
+      "mnw",
+      "mtq",
+      "sja",
+      "tyz",
+      "vie"
+    ],
+    "trade": [
+      "vie"
+    ]
+  },
+  "Vietnamese_Region": {
+    "l": [
+      "agn",
+      "bud",
+      "cdh",
+      "ceg",
+      "cja",
+      "cmi",
+      "cwt",
+      "ige",
+      "jra",
+      "mtq",
+      "sja",
+      "tyz",
+      "vie"
+    ],
+    "trade": [
+      "vie"
+    ]
+  },
+  "Yemen": {
+    "l": [
+      "acq",
+      "arb",
+      "mey"
+    ],
+    "trade": [
+      "arb"
+    ]
+  },
+  "Yoruba_Region": {
+    "l": [
+      "igl",
+      "mkd",
+      "tvw",
+      "yor"
+    ],
+    "trade": [
+      "yor"
+    ]
+  },
+  "Zambia": {
+    "l": [
+      "bem",
+      "eng",
+      "loz",
+      "lua",
+      "lun",
+      "nya",
+      "toi"
+    ],
+    "trade": [
+      "eng"
+    ],
+    "regional": [
+      "bem",
+      "nya"
+    ]
+  },
+  "Zimbabwe": {
+    "l": [
+      "eng",
+      "kck",
+      "ndc",
+      "nde",
+      "nya",
+      "sna",
+      "toi",
+      "ven",
+      "xho",
+      "zib"
+    ],
+    "trade": [
+      "eng"
+    ],
+    "regional": [
+      "sna",
+      "nde"
+    ]
+  }
+}

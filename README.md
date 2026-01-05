@@ -65,7 +65,7 @@ python3 download_language_content.py --book-set TIMING_NT --books MAT:1-7
 3. **download_language_content.py** - Download Bible content
 
 Optional:
-4. **export_story_data.py** - Generate metadata JSON files
+4. **export_story_data.py** - Export organized metadata and data files
 
 ### Canonical Structure
 
@@ -290,6 +290,117 @@ python3 download_language_content.py eng --books GEN:1 --force
 python3 download_language_content.py --book-set TIMING_NT --books MAT:26-28,LUK:24
 ```
 
+## Exported Data
+
+After downloading, run `export_story_data.py` to generate organized metadata:
+
+```bash
+python3 export_story_data.py
+```
+
+### Export Structure
+
+```
+export/
+├── ALL-langs.json              # 147 KB - Human-readable summary
+├── ALL-langs-compact.json      #  72 KB - Compact summary with names
+├── ALL-langs-mini.json         #  12 KB - ISO codes only (compact)
+├── ALL-langs-data.zip          # 413 KB - Complete data archive
+│
+├── regions.json                #  29 KB - Region metadata (readable)
+├── regions.zip                 # 4.8 KB - Region metadata (compact)
+│
+├── ALL-langs/                  # 2,365 data.json files
+│   ├── nt/{category}/{iso}/{id}/data.json
+│   └── ot/{category}/{iso}/{id}/data.json
+│
+└── regions/                    # 147 region-specific zip files
+    ├── Afghanistan.zip
+    ├── Albania.zip
+    └── ...
+```
+
+### Summary Files
+
+**ALL-langs.json** - Pretty-printed summary with language names:
+```json
+{
+  "metadata": {
+    "generated_at": "2026-01-05T...",
+    "total_languages": 1720
+  },
+  "canons": {
+    "nt": {
+      "with-timecode": {
+        "eng": {
+          "n": "English"
+        }
+      }
+    }
+  }
+}
+```
+
+**ALL-langs-compact.json** - Compact version with names (51% smaller):
+```json
+{"metadata":{"generated_at":"...","total_languages":1720},"canons":{"nt":{"with-timecode":{"eng":{"n":"English"}}}}}
+```
+
+**ALL-langs-mini.json** - Minimal version with ISO codes only (91% smaller):
+```json
+{"metadata":{"generated_at":"...","total_languages":1720},"canons":{"nt":{"with-timecode":["eng","spa","fra"]}}}
+```
+
+### Data Files
+
+**data.json** - Optimized per-language data:
+```json
+{
+  "a": "N1DA.mp3",
+  "t": "N_ET.txt"
+}
+```
+
+Format:
+- `"a"` - Audio file (stripped fileset ID + extension)
+- `"t"` - Text file (stripped fileset ID + extension)
+- Keys omitted if no data available
+- Fileset ID prefix removed (distinct_id is in path)
+
+### Region Files
+
+**regions.json** - Region metadata:
+```json
+{
+  "Afghanistan": {
+    "l": ["bal", "bgp", "prs", "pbu"],
+    "trade": ["prs", "pbu"],
+    "regional": ["uzn", "tuk"]
+  }
+}
+```
+
+Format:
+- `"l"` - Languages (ISO codes)
+- Optional: `"trade"`, `"regional"`, `"educational"`, `"literacy"`
+
+### Archives
+
+**ALL-langs-data.zip** - Complete data archive:
+- Contains all `data.json` files
+- Includes `summary.json` (compact)
+- Only includes: `nt/`, `ot/` folders
+- Excludes: `failed/` category
+
+**regions.zip** - Region metadata (compact):
+- Same structure as `regions.json`
+- Compact format (no whitespace)
+
+**Region-specific zips** (in `regions/` directory):
+- Filtered subsets of `ALL-langs-data.zip`
+- One zip per region (147 total)
+- Contains only languages for that region
+
 ## Project Statistics
 
 - **Languages**: 2000+
@@ -297,6 +408,8 @@ python3 download_language_content.py --book-set TIMING_NT --books MAT:26-28,LUK:
 - **Audio Formats**: MP3, Opus
 - **Text Formats**: Plain text, USX, JSON
 - **Timing**: Verse-level synchronization
+- **Exported Files**: 2,365+ optimized data.json files
+- **Export Size**: ~413 KB (compressed)
 
 ## Requirements
 
@@ -356,7 +469,16 @@ bible-story-builder/
 ├── sorted/                    # Organized metadata (generated)
 ├── downloads/                 # Downloaded content (generated)
 ├── download_log/              # Error logs (generated)
-└── export/                    # Exported metadata (generated)
+├── export/                    # Exported data & metadata (generated)
+│   ├── ALL-langs.json
+│   ├── ALL-langs-compact.json
+│   ├── ALL-langs-mini.json
+│   ├── ALL-langs-data.zip
+│   ├── regions.json
+│   ├── regions.zip
+│   ├── ALL-langs/
+│   └── regions/
+└── workspace/                 # Compact workspace data (generated)
 ```
 
 ## Troubleshooting

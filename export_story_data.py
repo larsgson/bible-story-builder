@@ -31,12 +31,28 @@ from pathlib import Path
 # Directories
 DOWNLOADS_DIR = Path("downloads/BB")
 DOWNLOAD_LOG_DIR = Path("download_log")
-EXPORT_DIR = Path("export/ALL")  # Human-readable exports with whitespace
+EXPORT_DIR = Path("export/ALL-langs")  # Human-readable exports with whitespace
 WORKSPACE_DIR = Path("workspace")  # Compact format for zipping
 SORTED_DIR = Path("sorted")
 
+# Category constants
+CATEGORY_WITH_TIMECODE = "with-timecode"
+CATEGORY_AUDIO_WITH_TIMECODE = "audio-with-timecode"
+CATEGORY_SYNCABLE = "syncable"
+CATEGORY_TEXT_ONLY = "text-only"
+CATEGORY_AUDIO_ONLY = "audio-only"
+CATEGORY_FAILED = "failed"
 
-def load_error_log(iso: str, canon: str):
+ALL_CATEGORIES = [
+    CATEGORY_WITH_TIMECODE,
+    CATEGORY_AUDIO_WITH_TIMECODE,
+    CATEGORY_SYNCABLE,
+    CATEGORY_TEXT_ONLY,
+    CATEGORY_AUDIO_ONLY,
+]
+
+
+def load_error_log(iso: str, canon: str) -> dict:
     """
     Load error log for a specific language and canon.
 
@@ -110,17 +126,18 @@ def get_fileset_type(fileset_id: str):
 
 def clean_file_path(file_path: str, fileset_id: str) -> str:
     """
-    Clean file path by removing redundant book/chapter prefix and fileset_id prefix.
+    Clean file path by removing redundant book/chapter prefix only.
+    Keep the full filename after the BOOK_CCC_ prefix.
 
     Example:
         Input: "REV/REV_015_AAAMLTN1DA.mp3", fileset_id: "AAAMLTN1DA"
-        Output: ".mp3"
+        Output: "AAAMLTN1DA.mp3"
 
         Input: "REV/REV_015_AAAMLTN_ET.txt", fileset_id: "AAAMLTN"
-        Output: "_ET.txt"
+        Output: "AAAMLTN_ET.txt"
 
         Input: "REV/REV_015_AAAMLTN1DA_timing.json", fileset_id: "AAAMLTN1DA_timing"
-        Output: ".json"
+        Output: "AAAMLTN1DA_timing.json"
     """
     # Get the filename from the path
     path_obj = Path(file_path)
@@ -133,24 +150,18 @@ def clean_file_path(file_path: str, fileset_id: str) -> str:
         # Reconstruct without the first two parts (BOOK and CCC)
         filename = "_".join(parts[2:])
 
-    # Now remove the fileset_id prefix if it matches exactly at the start
-    # For timing files, the fileset_id includes "_timing" suffix
-    if filename.startswith(fileset_id):
-        # Remove the fileset_id from the beginning
-        filename = filename[len(fileset_id) :]
-
     return filename
 
 
-def collect_files_for_distinct_id(distinct_id_path: Path):
+def collect_files_for_distinct_id(distinct_id_path: Path) -> dict:
     """
     Collect all downloaded files under a distinct_id directory.
 
     Returns dict: {fileset_id: {"type": type, "files": [relative_paths]}}
     Timing files are collected for analysis but not included in output.
     """
-    filesets: dict[str, dict[str, list[str] | str | None]] = defaultdict(
-        lambda: {"files": [], "type": None}
+    filesets: dict[str, dict[str, list | str]] = defaultdict(
+        lambda: {"files": [], "type": ""}
     )
 
     # Walk through all files under this distinct_id
@@ -178,12 +189,14 @@ def collect_files_for_distinct_id(distinct_id_path: Path):
             file_type = "timing"
         else:
             # Regular file: BOOK_CCC_FILESETID.ext
-            fileset_id_temp = parts[2].split(".")[0] if len(parts) >= 3 else None
-
-            if not fileset_id_temp:
+            # Fileset ID includes all parts after BOOK_CCC (parts 2 onwards)
+            # Example: REV_015_ENGNLTN_ET.txt -> ENGNLTN_ET
+            if len(parts) >= 3:
+                # Join all parts from index 2 onwards, then remove extension
+                remaining = "_".join(parts[2:])
+                fileset_id = remaining.rsplit(".", 1)[0]
+            else:
                 continue
-
-            fileset_id = fileset_id_temp
 
             # Determine type from extension
             if file_path.suffix == ".mp3":
@@ -195,23 +208,23 @@ def collect_files_for_distinct_id(distinct_id_path: Path):
             else:
                 file_type = get_fileset_type(fileset_id)
 
-        files_list = filesets[fileset_id]["files"]
-        if isinstance(files_list, list):
-            # Clean the file path before adding
-            cleaned_path = clean_file_path(str(relative_path), fileset_id)
-            files_list.append(cleaned_path)
-        if filesets[fileset_id]["type"] is None:
+        # Clean the file path before adding
+        cleaned_path = clean_file_path(str(relative_path), fileset_id)
+        files = filesets[fileset_id]["files"]
+        if isinstance(files, list):
+            files.append(cleaned_path)
+
+        if not filesets[fileset_id]["type"]:
             filesets[fileset_id]["type"] = file_type
 
     return dict(filesets)
 
 
-def determine_actual_category(filesets_by_type: dict) -> str:
+def determine_actual_category(filesets_by_type: dict[str, dict]) -> str:
     """
     Determine the actual category based on what content exists.
 
-    Returns: "with-timecode", "audio-with-timecode", "syncable",
-             "text-only", "audio-only", or "failed"
+    Returns: One of the category constants defined at module level.
     """
     # In compact format, filesets are just arrays, so check if non-empty
     has_audio = bool([fs for fs in filesets_by_type["audio"].values() if fs])
@@ -220,23 +233,42 @@ def determine_actual_category(filesets_by_type: dict) -> str:
 
     # No successful downloads at all
     if not has_audio and not has_text and not has_timing:
-        return "failed"
+        return CATEGORY_FAILED
 
     # Determine category based on what exists
     if has_audio and has_text and has_timing:
-        return "with-timecode"
+        return CATEGORY_WITH_TIMECODE
     elif has_audio and has_timing and not has_text:
-        return "audio-with-timecode"
+        return CATEGORY_AUDIO_WITH_TIMECODE
     elif has_audio and has_text:
-        return "syncable"
+        return CATEGORY_SYNCABLE
     elif has_text:
         # Text only, or text + timing (timing without audio is not useful)
-        return "text-only"
+        return CATEGORY_TEXT_ONLY
     elif has_audio:
-        return "audio-only"
+        return CATEGORY_AUDIO_ONLY
     else:
         # Edge case: only timing without any content
-        return "failed"
+        return CATEGORY_FAILED
+
+
+def strip_fileset_prefix(fileset_id: str, file_path: str) -> str:
+    """
+    Strip fileset ID prefix from file path if it matches.
+    Always keep the character immediately after the ID.
+    Returns empty string if stripping would result in empty string.
+
+    Example:
+        fileset_id: "ENGESVN2DA"
+        file_path: "ENGESVN2DA-01-Matthew-001.mp3"
+        returns: "-01-Matthew-001.mp3"
+    """
+    if file_path.startswith(fileset_id):
+        # Remove the ID but keep everything after (including next character)
+        result = file_path[len(fileset_id) :]
+        # Don't return empty string - keep original if nothing left
+        return result if result else file_path
+    return file_path
 
 
 def export_language_data(
@@ -245,7 +277,7 @@ def export_language_data(
     iso: str,
     distinct_id: str,
     distinct_id_path: Path,
-):
+) -> str:
     """
     Export data for a specific canon/category/iso/distinct_id combination.
     Recategorizes based on actual content.
@@ -263,14 +295,11 @@ def export_language_data(
 
     # Add downloaded filesets
     for fileset_id, fileset_data in downloaded_filesets.items():
-        file_type_value = fileset_data["type"]
-        # Ensure file_type is a string
-        if not isinstance(file_type_value, str):
+        file_type = fileset_data["type"]
+        if not file_type:
             continue
-        file_type = file_type_value
 
-        files_value = fileset_data["files"]
-        files_list = files_value if isinstance(files_value, list) else []
+        files_list = fileset_data["files"]
         # Compact format: just the file list
         filesets_by_type[file_type][fileset_id] = sorted(files_list)
 
@@ -291,10 +320,82 @@ def export_language_data(
     if actual_category != original_category:
         print(f"  Recategorized: {original_category} → {actual_category}")
 
-    # Create export data structure (compact format: only filesets)
-    # Metadata is encoded in directory path: export/{canon}/{category}/{iso}/{distinct_id}
-    # Exclude timing data as it's redundant (can be derived from audio ID)
-    export_data = {"audio": filesets_by_type["audio"], "text": filesets_by_type["text"]}
+    # Create export data structure with optimized format:
+    # - Use short keys: "a" for audio, "t" for text
+    # - Single string value combining stripped fileset ID with file extension
+    # - Format: "N1DA.mp3" (fileset_id minus distinct_id, plus file extension)
+    # - Metadata is encoded in directory path: export/{canon}/{category}/{iso}/{distinct_id}
+    # - Exclude timing data as it's redundant (can be derived from audio ID)
+
+    # Collect audio filesets (skip empty ones)
+    audio_filesets = {
+        fileset_id: files
+        for fileset_id, files in filesets_by_type["audio"].items()
+        if files
+    }
+
+    # Collect text filesets (skip empty ones)
+    text_filesets = {
+        fileset_id: files
+        for fileset_id, files in filesets_by_type["text"].items()
+        if files
+    }
+
+    # ERROR if multiple filesets detected
+    if len(audio_filesets) > 1:
+        fileset_ids = ", ".join(audio_filesets.keys())
+        raise ValueError(
+            f"Multiple audio filesets detected for {iso}/{distinct_id}: {fileset_ids}. "
+            f"Expected exactly 0 or 1 audio fileset."
+        )
+
+    if len(text_filesets) > 1:
+        fileset_ids = ", ".join(text_filesets.keys())
+        raise ValueError(
+            f"Multiple text filesets detected for {iso}/{distinct_id}: {fileset_ids}. "
+            f"Expected exactly 0 or 1 text fileset."
+        )
+
+    # Extract single fileset data (or empty string if none)
+    # Format: stripped_fileset_id + file_extension
+    # Example: "ENGKJVN1DA" - "ENGKJV" = "N1DA", + ".mp3" = "N1DA.mp3"
+    audio_value = ""
+    if audio_filesets:
+        fileset_id, files = next(iter(audio_filesets.items()))
+        # Strip distinct_id from fileset_id
+        stripped_fileset = (
+            fileset_id[len(distinct_id) :]
+            if fileset_id.startswith(distinct_id)
+            else fileset_id
+        )
+        # Get the file path and strip the fileset_id prefix from it
+        file_path = files[0] if files else ""
+        file_ext = strip_fileset_prefix(fileset_id, file_path)
+        # Combine: stripped fileset ID + file extension
+        audio_value = stripped_fileset + file_ext
+
+    text_value = ""
+    if text_filesets:
+        fileset_id, files = next(iter(text_filesets.items()))
+        # Strip distinct_id from fileset_id
+        stripped_fileset = (
+            fileset_id[len(distinct_id) :]
+            if fileset_id.startswith(distinct_id)
+            else fileset_id
+        )
+        # Get the file path and strip the fileset_id prefix from it
+        file_path = files[0] if files else ""
+        file_ext = strip_fileset_prefix(fileset_id, file_path)
+        # Combine: stripped fileset ID + file extension
+        text_value = stripped_fileset + file_ext
+
+    # Simplified format: single string values
+    # Omit keys with empty string values
+    export_data = {}
+    if audio_value:
+        export_data["a"] = audio_value
+    if text_value:
+        export_data["t"] = text_value
 
     # Create export directory using actual category (human-readable format)
     export_path = EXPORT_DIR / canon.lower() / actual_category / iso / distinct_id
@@ -317,7 +418,7 @@ def export_language_data(
     return actual_category
 
 
-def scan_and_export():
+def scan_and_export() -> None:
     """
     Scan downloads directory and export data for all found combinations.
     """
@@ -407,7 +508,7 @@ def scan_and_export():
     print("\n" + "=" * 80)
 
 
-def load_language_names_from_sorted():
+def load_language_names_from_sorted() -> dict[str, dict[str, str]]:
     """
     Load language names from sorted metadata.json files.
     This reads from the sorted directory created by sort_cache_data.py.
@@ -459,7 +560,7 @@ def load_language_names_from_sorted():
 
 def generate_summary_to_dir(
     target_dir: Path, source_dir: Path, use_compact: bool = False
-):
+) -> tuple[Path, set, dict]:
     """
     Generate a summary.json file in the specified directory.
 
@@ -486,13 +587,7 @@ def generate_summary_to_dir(
         # Initialize canon entry
         if canon not in canons_data:
             canons_data[canon] = {}
-            for category in [
-                "with-timecode",
-                "audio-with-timecode",
-                "syncable",
-                "text-only",
-                "audio-only",
-            ]:
+            for category in ALL_CATEGORIES:
                 canons_data[canon][category] = {}
 
         for category_dir in sorted(canon_dir.iterdir()):
@@ -534,10 +629,11 @@ def generate_summary_to_dir(
                         vernacular_name = f"{iso.upper()} (vernacular name not cached)"
 
                     # Add to category with compact format
-                    canons_data[canon][category][iso] = {
-                        "n": language_name,
-                        "v": vernacular_name,
-                    }
+                    # Omit "v" if it's the same as "n"
+                    lang_entry = {"n": language_name}
+                    if vernacular_name != language_name:
+                        lang_entry["v"] = vernacular_name
+                    canons_data[canon][category][iso] = lang_entry
 
     # Count total unique languages across all canons and categories
     all_isos = set()
@@ -556,8 +652,8 @@ def generate_summary_to_dir(
 
     # Write summary file
     target_dir.mkdir(parents=True, exist_ok=True)
-    # Use ALL.json for human-readable, summary.json for compact
-    filename = "ALL.json" if not use_compact else "summary.json"
+    # Use ALL-langs.json for human-readable, summary.json for compact
+    filename = "ALL-langs.json" if not use_compact else "summary.json"
     summary_file = target_dir / filename
 
     if use_compact:
@@ -570,10 +666,10 @@ def generate_summary_to_dir(
     return summary_file, all_isos, canons_data
 
 
-def generate_summary():
+def generate_summary() -> None:
     """
     Generate summary.json files:
-    1. Human-readable version in export/ALL/
+    1. Human-readable version in export/ALL-langs/
     2. Compact version in workspace/
     """
     print("\n" + "=" * 80)
@@ -584,21 +680,53 @@ def generate_summary():
     language_names = load_language_names_from_sorted()
     print(f"\nLoaded {len(language_names)} language names from sorted metadata")
 
-    # Generate human-readable summary as export/ALL.json (scanning export/ALL/)
-    print(f"\nGenerating human-readable summary as export/ALL.json...")
+    # Generate human-readable summary as export/ALL-langs.json (scanning export/ALL-langs/)
+    print("\nGenerating human-readable summary as export/ALL-langs.json...")
     summary_file_readable, all_isos, canons_data = generate_summary_to_dir(
         Path("export"), EXPORT_DIR, use_compact=False
     )
-    print(f"✓ Readable summary: {summary_file_readable}")
+    print("✓ Readable summary: " + str(summary_file_readable))
 
     # Generate compact summary in workspace/ (scanning workspace/)
     print(f"\nGenerating compact summary in {WORKSPACE_DIR}...")
     summary_file_compact, _, _ = generate_summary_to_dir(
         WORKSPACE_DIR, WORKSPACE_DIR, use_compact=True
     )
-    print(f"✓ Compact summary: {summary_file_compact}")
+    print("✓ Compact summary: " + str(summary_file_compact))
 
-    print(f"\nSummary statistics:")
+    # Copy workspace summary.json to export/ALL-langs-compact.json
+    print("\nCopying compact summary to export/ALL-langs-compact.json...")
+    compact_export_file = Path("export") / "ALL-langs-compact.json"
+    import shutil
+
+    shutil.copy2(summary_file_compact, compact_export_file)
+    print("✓ Compact export: " + str(compact_export_file))
+
+    # Generate mini summary as export/ALL-langs-mini.json (ISO codes only, compact format)
+    print("\nGenerating mini summary as export/ALL-langs-mini.json...")
+    mini_summary = {
+        "metadata": {
+            "generated_at": datetime.utcnow().isoformat() + "Z",
+            "total_languages": len(all_isos),
+        },
+        "canons": {},
+    }
+
+    # Build mini structure with ISO codes only (no language names)
+    for canon, categories in canons_data.items():
+        mini_summary["canons"][canon] = {}
+        for category, languages in categories.items():
+            # Just list of ISO codes (no names)
+            iso_list = sorted(languages.keys())
+            if iso_list:  # Only include category if it has languages
+                mini_summary["canons"][canon][category] = iso_list
+
+    mini_file = Path("export") / "ALL-langs-mini.json"
+    with open(mini_file, "w", encoding="utf-8") as f:
+        json.dump(mini_summary, f, separators=(",", ":"), ensure_ascii=False)
+    print("✓ Mini summary: " + str(mini_file))
+
+    print("\nSummary statistics:")
     print(f"  Total unique languages: {len(all_isos)}")
 
     # Count languages with/without names per canon
@@ -617,23 +745,18 @@ def generate_summary():
         print(f"    Languages with names: {langs_with_names}")
         print(f"    Languages without names: {langs_without_names}")
 
-        for category in [
-            "with-timecode",
-            "audio-with-timecode",
-            "syncable",
-            "text-only",
-            "audio-only",
-        ]:
+        for category in ALL_CATEGORIES:
             count = len(canon_data.get(category, {}))
             print(f"    {category:20s}: {count:4d} languages")
 
     print("\n" + "=" * 80)
 
 
-def create_export_archive():
+def create_export_archive() -> None:
     """
     Create a zip archive from the workspace directory (compact format).
-    Store the archive as export/ALL/ALL.zip
+    Store the archive as export/ALL-langs-data.zip
+    Only includes: nt/, ot/ folders and summary.json
     """
     print("\n" + "=" * 80)
     print("CREATING EXPORT ARCHIVE")
@@ -643,8 +766,8 @@ def create_export_archive():
         print(f"Error: Workspace directory not found: {WORKSPACE_DIR}")
         return
 
-    # Archive will be placed in export/ALL/
-    archive_path = EXPORT_DIR.parent / "ALL.zip"
+    # Archive will be placed in export/
+    archive_path = EXPORT_DIR.parent / "ALL-langs-data.zip"
 
     # Remove existing archive if it exists
     if archive_path.exists():
@@ -656,18 +779,26 @@ def create_export_archive():
 
     file_count = 0
     skipped_failed = 0
+    skipped_other = 0
     with zipfile.ZipFile(archive_path, "w", zipfile.ZIP_DEFLATED) as zipf:
         # Walk through all files in workspace directory
         for file_path in WORKSPACE_DIR.rglob("*"):
             if file_path.is_file():
                 # Create archive path relative to workspace directory
                 arcname = file_path.relative_to(WORKSPACE_DIR)
-                arcname_str = str(arcname)
+                parts = arcname.parts
 
                 # Skip files in "failed" category
-                if "/failed/" in arcname_str or arcname_str.startswith("failed/"):
+                if parts and parts[0] == CATEGORY_FAILED:
                     skipped_failed += 1
                     continue
+
+                # Only include nt/, ot/ folders and summary.json
+                if parts and parts[0] not in ["nt", "ot", "summary.json"]:
+                    # Check if this is summary.json at root level
+                    if not (len(parts) == 1 and parts[0] == "summary.json"):
+                        skipped_other += 1
+                        continue
 
                 zipf.write(file_path, arcname)
                 file_count += 1
@@ -680,20 +811,28 @@ def create_export_archive():
     archive_size = archive_path.stat().st_size
     size_mb = archive_size / (1024 * 1024)
 
-    print(f"\n✓ Archive created successfully")
+    print("\n✓ Archive created successfully")
     print(f"  Total files archived: {file_count}")
     print(f"  Skipped (failed): {skipped_failed}")
+    print(f"  Skipped (other): {skipped_other}")
     print(f"  Archive size: {size_mb:.2f} MB")
     print(f"  Archive path: {archive_path.absolute()}")
     print("\n" + "=" * 80)
 
 
-def parse_regions_config():
+def parse_regions_config() -> dict[str, dict]:
     """
     Parse the regions.conf file to extract region definitions.
 
+    Now handles metadata lines:
+    - @trade: trade/bridge languages
+    - @regional: regional lingua francas
+    - @educational: educational languages
+    - @literacy: primary literacy languages
+
     Returns:
-        dict: {region_id: {"name": str, "languages": [iso_codes]}}
+        dict: {region_id: {"name": str, "languages": [iso_codes], "trade": [iso_codes],
+                           "regional": [iso_codes], "educational": [iso_codes], "literacy": [iso_codes]}}
     """
     config_path = Path("config/regions.conf")
 
@@ -704,50 +843,151 @@ def parse_regions_config():
     regions = {}
     current_region = None
     current_languages = []
+    current_metadata = {}
 
-    with open(config_path, "r", encoding="utf-8") as f:
-        for line in f:
-            line = line.strip()
+    try:
+        with open(config_path, "r", encoding="utf-8") as f:
+            for line in f:
+                line = line.strip()
 
-            # Skip comments and empty lines
-            if not line or line.startswith("#"):
-                # If we have a current region, save it
-                if current_region and current_languages:
-                    regions[current_region] = {
-                        "name": current_region,
-                        "languages": current_languages,
-                    }
-                    current_region = None
+                # Skip comments and empty lines
+                if not line or line.startswith("#"):
+                    # If we have a current region, save it
+                    if current_region and current_languages:
+                        regions[current_region] = {
+                            "name": current_region,
+                            "languages": current_languages,
+                            **current_metadata,
+                        }
+                        current_region = None
+                        current_languages = []
+                        current_metadata = {}
+                    continue
+
+                # Check for metadata lines (@trade, @regional, @educational, @literacy)
+                if line.startswith("@"):
+                    if ":" in line:
+                        metadata_type, metadata_value = line.split(":", 1)
+                        metadata_type = metadata_type[1:].strip()  # Remove @ prefix
+                        metadata_langs = [
+                            lang.strip()
+                            for lang in metadata_value.split(",")
+                            if lang.strip()
+                        ]
+                        current_metadata[metadata_type] = metadata_langs
+                    continue
+
+                # Check if this is a region name (no commas, not all lowercase, not metadata)
+                if "," not in line and not line.islower() and not line.startswith("@"):
+                    # Save previous region if exists
+                    if current_region and current_languages:
+                        regions[current_region] = {
+                            "name": current_region,
+                            "languages": current_languages,
+                            **current_metadata,
+                        }
+
+                    # Start new region
+                    current_region = line
                     current_languages = []
-                continue
+                    current_metadata = {}
+                else:
+                    # This is a language list line
+                    if current_region:
+                        # Split by comma and clean up
+                        langs = [
+                            lang.strip() for lang in line.split(",") if lang.strip()
+                        ]
+                        current_languages.extend(langs)
 
-            # Check if this is a region name (no commas, not all lowercase)
-            if "," not in line and not line.islower():
-                # Save previous region if exists
-                if current_region and current_languages:
-                    regions[current_region] = {
-                        "name": current_region,
-                        "languages": current_languages,
-                    }
-
-                # Start new region
-                current_region = line
-                current_languages = []
-            else:
-                # This is a language list line
-                if current_region:
-                    # Split by comma and clean up
-                    langs = [lang.strip() for lang in line.split(",") if lang.strip()]
-                    current_languages.extend(langs)
-
-    # Don't forget the last region
-    if current_region and current_languages:
-        regions[current_region] = {
-            "name": current_region,
-            "languages": current_languages,
-        }
+        # Don't forget the last region
+        if current_region and current_languages:
+            regions[current_region] = {
+                "name": current_region,
+                "languages": current_languages,
+                **current_metadata,
+            }
+    except (IOError, OSError) as e:
+        print(f"Error reading regions config: {e}")
+        return {}
 
     return regions
+
+
+def generate_regions_metadata() -> tuple[Path, dict] | None:
+    """
+    Generate regions.json metadata file in workspace directory.
+
+    Creates a standalone regions metadata file with:
+    - Region definitions
+    - Trade languages
+    - Regional lingua francas
+    - Educational languages
+    - Literacy languages
+    - Language lists
+    """
+    print("\n" + "=" * 80)
+    print("GENERATING REGIONS METADATA")
+    print("=" * 80)
+
+    # Parse regions config
+    print("\nParsing regions configuration...")
+    regions = parse_regions_config()
+
+    if not regions:
+        print("No regions found in config. Skipping regions metadata generation.")
+        return
+
+    print(f"Found {len(regions)} regions in config/regions.conf")
+
+    # Build optimized metadata structure
+    # Format: {"region_id": {"l": [...], "trade": [...], "regional": [...], ...}}
+    regions_metadata = {}
+
+    # Convert regions to optimized format
+    for region_name, region_data in sorted(regions.items()):
+        region_id = sanitize_filename(region_name)
+
+        # Build optimized entry with "l" for languages
+        metadata_entry = {
+            "l": region_data["languages"],
+        }
+
+        # Add optional metadata fields (directly at entry level, not nested)
+        metadata_types = ["trade", "regional", "educational", "literacy"]
+        for metadata_type in metadata_types:
+            if metadata_type in region_data:
+                metadata_entry[metadata_type] = region_data[metadata_type]
+
+        regions_metadata[region_id] = metadata_entry
+
+    # Write compact version to workspace/regions.json
+    WORKSPACE_DIR.mkdir(parents=True, exist_ok=True)
+    regions_file = WORKSPACE_DIR / "regions.json"
+
+    with open(regions_file, "w", encoding="utf-8") as f:
+        json.dump(regions_metadata, f, separators=(",", ":"), ensure_ascii=False)
+
+    print(f"\n✓ Regions metadata written to: {regions_file} (compact)")
+    print(f"  Total regions: {len(regions_metadata)}")
+
+    # Write non-compacted version to export/regions.json
+    export_regions_json = EXPORT_DIR.parent / "regions.json"
+    with open(export_regions_json, "w", encoding="utf-8") as f:
+        json.dump(regions_metadata, f, indent=2, ensure_ascii=False)
+    print(f"✓ Regions metadata written to: {export_regions_json} (readable)")
+
+    # Create regions.zip in export directory with compact format
+    export_regions_zip = EXPORT_DIR.parent / "regions.zip"
+    with zipfile.ZipFile(export_regions_zip, "w", zipfile.ZIP_DEFLATED) as z:
+        z.writestr(
+            "regions.json",
+            json.dumps(regions_metadata, separators=(",", ":"), ensure_ascii=False),
+        )
+    print(f"✓ Regions metadata zipped to: {export_regions_zip} (compact)")
+    print(f"{'=' * 80}")
+
+    return regions_file, regions_metadata
 
 
 def sanitize_filename(name: str) -> str:
@@ -767,12 +1007,10 @@ def extract_iso_from_path(path: str) -> str:
     Path format: nt/category/iso/distinct_id/bible-data.json
     """
     parts = path.split("/")
-    if len(parts) >= 3:
-        return parts[2]  # ISO is third component
-    return ""
+    return parts[2] if len(parts) >= 3 else ""
 
 
-def filter_summary_by_isos(summary: dict, iso_codes: set) -> dict:
+def filter_summary_by_isos(summary: dict, iso_codes: set[str]) -> dict:
     """
     Filter summary.json to only include specified ISO codes.
     Also excludes "failed" category.
@@ -795,7 +1033,7 @@ def filter_summary_by_isos(summary: dict, iso_codes: set) -> dict:
 
         for category, languages in categories.items():
             # Skip failed category
-            if category == "failed":
+            if category == CATEGORY_FAILED:
                 continue
 
             filtered_langs = {
@@ -811,10 +1049,14 @@ def filter_summary_by_isos(summary: dict, iso_codes: set) -> dict:
 
 
 def create_region_zip(
-    region_id: str, region_name: str, iso_codes: list, all_summary: dict
-):
+    region_id: str,
+    region_name: str,
+    iso_codes: list[str],
+    all_summary: dict,
+    region_metadata: dict | None = None,
+) -> None:
     """
-    Create a region-specific zip by filtering ALL.zip.
+    Create a region-specific zip by filtering ALL-langs-data.zip.
     Uses direct zip-to-zip streaming for efficiency.
 
     Args:
@@ -822,19 +1064,26 @@ def create_region_zip(
         region_name: Human-readable region name
         iso_codes: List of ISO language codes for this region
         all_summary: The complete summary dict from workspace/summary.json
+        region_metadata: Optional metadata dict for this region (trade, regional, etc.)
     """
     iso_set = set(iso_codes)
-    all_zip_path = EXPORT_DIR.parent / "ALL.zip"
-    region_zip_path = EXPORT_DIR.parent / f"{region_id}.zip"
+    all_zip_path = EXPORT_DIR.parent / "ALL-langs-data.zip"
+    regions_dir = EXPORT_DIR.parent / "regions"
+    regions_dir.mkdir(parents=True, exist_ok=True)
+    region_zip_path = regions_dir / f"{region_id}.zip"
 
     if not all_zip_path.exists():
-        print(f"  ✗ Skipping {region_name}: ALL.zip not found")
+        print(f"  ✗ Skipping {region_name}: ALL-langs-data.zip not found")
         return
 
     print(f"  Creating {region_id}.zip ({len(iso_codes)} languages)...")
 
     # Filter summary
     filtered_summary = filter_summary_by_isos(all_summary, iso_set)
+
+    # Add region metadata if provided
+    if region_metadata:
+        filtered_summary["region_metadata"] = region_metadata
 
     matched_files = 0
     skipped_files = 0
@@ -848,13 +1097,15 @@ def create_region_zip(
             )
             dst.writestr("summary.json", summary_json)
 
-            # Stream matching files from ALL.zip
+            # Stream matching files from ALL-langs-data.zip
             for entry_name in src.namelist():
                 if entry_name == "summary.json":
                     continue  # We already added the filtered version
 
                 # Skip files in "failed" category
-                if "/failed/" in entry_name or entry_name.startswith("failed/"):
+                if f"/{CATEGORY_FAILED}/" in entry_name or entry_name.startswith(
+                    f"{CATEGORY_FAILED}/"
+                ):
                     skipped_files += 1
                     continue
 
@@ -876,9 +1127,9 @@ def create_region_zip(
     print(f"      Files: {matched_files}, Size: {size_kb:.0f} KB")
 
 
-def create_region_zips():
+def create_region_zips() -> None:
     """
-    Create region-specific zip files by filtering ALL.zip.
+    Create region-specific zip files by filtering ALL-langs-data.zip.
     """
     print("\n" + "=" * 80)
     print("CREATING REGION-SPECIFIC ZIPS")
@@ -894,6 +1145,15 @@ def create_region_zips():
 
     print(f"Found {len(regions)} regions in config/regions.conf")
 
+    # Load regions metadata from workspace
+    workspace_regions_path = WORKSPACE_DIR / "regions.json"
+    regions_metadata_dict = {}
+    if workspace_regions_path.exists():
+        with open(workspace_regions_path, "r", encoding="utf-8") as f:
+            regions_data = json.load(f)
+            regions_metadata_dict = regions_data.get("regions", {})
+        print(f"Loaded metadata for {len(regions_metadata_dict)} regions")
+
     # Load the complete summary from workspace
     workspace_summary_path = WORKSPACE_DIR / "summary.json"
     if not workspace_summary_path.exists():
@@ -907,7 +1167,7 @@ def create_region_zips():
     print(f"Total languages in summary: {all_summary['metadata']['total_languages']}")
 
     # Create each region zip
-    print(f"\nCreating region zips...")
+    print("\nCreating region zips...")
     created_count = 0
 
     for region_name, region_data in sorted(regions.items()):
@@ -918,20 +1178,29 @@ def create_region_zips():
             print(f"  ⚠ Skipping {region_name}: No languages defined")
             continue
 
+        # Get metadata for this region (only the metadata field)
+        region_metadata = None
+        if region_id in regions_metadata_dict:
+            region_meta_full = regions_metadata_dict[region_id]
+            if "metadata" in region_meta_full:
+                region_metadata = region_meta_full["metadata"]
+
         try:
-            create_region_zip(region_id, region_name, iso_codes, all_summary)
+            create_region_zip(
+                region_id, region_name, iso_codes, all_summary, region_metadata
+            )
             created_count += 1
         except Exception as e:
             print(f"  ✗ Failed to create {region_id}.zip: {e}")
 
     # Summary
-    print(f"\n{'=' * 80}")
+    print("\n" + "=" * 80)
     print(f"✓ Created {created_count} region zip files")
-    print(f"  Location: export/")
-    print(f"{'=' * 80}")
+    print("  Location: export/regions/")
+    print("=" * 80)
 
 
-def main():
+def main() -> None:
     """Main entry point."""
     print("\n" + "=" * 80)
     print("BIBLE STORY DATA EXPORT")
@@ -941,6 +1210,7 @@ def main():
     try:
         scan_and_export()
         generate_summary()
+        generate_regions_metadata()
         create_export_archive()
         create_region_zips()
         print("\n✓ Export completed successfully\n")

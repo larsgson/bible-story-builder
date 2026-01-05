@@ -6,12 +6,17 @@ This script uses the new canonical metadata from sorted/BB/ which organizes
 content by canon (NT, OT, PARTIAL) and category.
 
 Usage:
-    # Download specific language and books
+    # Download specific language and books (default: all content types)
     python download_language_content.py eng --books Test
     python download_language_content.py spa --books GEN:1-3,MAT:1-5
 
     # Download with story sets
     python download_language_content.py eng --books "OBS Intro OT+NT"
+
+    # Download specific content types
+    python download_language_content.py eng --books Test --content-types audio
+    python download_language_content.py eng --books Test --content-types text,timing
+    python download_language_content.py eng --books Test --content-types audio,text,timing
 
 Prerequisites:
     1. Run sort_cache_data.py first to generate sorted/BB/
@@ -25,6 +30,7 @@ Output:
 import argparse
 import json
 import os
+import re
 import sys
 from collections import defaultdict
 from datetime import datetime
@@ -54,6 +60,7 @@ SORTED_DIR = Path("sorted/BB")
 OUTPUT_DIR = Path("downloads/BB")
 CONFIG_DIR = Path("config")
 STORY_SET_CONFIG = CONFIG_DIR / "story-set.conf"
+TEMPLATE_DIR = Path("templates")
 ERROR_LOG_DIR = Path("download_log")
 
 # Book mappings
@@ -141,7 +148,7 @@ class DownloadStats:
 
     def report(self):
         total = self.downloaded_from_api + self.already_exists
-        print(f"\nDownload Statistics:")
+        print("\nDownload Statistics:")
         print(f"  Already exists:      {self.already_exists}")
         print(f"  Downloaded from API: {self.downloaded_from_api}")
         print(f"  Failed:              {self.failed}")
@@ -289,6 +296,67 @@ def load_story_sets() -> Dict[str, List[Tuple[str, List[int]]]]:
                         story_sets[current_set].append((book.strip(), chapters))
 
     return story_sets
+
+
+def load_template_references(template_id: str) -> List[Tuple[str, List[int]]]:
+    """
+    Load Bible references from all .md files in templates/<template_id>/.
+
+    Returns list of (book, chapters) tuples similar to story sets.
+    """
+    template_path = TEMPLATE_DIR / template_id
+
+    if not template_path.exists() or not template_path.is_dir():
+        log(f"Error: Template directory not found: {template_path}", "ERROR")
+        return []
+
+    # Pattern to match: <<<REF: BOOK CHAPTER:VERSES>>>
+    # Examples: <<<REF: GEN 1:1-2>>>, <<<REF: LUK 1:5-7>>>, <<<REF: GEN 1:10,22>>>
+    ref_pattern = re.compile(r"<<<REF:\s*([A-Z0-9]+)\s+(\d+):[^>]+>>>")
+
+    # Dictionary to collect chapters per book
+    book_chapters: Dict[str, set] = defaultdict(set)
+
+    # Find all .md files in template directory
+    md_files = sorted(template_path.glob("*.md"))
+
+    if not md_files:
+        log(f"Warning: No .md files found in {template_path}", "WARN")
+        return []
+
+    log(f"Scanning {len(md_files)} template files in {template_path}", "INFO")
+
+    # Process each markdown file
+    for md_file in md_files:
+        try:
+            with open(md_file, "r", encoding="utf-8") as f:
+                content = f.read()
+
+            # Find all references
+            matches = ref_pattern.findall(content)
+            for book, chapter in matches:
+                book_chapters[book.upper()].add(int(chapter))
+
+        except Exception as e:
+            log(f"Warning: Error reading {md_file}: {e}", "WARN")
+            continue
+
+    # Convert to list of tuples with sorted chapters
+    result = []
+    for book in sorted(book_chapters.keys()):
+        chapters = sorted(list(book_chapters[book]))
+        result.append((book, chapters))
+
+    # Log what was found
+    if result:
+        log(f"Found references in template '{template_id}':", "INFO")
+        for book, chapters in result:
+            chapter_str = ",".join(map(str, chapters))
+            log(f"  {book}: {chapter_str}", "INFO")
+    else:
+        log(f"Warning: No Bible references found in template '{template_id}'", "WARN")
+
+    return result
 
 
 def parse_chapter_spec(spec: str) -> List[int]:
@@ -579,18 +647,35 @@ def get_best_fileset_for_book(
     }
 
 
-def make_api_request(endpoint: str, params: Optional[Dict] = None) -> Optional[Dict]:
-    """Make API request with error handling."""
+def make_api_request(
+    endpoint: str, params: Optional[Dict] = None, use_key_param: bool = False
+) -> Optional[Dict]:
+    """Make API request with error handling.
+
+    Args:
+        endpoint: API endpoint path
+        params: Query parameters
+        use_key_param: If True, use 'key' query param instead of Bearer token (for timing endpoint)
+    """
     if not BIBLE_API_KEY:
         log("BIBLE_API_KEY not set in .env file", "ERROR")
         return None
 
     url = f"{BIBLE_API_BASE_URL}/{endpoint}"
-    headers = {"Authorization": f"Bearer {BIBLE_API_KEY}"}
+    request_params = params or {}
+
+    if use_key_param:
+        # Some endpoints (like timestamps) require key as query param, not Bearer token
+        request_params["key"] = BIBLE_API_KEY
+        request_params["v"] = "4"
+        headers = {}
+    else:
+        # Most endpoints use Bearer token
+        headers = {"Authorization": f"Bearer {BIBLE_API_KEY}"}
 
     try:
         response = requests.get(
-            url, headers=headers, params=params or {}, timeout=API_TIMEOUT
+            url, headers=headers, params=request_params, timeout=API_TIMEOUT
         )
         response.raise_for_status()
         return response.json()
@@ -601,10 +686,11 @@ def make_api_request(endpoint: str, params: Optional[Dict] = None) -> Optional[D
 
 def get_audio_path(fileset_id: str, book: str, chapter: int) -> Optional[str]:
     """Get audio file path from API."""
-    data = make_api_request(
-        "library/filesetmedia",
-        {"dam_id": fileset_id, "book_id": book, "chapter_id": chapter},
-    )
+    # Use the correct endpoint format: /bibles/filesets/{fileset_id}/{book}/{chapter}
+    endpoint = f"bibles/filesets/{fileset_id}/{book}/{chapter}"
+
+    # This endpoint requires key as query param, not Bearer token
+    data = make_api_request(endpoint, use_key_param=True)
 
     if not data or "data" not in data or not data["data"]:
         return None
@@ -614,10 +700,11 @@ def get_audio_path(fileset_id: str, book: str, chapter: int) -> Optional[str]:
 
 def get_text_content(fileset_id: str, book: str, chapter: int) -> Optional[str]:
     """Get text content from API."""
-    data = make_api_request(
-        "library/filesetmedia",
-        {"dam_id": fileset_id, "book_id": book, "chapter_id": chapter},
-    )
+    # Use the correct endpoint format: /bibles/filesets/{fileset_id}/{book}/{chapter}
+    endpoint = f"bibles/filesets/{fileset_id}/{book}/{chapter}"
+
+    # This endpoint requires key as query param, not Bearer token
+    data = make_api_request(endpoint, use_key_param=True)
 
     if not data or "data" not in data or not data["data"]:
         return None
@@ -626,10 +713,51 @@ def get_text_content(fileset_id: str, book: str, chapter: int) -> Optional[str]:
 
 
 def get_timing_data(fileset_id: str, book: str, chapter: int) -> Optional[Dict]:
-    """Get timing data from API."""
-    # Timing data is accessed via a different endpoint
-    # This is a placeholder - adjust based on actual API
+    """Get timing data from API for a specific chapter."""
+    # Normalize fileset ID - timing API doesn't work with suffixes like -opus16
+    base_fileset_id = normalize_fileset_id(fileset_id)
+    endpoint = f"timestamps/{base_fileset_id}/{book}/{chapter}"
+
+    # Timing endpoint requires key as query param, not Bearer token
+    data = make_api_request(endpoint, use_key_param=True)
+    if not data:
+        return None
+
+    if "error" in data:
+        return None
+
+    if "data" in data:
+        timing_data = data["data"]
+        # Check if data array is not empty
+        if timing_data and len(timing_data) > 0:
+            return timing_data
+        return None
+
     return None
+
+
+def normalize_fileset_id(fileset_id: str) -> str:
+    """Remove format suffixes for API calls.
+
+    This is used for API calls that don't accept format suffixes.
+
+    Examples:
+        AAAMLTN1DA-opus16 -> AAAMLTN1DA
+        ENGESV_ET-json -> ENGESV_ET
+    """
+    # Remove audio format suffixes
+    audio_suffixes = ["-opus16", "-opus32", "-mp3-64", "-mp3-128", "-mp3"]
+    for suffix in audio_suffixes:
+        if fileset_id.endswith(suffix):
+            return fileset_id[: -len(suffix)]
+
+    # Remove text format suffixes
+    text_suffixes = ["-json", "-usx", "-html"]
+    for suffix in text_suffixes:
+        if fileset_id.endswith(suffix):
+            return fileset_id[: -len(suffix)]
+
+    return fileset_id
 
 
 def download_audio(
@@ -812,20 +940,28 @@ def download_chapter(
     text_fileset: Optional[str],
     timing_available: bool,
     force: bool = False,
+    content_types: Optional[List[str]] = None,
 ) -> bool:
     """
-    Download all content for a specific chapter.
+    Download content for a specific chapter based on requested content types.
+
+    Args:
+        content_types: List of content types to download ('audio', 'text', 'timing').
+                      If None, downloads all available content types (default behavior).
 
     Returns True if all required downloads succeeded or already exist, False otherwise.
     """
+    # Default to all content types if not specified (backward compatibility)
+    if content_types is None:
+        content_types = ["audio", "text", "timing"]
     # Output structure: downloads/BB/{canon}/{category}/{iso}/{distinct_id}/{book}/
     base_dir = OUTPUT_DIR / canon.lower() / category / iso / distinct_id / book
     base_dir.mkdir(parents=True, exist_ok=True)
 
     success = True
 
-    # Download audio
-    if audio_fileset:
+    # Download audio (if requested)
+    if audio_fileset and "audio" in content_types:
         audio_file = base_dir / f"{book}_{chapter:03d}_{audio_fileset}.mp3"
         if audio_file.exists() and not force:
             log(f"  ⊙ Already exists: {audio_file.name}", "INFO")
@@ -843,8 +979,8 @@ def download_chapter(
             ):
                 success = False
 
-    # Download text
-    if text_fileset:
+    # Download text (if requested)
+    if text_fileset and "text" in content_types:
         text_file = base_dir / f"{book}_{chapter:03d}_{text_fileset}.txt"
         if text_file.exists() and not force:
             log(f"  ⊙ Already exists: {text_file.name}", "INFO")
@@ -862,8 +998,8 @@ def download_chapter(
             ):
                 success = False
 
-    # Download timing (if available)
-    if timing_available and audio_fileset:
+    # Download timing (if requested and available)
+    if timing_available and audio_fileset and "timing" in content_types:
         timing_file = base_dir / f"{book}_{chapter:03d}_{audio_fileset}_timing.json"
         if timing_file.exists() and not force:
             log(f"  ⊙ Already exists: {timing_file.name}", "INFO")
@@ -891,13 +1027,29 @@ def download_language(
     force_partial: bool = False,
     required_category: Optional[str] = None,
     required_canon: Optional[str] = None,
+    content_types: Optional[List[str]] = None,
 ):
-    """Download content for a language."""
+    """
+    Download content for a language.
+
+    Args:
+        content_types: List of content types to download ('audio', 'text', 'timing').
+                      If None, downloads all available content types (default behavior).
+    """
     log(f"Processing language: {iso}", "INFO")
 
     # Expand book specification
+    # Split on both comma and space to handle different separators
     book_chapters = []
-    for spec in books_spec.split(","):
+    # First try splitting by spaces (for template format), then by commas (for manual format)
+    if " " in books_spec and ":" in books_spec:
+        # Template format: "GEN:1,2,3 LUK:1,2 MAT:1,2"
+        specs = books_spec.split()
+    else:
+        # Manual format: "GEN:1-3,MAT:1-5" or "GEN,MAT"
+        specs = books_spec.split(",")
+
+    for spec in specs:
         book_chapters.extend(expand_book_spec(spec.strip()))
 
     if not book_chapters:
@@ -935,7 +1087,12 @@ def download_language(
         if required_category:
             filtered_metadata = {}
             for fid, meta in metadata_by_fileset.items():
-                if meta.get("aggregate_category") == required_category:
+                category = meta.get("aggregate_category")
+                # For timing categories, accept both with-timecode and audio-with-timecode
+                if required_category == "with-timecode":
+                    if category in ("with-timecode", "audio-with-timecode"):
+                        filtered_metadata[fid] = meta
+                elif category == required_category:
                     filtered_metadata[fid] = meta
 
             if not filtered_metadata:
@@ -994,7 +1151,26 @@ def download_language(
             # Try each distinct_id
             # If required_category is set: stop at first success (book-set mode)
             # If required_category is None: download all versions (single language mode)
-            for distinct_id, version_metadata in distinct_ids_to_try.items():
+
+            # Sort distinct_ids by category priority when filtering by timing
+            # Prefer with-timecode over audio-with-timecode
+            if required_category == "with-timecode":
+
+                def get_category_priority(distinct_id):
+                    # Get category from first metadata entry for this distinct_id
+                    first_meta = distinct_ids_to_try[distinct_id][0]
+                    category = first_meta.get("aggregate_category", "")
+                    # with-timecode (0) before audio-with-timecode (1)
+                    return (0 if category == "with-timecode" else 1, distinct_id)
+
+                distinct_ids_items = sorted(
+                    distinct_ids_to_try.items(),
+                    key=lambda x: get_category_priority(x[0]),
+                )
+            else:
+                distinct_ids_items = distinct_ids_to_try.items()
+
+            for distinct_id, version_metadata in distinct_ids_items:
                 # Get best fileset info for this distinct_id
                 version_dict = {
                     m.get("fileset", {}).get("id", ""): m for m in version_metadata
@@ -1027,17 +1203,14 @@ def download_language(
                         fileset_info["text_fileset"],
                         fileset_info["timing_available"],
                         force,
+                        content_types,
                     )
                     if not chapter_success:
                         success = False
 
                 if success:
                     log(f"✓ Successfully downloaded {distinct_id}", "INFO")
-                    # If required_category is set (book-set mode), stop at first success
-                    if required_category:
-                        log(f"Stopping at first success (book-set mode)", "INFO")
-                        break
-                    # Otherwise (single language mode), continue to download all versions
+                    # Continue to download all distinct_ids (versions) regardless of mode
                 else:
                     remaining = [
                         d
@@ -1100,11 +1273,12 @@ def get_languages_by_book_set(book_set: str) -> List[str]:
             continue
 
         # Load metadata for this language
-        if book_set == "TIMING_NT":
+        elif book_set == "TIMING_NT":
             # Has timing data for NT
             metadata_dict = load_language_metadata(iso, "NT")
             for metadata in metadata_dict.values():
-                if metadata.get("aggregate_category") == "with-timecode":
+                category = metadata.get("aggregate_category")
+                if category in ("with-timecode", "audio-with-timecode"):
                     languages.append(iso)
                     break
 
@@ -1112,7 +1286,8 @@ def get_languages_by_book_set(book_set: str) -> List[str]:
             # Has timing data for OT
             metadata_dict = load_language_metadata(iso, "OT")
             for metadata in metadata_dict.values():
-                if metadata.get("aggregate_category") == "with-timecode":
+                category = metadata.get("aggregate_category")
+                if category in ("with-timecode", "audio-with-timecode"):
                     languages.append(iso)
                     break
 
@@ -1155,6 +1330,10 @@ def main():
         help="Books to download (e.g., 'GEN', 'GEN:1-3', 'Test', 'OBS Intro OT+NT')",
     )
     parser.add_argument(
+        "--template",
+        help="Template ID to load references from (e.g., 'OBS'). Reads from templates/<template_id>/*.md",
+    )
+    parser.add_argument(
         "--book-set",
         help="Book-set filter: ALL, TIMING_NT, TIMING_OT, SYNC_NT, SYNC_OT, PARTIAL",
     )
@@ -1168,12 +1347,61 @@ def main():
         action="store_true",
         help="Include partial content (single books, incomplete sets)",
     )
+    parser.add_argument(
+        "--content-types",
+        help="Content types to download: audio, text, timing (comma-separated, e.g., 'audio,text'). Default: all types",
+    )
 
     args = parser.parse_args()
 
     # Initialize variables
     required_category: Optional[str] = None
     required_canon: Optional[str] = None
+    template_books: Optional[str] = None
+    content_types: Optional[List[str]] = None
+
+    # Parse content types
+    if args.content_types:
+        content_types = [ct.strip().lower() for ct in args.content_types.split(",")]
+        valid_types = {"audio", "text", "timing"}
+        invalid_types = [ct for ct in content_types if ct not in valid_types]
+        if invalid_types:
+            log(f"Error: Invalid content types: {', '.join(invalid_types)}", "ERROR")
+            log("Valid types: audio, text, timing", "ERROR")
+            sys.exit(1)
+        log(f"Content types to download: {', '.join(content_types)}", "INFO")
+
+    # Handle --template argument
+    if args.template:
+        # Load references from template
+        template_refs = load_template_references(args.template)
+
+        if not template_refs:
+            log(
+                f"Error: No valid references found in template '{args.template}'",
+                "ERROR",
+            )
+            sys.exit(1)
+
+        # Convert template references to book spec format
+        # Format: BOOK:CHAPTER,CHAPTER,... with spaces between books
+        # Note: Commas within chapter lists, spaces between different books
+        book_specs = []
+        for book, chapters in template_refs:
+            chapter_list = ",".join(map(str, chapters))
+            book_specs.append(f"{book}:{chapter_list}")
+        template_books = " ".join(book_specs)
+
+        # Check for competing --books argument
+        if args.books:
+            log("=" * 70, "WARN")
+            log("WARNING: Both --template and --books specified", "WARN")
+            log(f"  --template '{args.template}' takes precedence", "WARN")
+            log(f"  Ignoring --books argument: '{args.books}'", "WARN")
+            log("=" * 70, "WARN")
+
+        # Override books with template references
+        args.books = template_books
 
     # Validate arguments
     if args.book_set:
@@ -1265,6 +1493,7 @@ def main():
             args.force_partial,
             required_category if args.book_set else None,
             required_canon if args.book_set else None,
+            content_types,
         )
 
     # Save error logs
