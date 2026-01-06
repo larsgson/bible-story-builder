@@ -860,6 +860,14 @@ def generate_summary() -> None:
     total_files = manifest_data["metadata"]["totalFiles"]
     print(f"  Total data.json files indexed: {total_files}")
 
+    # Copy manifest.json to export/ALL-langs/ directory
+    print("\nCopying manifest.json to export/ALL-langs/...")
+    import shutil
+
+    export_manifest = EXPORT_DIR / "manifest.json"
+    shutil.copy2(manifest_file, export_manifest)
+    print("✓ Export manifest: " + str(export_manifest))
+
     print("\n" + "=" * 80)
 
 

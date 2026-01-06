@@ -778,6 +778,11 @@ def export_pretty_timings(template_id: str) -> bool:
         if file_path.is_file():
             # Create corresponding path in export directory
             relative_path = file_path.relative_to(workspace_template_dir)
+
+            # Skip manifest.json - we'll copy it separately in compact format
+            if file_path.name == "manifest.json" and len(relative_path.parts) == 1:
+                continue
+
             output_path = export_timings_dir / relative_path
 
             # Create parent directory if needed
@@ -801,6 +806,16 @@ def export_pretty_timings(template_id: str) -> bool:
             # Print progress every 100 files
             if file_count % 100 == 0:
                 log(f"  Processed {file_count} files...")
+
+    # Copy manifest.json in compact format
+    manifest_src = workspace_template_dir / "manifest.json"
+    if manifest_src.exists():
+        manifest_dst = export_timings_dir / "manifest.json"
+        import shutil
+
+        shutil.copy2(manifest_src, manifest_dst)
+        file_count += 1
+        log(f"  Copied manifest.json in compact format")
 
     log(f"\nPretty timings export complete")
     log(f"  Total files exported: {file_count}")
