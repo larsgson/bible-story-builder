@@ -24,6 +24,9 @@ DOWNLOADS_DIR = Path("downloads/BB")
 REGIONS_CONFIG = Path("config/regions.conf")
 LOG_DIR = Path("export_log")
 
+# Fixed timestamp for reproducible builds (avoids changing zip files when content is identical)
+FIXED_TIMESTAMP = "2026-01-01T00:00:00Z"
+
 
 def log(msg: str, level: str = "INFO"):
     print(f"[{level}] {msg}")
@@ -806,9 +809,97 @@ def export_pretty_timings(template_id: str) -> bool:
     return True
 
 
+def generate_template_manifest(template_id: str) -> bool:
+    """
+    Generate manifest.json for a template's timing files.
+    Structure: testament/category/langCode/[distinctIds]
+    Stored as: workspace/templates/{template_id}/manifest.json
+    Returns True if successful, False otherwise.
+    """
+    workspace_template_dir = WORKSPACE_DIR / template_id
+    if not workspace_template_dir.exists():
+        log(
+            f"Template workspace directory not found: {workspace_template_dir}", "ERROR"
+        )
+        return False
+
+    log(f"\nGenerating manifest.json for template: {template_id}")
+
+    # Collect all timing.json files
+    manifest_data = {
+        "metadata": {
+            "generatedAt": FIXED_TIMESTAMP,
+            "totalFiles": 0,
+        },
+        "files": {},
+    }
+
+    file_count = 0
+
+    # Walk through testament/category/langCode/distinctId/timing.json structure
+    for testament_dir in sorted(workspace_template_dir.iterdir()):
+        if not testament_dir.is_dir():
+            continue
+
+        testament = testament_dir.name
+
+        # Skip non-testament directories
+        if testament not in ["nt", "ot"]:
+            continue
+
+        if testament not in manifest_data["files"]:
+            manifest_data["files"][testament] = {}
+
+        for category_dir in sorted(testament_dir.iterdir()):
+            if not category_dir.is_dir():
+                continue
+
+            category = category_dir.name
+
+            if category not in manifest_data["files"][testament]:
+                manifest_data["files"][testament][category] = {}
+
+            for lang_dir in sorted(category_dir.iterdir()):
+                if not lang_dir.is_dir():
+                    continue
+
+                lang_code = lang_dir.name
+
+                if lang_code not in manifest_data["files"][testament][category]:
+                    manifest_data["files"][testament][category][lang_code] = []
+
+                for distinct_id_dir in sorted(lang_dir.iterdir()):
+                    if not distinct_id_dir.is_dir():
+                        continue
+
+                    distinct_id = distinct_id_dir.name
+
+                    # Check if timing.json exists
+                    timing_file = distinct_id_dir / "timing.json"
+                    if timing_file.exists():
+                        manifest_data["files"][testament][category][lang_code].append(
+                            distinct_id
+                        )
+                        file_count += 1
+
+    # Update total count
+    manifest_data["metadata"]["totalFiles"] = file_count
+
+    # Write manifest.json in compact format
+    manifest_file = workspace_template_dir / "manifest.json"
+    with open(manifest_file, "w", encoding="utf-8") as f:
+        json.dump(manifest_data, f, separators=(",", ":"), ensure_ascii=False)
+
+    log(f"✓ Manifest file: {manifest_file}")
+    log(f"  Total timing.json files indexed: {file_count}")
+
+    return True
+
+
 def create_all_timings_zip(template_id: str) -> bool:
     """
     Create ALL-timings.zip containing all workspace data for a template.
+    Includes manifest.json and all timing files.
     Stored as: export/templates/{template_id}/ALL-timings.zip
     Returns True if successful, False otherwise.
     """
@@ -912,6 +1003,12 @@ def main():
         pretty_success = export_pretty_timings(template_id)
         if not pretty_success:
             log(f"Failed to export pretty timings for {template_id}", "ERROR")
+            continue
+
+        # Step 2.5: Generate manifest.json
+        manifest_success = generate_template_manifest(template_id)
+        if not manifest_success:
+            log(f"Failed to generate manifest for {template_id}", "ERROR")
             continue
 
         # Step 3: Create ALL-timings.zip

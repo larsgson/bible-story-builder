@@ -35,6 +35,9 @@ EXPORT_DIR = Path("export/ALL-langs")  # Human-readable exports with whitespace
 WORKSPACE_DIR = Path("workspace")  # Compact format for zipping
 SORTED_DIR = Path("sorted")
 
+# Fixed timestamp for reproducible builds (avoids changing zip files when content is identical)
+FIXED_TIMESTAMP = "2026-01-01T00:00:00Z"
+
 # Category constants
 CATEGORY_WITH_TIMECODE = "with-timecode"
 CATEGORY_AUDIO_WITH_TIMECODE = "audio-with-timecode"
@@ -644,7 +647,7 @@ def generate_summary_to_dir(
     # Create summary structure
     summary = {
         "metadata": {
-            "generated_at": datetime.utcnow().isoformat() + "Z",
+            "generated_at": FIXED_TIMESTAMP,
             "total_languages": len(all_isos),
         },
         "canons": canons_data,
@@ -664,6 +667,103 @@ def generate_summary_to_dir(
             json.dump(summary, f, indent=2, ensure_ascii=False)
 
     return summary_file, all_isos, canons_data
+
+
+def generate_manifest(target_dir: Path) -> Path:
+    """
+    Generate manifest.json that indexes all data.json files.
+
+    Structure matches build-manifest.mjs output:
+    {
+      "metadata": {
+        "generatedAt": "ISO timestamp",
+        "totalFiles": count
+      },
+      "files": {
+        "testament": {
+          "category": {
+            "langCode": ["distinctId1", "distinctId2", ...]
+          }
+        }
+      }
+    }
+
+    Args:
+        target_dir: Directory to scan and write manifest.json
+
+    Returns:
+        Path to the generated manifest.json file
+    """
+    # Collect all data.json files
+    manifest_data = {
+        "metadata": {
+            "generatedAt": FIXED_TIMESTAMP,
+            "totalFiles": 0,
+        },
+        "files": {},
+    }
+
+    file_count = 0
+
+    # Walk through testament/category/langCode/distinctId/data.json structure
+    for testament_dir in sorted(target_dir.iterdir()):
+        if not testament_dir.is_dir():
+            continue
+
+        testament = testament_dir.name
+
+        # Skip non-testament directories
+        if testament not in ["nt", "ot"]:
+            continue
+
+        if testament not in manifest_data["files"]:
+            manifest_data["files"][testament] = {}
+
+        for category_dir in sorted(testament_dir.iterdir()):
+            if not category_dir.is_dir():
+                continue
+
+            category = category_dir.name
+
+            # Skip failed category
+            if category == "failed":
+                continue
+
+            if category not in manifest_data["files"][testament]:
+                manifest_data["files"][testament][category] = {}
+
+            for lang_dir in sorted(category_dir.iterdir()):
+                if not lang_dir.is_dir():
+                    continue
+
+                lang_code = lang_dir.name
+
+                if lang_code not in manifest_data["files"][testament][category]:
+                    manifest_data["files"][testament][category][lang_code] = []
+
+                for distinct_id_dir in sorted(lang_dir.iterdir()):
+                    if not distinct_id_dir.is_dir():
+                        continue
+
+                    distinct_id = distinct_id_dir.name
+
+                    # Check if data.json exists
+                    data_file = distinct_id_dir / "data.json"
+                    if data_file.exists():
+                        manifest_data["files"][testament][category][lang_code].append(
+                            distinct_id
+                        )
+                        file_count += 1
+
+    # Update total count
+    manifest_data["metadata"]["totalFiles"] = file_count
+
+    # Write manifest.json in compact format
+    manifest_file = target_dir / "manifest.json"
+    with open(manifest_file, "w", encoding="utf-8") as f:
+        json.dump(manifest_data, f, separators=(",", ":"), ensure_ascii=False)
+
+    return manifest_file
 
 
 def generate_summary() -> None:
@@ -706,7 +806,7 @@ def generate_summary() -> None:
     print("\nGenerating mini summary as export/ALL-langs-mini.json...")
     mini_summary = {
         "metadata": {
-            "generated_at": datetime.utcnow().isoformat() + "Z",
+            "generated_at": FIXED_TIMESTAMP,
             "total_languages": len(all_isos),
         },
         "canons": {},
@@ -749,6 +849,17 @@ def generate_summary() -> None:
             count = len(canon_data.get(category, {}))
             print(f"    {category:20s}: {count:4d} languages")
 
+    # Generate manifest.json in workspace
+    print("\nGenerating manifest.json in workspace...")
+    manifest_file = generate_manifest(WORKSPACE_DIR)
+    print("✓ Manifest file: " + str(manifest_file))
+
+    # Read and display manifest stats
+    with open(manifest_file) as f:
+        manifest_data = json.load(f)
+    total_files = manifest_data["metadata"]["totalFiles"]
+    print(f"  Total data.json files indexed: {total_files}")
+
     print("\n" + "=" * 80)
 
 
@@ -756,7 +867,7 @@ def create_export_archive() -> None:
     """
     Create a zip archive from the workspace directory (compact format).
     Store the archive as export/ALL-langs-data.zip
-    Only includes: nt/, ot/ folders and summary.json
+    Only includes: nt/, ot/ folders, summary.json, and manifest.json
     """
     print("\n" + "=" * 80)
     print("CREATING EXPORT ARCHIVE")
@@ -793,14 +904,29 @@ def create_export_archive() -> None:
                     skipped_failed += 1
                     continue
 
-                # Only include nt/, ot/ folders and summary.json
-                if parts and parts[0] not in ["nt", "ot", "summary.json"]:
-                    # Check if this is summary.json at root level
-                    if not (len(parts) == 1 and parts[0] == "summary.json"):
+                # Only include nt/, ot/ folders, summary.json, and manifest.json
+                if parts and parts[0] not in [
+                    "nt",
+                    "ot",
+                    "summary.json",
+                    "manifest.json",
+                ]:
+                    # Check if this is summary.json or manifest.json at root level
+                    if not (
+                        len(parts) == 1
+                        and parts[0] in ["summary.json", "manifest.json"]
+                    ):
                         skipped_other += 1
                         continue
 
-                zipf.write(file_path, arcname)
+                # Use fixed timestamp to avoid changing zip when content is identical
+                zip_info = zipfile.ZipInfo(str(arcname))
+                zip_info.date_time = (2026, 1, 1, 0, 0, 0)
+                zip_info.compress_type = zipfile.ZIP_DEFLATED
+
+                with open(file_path, "rb") as f:
+                    zipf.writestr(zip_info, f.read())
+
                 file_count += 1
 
                 # Print progress every 100 files
@@ -1091,11 +1217,14 @@ def create_region_zip(
     # Direct zip-to-zip filtering
     with zipfile.ZipFile(all_zip_path, "r") as src:
         with zipfile.ZipFile(region_zip_path, "w", zipfile.ZIP_DEFLATED) as dst:
-            # Add filtered summary first
+            # Add filtered summary first with fixed timestamp
             summary_json = json.dumps(
                 filtered_summary, separators=(",", ":"), ensure_ascii=False
             )
-            dst.writestr("summary.json", summary_json)
+            summary_info = zipfile.ZipInfo("summary.json")
+            summary_info.date_time = (2026, 1, 1, 0, 0, 0)
+            summary_info.compress_type = zipfile.ZIP_DEFLATED
+            dst.writestr(summary_info, summary_json)
 
             # Stream matching files from ALL-langs-data.zip
             for entry_name in src.namelist():
@@ -1113,8 +1242,11 @@ def create_region_zip(
                 iso = extract_iso_from_path(entry_name)
 
                 if iso in iso_set:
-                    # Stream this entry to the new zip
-                    dst.writestr(entry_name, src.read(entry_name))
+                    # Stream this entry to the new zip with fixed timestamp
+                    zip_info = zipfile.ZipInfo(entry_name)
+                    zip_info.date_time = (2026, 1, 1, 0, 0, 0)
+                    zip_info.compress_type = zipfile.ZIP_DEFLATED
+                    dst.writestr(zip_info, src.read(entry_name))
                     matched_files += 1
                 else:
                     skipped_files += 1
