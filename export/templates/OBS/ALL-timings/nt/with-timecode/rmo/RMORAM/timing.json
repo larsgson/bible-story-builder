@@ -90,5 +90,29 @@
         143.19
       ]
     }
+  },
+  "warnings": {
+    "RMORAMN2SA": {
+      "22": {
+        "LUK1:26": {
+          "details": "using verses 25 and 27 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            25,
+            27
+          ]
+        },
+        "LUK1:8": {
+          "details": "using verses 7 and 9 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            7,
+            9
+          ]
+        }
+      }
+    }
   }
 }

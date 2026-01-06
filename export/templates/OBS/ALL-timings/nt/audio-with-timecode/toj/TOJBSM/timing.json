@@ -90,5 +90,26 @@
         186.766
       ]
     }
+  },
+  "warnings": {
+    "TOJBSMN1DA": {
+      "23": {
+        "MAT1:20-21": {
+          "details": "verse 21 missing, timestamps repeated",
+          "missing_verses": [
+            21
+          ],
+          "type": "partial"
+        },
+        "MAT1:24-25": {
+          "details": "no verses after range, repeating verse 20 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            20
+          ]
+        }
+      }
+    }
   }
 }

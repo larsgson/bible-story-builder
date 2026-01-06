@@ -90,5 +90,20 @@
         128.89
       ]
     }
+  },
+  "warnings": {
+    "ADJWBTN2SA": {
+      "22": {
+        "LUK1:8": {
+          "details": "using verses 7 and 10 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            7,
+            10
+          ]
+        }
+      }
+    }
   }
 }

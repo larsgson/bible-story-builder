@@ -90,5 +90,20 @@
         238.85
       ]
     }
+  },
+  "warnings": {
+    "MBCMVAN1DA": {
+      "22": {
+        "LUK1:8": {
+          "details": "using verses 7 and 9 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            7,
+            9
+          ]
+        }
+      }
+    }
   }
 }

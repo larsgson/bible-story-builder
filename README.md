@@ -17,10 +17,6 @@ Perfect for:
 - Multilingual ministry
 - Bible app development
 
-## Quick Start
-
-See [QUICKSTART.md](QUICKSTART.md) for detailed instructions.
-
 ### 1. Install
 
 ```bash
@@ -195,7 +191,7 @@ Downloaded content is automatically categorized:
 - **syncable** - Has audio + text (can be synced, no timing)
 - **text-only** - Has text only
 - **audio-only** - Has audio only
-- **incomplete-timecode** - Has timing but missing audio or text
+- **audio-with-timecode** - Has timing but missing text
 
 ## Command Reference
 

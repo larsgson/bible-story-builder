@@ -90,5 +90,18 @@
         177.713
       ]
     }
+  },
+  "warnings": {
+    "TNRNTMN1DA": {
+      "23": {
+        "MAT1:24-25": {
+          "details": "verse 25 missing, timestamps repeated",
+          "missing_verses": [
+            25
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

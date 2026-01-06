@@ -90,5 +90,35 @@
         240.716
       ]
     }
+  },
+  "warnings": {
+    "BBBWBTN1DA": {
+      "23": {
+        "MAT1:18-19": {
+          "details": "no verses after range, repeating verse 14 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            14
+          ]
+        },
+        "MAT1:20-21": {
+          "details": "no verses after range, repeating verse 14 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            14
+          ]
+        },
+        "MAT1:24-25": {
+          "details": "no verses after range, repeating verse 14 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            14
+          ]
+        }
+      }
+    }
   }
 }

@@ -90,5 +90,19 @@
         274.715
       ]
     }
+  },
+  "warnings": {
+    "CBSBSPN2SA": {
+      "23": {
+        "MAT1:24-25": {
+          "details": "no verses after range, repeating verse 23 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            23
+          ]
+        }
+      }
+    }
   }
 }

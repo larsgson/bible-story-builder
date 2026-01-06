@@ -90,5 +90,28 @@
         294.004
       ]
     }
+  },
+  "warnings": {
+    "IPIPNGN2SA": {
+      "22": {
+        "LUK1:57": {
+          "details": "no verses after range, repeating verse 55 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            55
+          ]
+        }
+      },
+      "23": {
+        "MAT1:24-25": {
+          "details": "verse 25 missing, timestamps repeated",
+          "missing_verses": [
+            25
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

@@ -90,5 +90,18 @@
         134.76
       ]
     }
+  },
+  "warnings": {
+    "KANDPIN1DA": {
+      "23": {
+        "LUK2:12-14": {
+          "details": "verse 14 missing, timestamps repeated",
+          "missing_verses": [
+            14
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

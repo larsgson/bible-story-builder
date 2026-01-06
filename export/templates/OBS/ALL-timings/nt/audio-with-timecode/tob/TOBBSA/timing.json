@@ -90,5 +90,19 @@
         194.647
       ]
     }
+  },
+  "warnings": {
+    "TOBBSAN1DA": {
+      "23": {
+        "MAT1:24-25": {
+          "details": "no verses after range, repeating verse 22 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            22
+          ]
+        }
+      }
+    }
   }
 }

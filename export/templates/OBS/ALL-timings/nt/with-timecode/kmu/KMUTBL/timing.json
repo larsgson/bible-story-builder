@@ -90,5 +90,19 @@
         230.495
       ]
     }
+  },
+  "warnings": {
+    "KMUTBLN1DA": {
+      "23": {
+        "MAT1:24-25": {
+          "details": "no verses after range, repeating verse 23 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            23
+          ]
+        }
+      }
+    }
   }
 }

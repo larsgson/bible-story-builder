@@ -90,5 +90,18 @@
         130.794
       ]
     }
+  },
+  "warnings": {
+    "MALBIBN1DA": {
+      "23": {
+        "MAT1:24-25": {
+          "details": "verse 25 missing, timestamps repeated",
+          "missing_verses": [
+            25
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

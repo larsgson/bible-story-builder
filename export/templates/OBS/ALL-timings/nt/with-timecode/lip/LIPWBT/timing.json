@@ -90,5 +90,18 @@
         157.34
       ]
     }
+  },
+  "warnings": {
+    "LIPWBTN2SA": {
+      "22": {
+        "LUK1:39-41": {
+          "details": "verse 40 missing, timestamps repeated",
+          "missing_verses": [
+            40
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

@@ -90,5 +90,35 @@
         168.56
       ]
     }
+  },
+  "warnings": {
+    "LHUTBSN2DA": {
+      "23": {
+        "MAT1:18-19": {
+          "details": "no verses after range, repeating verse 12 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            12
+          ]
+        },
+        "MAT1:20-21": {
+          "details": "no verses after range, repeating verse 12 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            12
+          ]
+        },
+        "MAT1:24-25": {
+          "details": "no verses after range, repeating verse 12 timestamp",
+          "method": "repeat_before",
+          "type": "approximated",
+          "used_verses": [
+            12
+          ]
+        }
+      }
+    }
   }
 }

@@ -415,8 +415,18 @@ def export_to_workspace(template_id: str) -> Tuple[bool, ExportLogger]:
         )
         timing_by_key[key] = meta
 
-    # Build workspace structure: {canon: {category: {language: {distinct_id: {fileset: {story: {ref: [times]}}}}}}}
+    # Build workspace structure: {canon: {category: {language: {distinct_id: {fileset: {story: {ref: timing_info}}}}}}}
+    # timing_info contains: timestamps, missing_verses, approximation
     workspace_data = defaultdict(
+        lambda: defaultdict(
+            lambda: defaultdict(
+                lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
+            )
+        )
+    )
+
+    # Track warnings separately: {canon: {category: {iso: {distinct_id: {fileset: {story: {ref: warning_info}}}}}}}
+    workspace_warnings = defaultdict(
         lambda: defaultdict(
             lambda: defaultdict(
                 lambda: defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
@@ -512,9 +522,79 @@ def export_to_workspace(template_id: str) -> Tuple[bool, ExportLogger]:
                             story_int
                         ] = {}
 
+                    # Store timing data
                     workspace_data[canon][category][iso][distinct_id][fileset][
                         story_int
                     ][ref_key] = timestamps
+
+                    # Store warning if there are issues
+                    if approximation or missing_verses:
+                        if (
+                            story_int
+                            not in workspace_warnings[canon][category][iso][
+                                distinct_id
+                            ][fileset]
+                        ):
+                            workspace_warnings[canon][category][iso][distinct_id][
+                                fileset
+                            ][story_int] = {}
+
+                        warning_entry = {}
+
+                        if approximation:
+                            warning_entry["type"] = "approximated"
+                            warning_entry["details"] = approximation
+
+                            # Parse approximation to extract used verses
+                            if "verses" in approximation and "and" in approximation:
+                                # Pattern: "using verses X and Y as boundary approximation"
+                                import re
+
+                                match = re.search(
+                                    r"verses\s+(\d+)\s+and\s+(\d+)", approximation
+                                )
+                                if match:
+                                    warning_entry["used_verses"] = [
+                                        int(match.group(1)),
+                                        int(match.group(2)),
+                                    ]
+                                    warning_entry["method"] = "boundary_verses"
+                            elif "repeating verse" in approximation:
+                                # Pattern: "no verses after range, repeating verse X timestamp"
+                                import re
+
+                                match = re.search(
+                                    r"repeating verse\s+(\d+)", approximation
+                                )
+                                if match:
+                                    warning_entry["used_verses"] = [int(match.group(1))]
+                                    warning_entry["method"] = "repeat_before"
+                            elif "using timestamp 0 and verse" in approximation:
+                                # Pattern: "no verses before range, using timestamp 0 and verse X"
+                                import re
+
+                                match = re.search(r"verse\s+(\d+)", approximation)
+                                if match:
+                                    warning_entry["used_verses"] = [int(match.group(1))]
+                                    warning_entry["method"] = "use_after"
+
+                        elif missing_verses:
+                            warning_entry["type"] = "partial"
+                            warning_entry["missing_verses"] = missing_verses
+                            count = len(missing_verses)
+                            if count == 1:
+                                warning_entry["details"] = (
+                                    f"verse {missing_verses[0]} missing, timestamps repeated"
+                                )
+                            else:
+                                warning_entry["details"] = (
+                                    f"{count} verses missing, timestamps repeated"
+                                )
+
+                        workspace_warnings[canon][category][iso][distinct_id][fileset][
+                            story_int
+                        ][ref_key] = warning_entry
+
                     processed_count += 1
 
     # Write workspace files (one per distinct_id)
@@ -534,9 +614,18 @@ def export_to_workspace(template_id: str) -> Tuple[bool, ExportLogger]:
                     output_dir.mkdir(parents=True, exist_ok=True)
                     output_file = output_dir / "timing.json"
 
+                    # Build output structure with optional warnings
+                    output_data = filesets.copy()
+
+                    # Add warnings section only if there are warnings for this distinct_id
+                    if distinct_id in workspace_warnings[canon][category][iso]:
+                        warnings = workspace_warnings[canon][category][iso][distinct_id]
+                        if warnings:
+                            output_data["warnings"] = warnings
+
                     # Write compact JSON (no indentation)
                     with open(output_file, "w") as f:
-                        json.dump(filesets, f, sort_keys=True, separators=(",", ":"))
+                        json.dump(output_data, f, sort_keys=True, separators=(",", ":"))
 
                     files_written += 1
 
@@ -630,7 +719,15 @@ def create_region_zips(
                             arcname = (
                                 f"{canon}/{category}/{iso}/{distinct_id}/timing.json"
                             )
-                            zipf.write(timing_file, arcname)
+
+                            # Use fixed timestamp to avoid changing zip when content is identical
+                            zip_info = zipfile.ZipInfo(arcname)
+                            zip_info.date_time = (2026, 1, 1, 0, 0, 0)
+                            zip_info.compress_type = zipfile.ZIP_DEFLATED
+
+                            with open(timing_file, "rb") as f:
+                                zipf.writestr(zip_info, f.read())
+
                             files_in_zip += 1
 
             if files_in_zip > 0:
@@ -746,7 +843,15 @@ def create_all_timings_zip(template_id: str) -> bool:
             if file_path.is_file():
                 # Create archive path relative to workspace template directory
                 arcname = file_path.relative_to(workspace_template_dir)
-                zipf.write(file_path, arcname)
+
+                # Use fixed timestamp to avoid changing zip when content is identical
+                zip_info = zipfile.ZipInfo(str(arcname))
+                zip_info.date_time = (2026, 1, 1, 0, 0, 0)
+                zip_info.compress_type = zipfile.ZIP_DEFLATED
+
+                with open(file_path, "rb") as f:
+                    zipf.writestr(zip_info, f.read())
+
                 file_count += 1
 
                 # Print progress every 100 files

@@ -370,5 +370,18 @@
         170.0
       ]
     }
+  },
+  "warnings": {
+    "MARDPIO1DA": {
+      "1": {
+        "GEN1:14-18": {
+          "details": "verse 18 missing, timestamps repeated",
+          "missing_verses": [
+            18
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

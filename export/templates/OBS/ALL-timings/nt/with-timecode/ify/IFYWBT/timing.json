@@ -90,5 +90,19 @@
         162.21
       ]
     }
+  },
+  "warnings": {
+    "IFYWBTN2SA": {
+      "23": {
+        "LUK2:8-11": {
+          "details": "2 verses missing, timestamps repeated",
+          "missing_verses": [
+            10,
+            11
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

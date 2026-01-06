@@ -88,5 +88,43 @@
         191.98
       ]
     }
+  },
+  "warnings": {
+    "MUHWBTN2SA": {
+      "22": {
+        "LUK1:26": {
+          "details": "using verses 25 and 27 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            25,
+            27
+          ]
+        },
+        "LUK1:39-41": {
+          "details": "verse 41 missing, timestamps repeated",
+          "missing_verses": [
+            41
+          ],
+          "type": "partial"
+        }
+      },
+      "23": {
+        "MAT1:24-25": {
+          "details": "verse 24 missing, timestamps repeated",
+          "missing_verses": [
+            24
+          ],
+          "type": "partial"
+        },
+        "MAT2:1-2": {
+          "details": "verse 1 missing, timestamps repeated",
+          "missing_verses": [
+            1
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

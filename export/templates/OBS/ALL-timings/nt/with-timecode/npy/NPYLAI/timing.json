@@ -89,5 +89,18 @@
         209.37
       ]
     }
+  },
+  "warnings": {
+    "NPYLAIN2SA": {
+      "23": {
+        "LUK2:8-11": {
+          "details": "verse 8 missing, timestamps repeated",
+          "missing_verses": [
+            8
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

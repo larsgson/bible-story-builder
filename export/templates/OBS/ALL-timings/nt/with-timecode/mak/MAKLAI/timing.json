@@ -90,5 +90,20 @@
         184.16
       ]
     }
+  },
+  "warnings": {
+    "MAKLAIN2SA": {
+      "23": {
+        "LUK2:6-7": {
+          "details": "using verses 5 and 8 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            5,
+            8
+          ]
+        }
+      }
+    }
   }
 }

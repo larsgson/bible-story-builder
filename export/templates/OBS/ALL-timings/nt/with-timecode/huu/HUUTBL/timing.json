@@ -90,5 +90,18 @@
         208.26
       ]
     }
+  },
+  "warnings": {
+    "HUUTBLN1DA": {
+      "23": {
+        "LUK2:6-7": {
+          "details": "verse 7 missing, timestamps repeated",
+          "missing_verses": [
+            7
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

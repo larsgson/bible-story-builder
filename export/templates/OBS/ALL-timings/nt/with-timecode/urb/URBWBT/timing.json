@@ -90,5 +90,26 @@
         256.12
       ]
     }
+  },
+  "warnings": {
+    "URBWBTN1DA": {
+      "22": {
+        "LUK1:8": {
+          "details": "using verses 7 and 9 as boundary approximation",
+          "method": "boundary_verses",
+          "type": "approximated",
+          "used_verses": [
+            7,
+            9
+          ]
+        }
+      },
+      "23": {
+        "LUK2:1": {
+          "details": "no verses before range, using timestamp 0 and verse 3",
+          "type": "approximated"
+        }
+      }
+    }
   }
 }

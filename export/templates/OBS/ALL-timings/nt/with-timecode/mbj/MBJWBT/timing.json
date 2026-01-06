@@ -89,5 +89,18 @@
         203.16
       ]
     }
+  },
+  "warnings": {
+    "MBJWBTN1DA": {
+      "22": {
+        "LUK1:39-41": {
+          "details": "verse 39 missing, timestamps repeated",
+          "missing_verses": [
+            39
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }

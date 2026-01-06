@@ -90,5 +90,18 @@
         170.89
       ]
     }
+  },
+  "warnings": {
+    "DUGBTLN2SA": {
+      "23": {
+        "LUK2:6-7": {
+          "details": "verse 7 missing, timestamps repeated",
+          "missing_verses": [
+            7
+          ],
+          "type": "partial"
+        }
+      }
+    }
   }
 }
