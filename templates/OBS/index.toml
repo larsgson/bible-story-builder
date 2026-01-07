@@ -1,0 +1,17 @@
+# OBS Collection Metadata
+level = "collection"
+title = "Open Bible Stories"
+
+# List of category directories in order
+categories = [
+  "01-Beginning",
+  "02-Patriarchs",
+  "03-Exodus",
+  "04-In-the-Promised-Land",
+  "05-Exile-Return-and-waiting-on-the-Messiah",
+  "06-Jesus-Starts-His-Ministry",
+  "07-Stories-and-Miracles",
+  "08-Triumph-Over-Death",
+  "09-The-Church-Begins",
+  "10-God's-New-Covenant"
+]

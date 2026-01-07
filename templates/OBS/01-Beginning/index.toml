@@ -1,0 +1,23 @@
+# Beginning Category
+level = "category"
+id = "01"
+title = "Beginning"
+beg = 1
+count = 3
+
+[image]
+filename = "000-01.png"
+
+# Stories in this category
+[[stories]]
+id = "01"
+title = "The Creation"
+
+[[stories]]
+id = "02"
+title = "Sin Enters the World"
+
+[[stories]]
+id = "03"
+title = "The Flood"
+

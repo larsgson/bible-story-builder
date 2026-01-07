@@ -67,6 +67,7 @@ api-cache/
 sorted/
 workspace/
 example/
+to-do/
 
 # Backup files
 *.bak

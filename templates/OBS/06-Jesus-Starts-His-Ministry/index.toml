@@ -1,0 +1,27 @@
+# Jesus Starts His Ministry Category
+level = "category"
+id = "06"
+title = "Jesus Starts His Ministry"
+beg = 23
+count = 4
+
+[image]
+filename = "42_Lk_03_03.png"
+
+# Stories in this category
+[[stories]]
+id = "23"
+title = "The Birth of Jesus"
+
+[[stories]]
+id = "24"
+title = "John Baptizes Jesus"
+
+[[stories]]
+id = "25"
+title = "Satan Tempts Jesus"
+
+[[stories]]
+id = "26"
+title = "Jesus Starts His Ministry"
+

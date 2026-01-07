@@ -27,7 +27,14 @@ def get_template_ids() -> List[str]:
 
 
 def load_template_refs(template_id: str) -> Dict[str, Set[int]]:
-    """Load Bible refs from template .md files, return {BOOK: {chapters}}."""
+    """Load Bible refs from template .md files, return {BOOK: {chapters}}.
+
+    Supports both flat and hierarchical template structures:
+    - Flat: templates/OBS/01.md, templates/OBS/02.md
+    - Hierarchical: templates/OBS/01-Beginning/01.md, templates/OBS/02-Patriarchs/04-Abraham/04.md
+
+    Only processes numbered .md files (story content), ignores index.md (navigation).
+    """
     path = TEMPLATE_DIR / template_id
     if not path.exists():
         return {}
@@ -35,7 +42,12 @@ def load_template_refs(template_id: str) -> Dict[str, Set[int]]:
     pattern = re.compile(r"<<<REF:\s*([A-Z0-9]+)\s+(\d+):[^>]+>>>")
     book_chapters = defaultdict(set)
 
-    for md_file in path.glob("*.md"):
+    # Use recursive glob to find all .md files (supports hierarchical structure)
+    for md_file in path.rglob("*.md"):
+        # Only process numbered files (story content), skip index.md and other non-story files
+        if not md_file.stem.isdigit():
+            continue
+
         try:
             content = md_file.read_text()
             for book, chapter in pattern.findall(content):

@@ -1,0 +1,31 @@
+# In the Promised Land Category
+level = "category"
+id = "04"
+title = "In the Promised Land"
+beg = 15
+count = 5
+
+[image]
+filename = "00-03a.png"
+
+# Stories in this category
+[[stories]]
+id = "15"
+title = "The Promised Land"
+
+[[stories]]
+id = "16"
+title = "The Deliverers"
+
+[[stories]]
+id = "17"
+title = "God's Covenant with David"
+
+[[stories]]
+id = "18"
+title = "The Divided Kingdom"
+
+[[stories]]
+id = "19"
+title = "The Prophets"
+

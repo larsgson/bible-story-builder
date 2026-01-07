@@ -1,0 +1,23 @@
+# Exile, Return and waiting on the Messiah Category
+level = "category"
+id = "05"
+title = "Exile, Return and waiting on the Messiah"
+beg = 20
+count = 3
+
+[image]
+filename = "000-06.png"
+
+# Stories in this category
+[[stories]]
+id = "20"
+title = "The Exile and Return"
+
+[[stories]]
+id = "21"
+title = "God Promises the Messiah"
+
+[[stories]]
+id = "22"
+title = "The Birth of John"
+

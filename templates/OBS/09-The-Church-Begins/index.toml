@@ -1,0 +1,31 @@
+# The Church Begins Category
+level = "category"
+id = "09"
+title = "The Church Begins"
+beg = 43
+count = 5
+
+[image]
+filename = "00-08a.png"
+
+# Stories in this category
+[[stories]]
+id = "43"
+title = "The Church Begins"
+
+[[stories]]
+id = "44"
+title = "Peter and John Heal a Beggar"
+
+[[stories]]
+id = "45"
+title = "Stephen and Philip"
+
+[[stories]]
+id = "46"
+title = "Saul Becomes a Follower of Jesus"
+
+[[stories]]
+id = "47"
+title = "Paul and Silas in Philippi"
+

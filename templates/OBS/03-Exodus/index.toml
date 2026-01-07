@@ -1,0 +1,35 @@
+# Exodus Category
+level = "category"
+id = "03"
+title = "Exodus"
+beg = 9
+count = 6
+
+[image]
+filename = "00-02d.png"
+
+# Stories in this category
+[[stories]]
+id = "09"
+title = "God Calls Moses"
+
+[[stories]]
+id = "10"
+title = "The Ten Plagues"
+
+[[stories]]
+id = "11"
+title = "The Passover"
+
+[[stories]]
+id = "12"
+title = "The Exodus"
+
+[[stories]]
+id = "13"
+title = "God's Covenant with Israel"
+
+[[stories]]
+id = "14"
+title = "Wandering in the Wilderness"
+

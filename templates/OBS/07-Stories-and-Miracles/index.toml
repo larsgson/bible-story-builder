@@ -1,0 +1,47 @@
+# Stories and Miracles Category
+level = "category"
+id = "07"
+title = "Stories and Miracles"
+beg = 27
+count = 9
+
+[image]
+filename = "42_Lk_08_01.png"
+
+# Stories in this category
+[[stories]]
+id = "27"
+title = "The Story of the Good Samaritan"
+
+[[stories]]
+id = "28"
+title = "The Rich Young Ruler"
+
+[[stories]]
+id = "29"
+title = "The Story of the Unmerciful Servant"
+
+[[stories]]
+id = "30"
+title = "Jesus Feeds Thousands of People"
+
+[[stories]]
+id = "31"
+title = "Jesus Walks on Water"
+
+[[stories]]
+id = "32"
+title = "Jesus Heals a Demon-Possessed Man & a Sick Woman"
+
+[[stories]]
+id = "33"
+title = "The Story of the Farmer"
+
+[[stories]]
+id = "34"
+title = "Jesus Teaches Other Stories"
+
+[[stories]]
+id = "35"
+title = "The Story of the Compassionate Father"
+

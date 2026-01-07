@@ -302,6 +302,12 @@ def load_template_references(template_id: str) -> List[Tuple[str, List[int]]]:
     """
     Load Bible references from all .md files in templates/<template_id>/.
 
+    Supports both flat and hierarchical template structures:
+    - Flat: templates/OBS/01.md, templates/OBS/02.md
+    - Hierarchical: templates/OBS/01-Beginning/01.md, templates/OBS/02-Patriarchs/04-Abraham/04.md
+
+    Only processes numbered .md files (story content), ignores index.md (navigation).
+
     Returns list of (book, chapters) tuples similar to story sets.
     """
     template_path = TEMPLATE_DIR / template_id
@@ -317,8 +323,8 @@ def load_template_references(template_id: str) -> List[Tuple[str, List[int]]]:
     # Dictionary to collect chapters per book
     book_chapters: Dict[str, set] = defaultdict(set)
 
-    # Find all .md files in template directory
-    md_files = sorted(template_path.glob("*.md"))
+    # Find all .md files in template directory (recursive to support hierarchical structure)
+    md_files = sorted(template_path.rglob("*.md"))
 
     if not md_files:
         log(f"Warning: No .md files found in {template_path}", "WARN")
@@ -328,6 +334,10 @@ def load_template_references(template_id: str) -> List[Tuple[str, List[int]]]:
 
     # Process each markdown file
     for md_file in md_files:
+        # Only process numbered files (story content), skip index.md and other non-story files
+        if not md_file.stem.isdigit():
+            continue
+
         try:
             with open(md_file, "r", encoding="utf-8") as f:
                 content = f.read()

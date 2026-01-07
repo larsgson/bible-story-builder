@@ -84,6 +84,12 @@ def load_template_refs(template_id: str) -> Dict[str, Dict[str, List[Tuple[int, 
     Load Bible refs from template .md files.
     Returns {story_number: {BOOK: [(chapter, verses)]}}
 
+    Supports both flat and hierarchical template structures:
+    - Flat: templates/OBS/01.md, templates/OBS/02.md
+    - Hierarchical: templates/OBS/01-Beginning/01.md, templates/OBS/02-Patriarchs/04-Abraham/04.md
+
+    Only processes numbered .md files (story content), ignores index.md (navigation).
+
     Splits comma-separated references into individual entries.
     Example: "GEN 1:1,5-7" becomes two entries: (1, "1") and (1, "5-7")
     Example: "GEN 6:21, GEN 7:1,7" becomes (6, "21"), (7, "1"), (7, "7")
@@ -96,8 +102,10 @@ def load_template_refs(template_id: str) -> Dict[str, Dict[str, List[Tuple[int, 
     pattern = re.compile(r"<<<REF:\s*([^>]+)>>>")
     story_refs = defaultdict(lambda: defaultdict(list))
 
-    for md_file in sorted(path.glob("*.md")):
+    # Use recursive glob to find all .md files (supports hierarchical structure)
+    for md_file in sorted(path.rglob("*.md")):
         # Extract story number from filename (e.g., "01.md" -> "01")
+        # Only process numbered files (story content), skip index.md and other non-story files
         story_num = md_file.stem
         if not story_num.isdigit():
             continue

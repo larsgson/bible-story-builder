@@ -1,0 +1,39 @@
+# Triumph Over Death Category
+level = "category"
+id = "08"
+title = "Triumph Over Death"
+beg = 36
+count = 7
+
+[image]
+filename = "000-07.png"
+
+# Stories in this category
+[[stories]]
+id = "36"
+title = "The Transfiguration"
+
+[[stories]]
+id = "37"
+title = "Jesus Raises Lazarus from the Dead"
+
+[[stories]]
+id = "38"
+title = "Jesus Is Betrayed"
+
+[[stories]]
+id = "39"
+title = "Jesus Is Put on Trial"
+
+[[stories]]
+id = "40"
+title = "Jesus Is Crucified"
+
+[[stories]]
+id = "41"
+title = "God Raises Jesus from the Dead"
+
+[[stories]]
+id = "42"
+title = "Jesus Returns to Heaven"
+
