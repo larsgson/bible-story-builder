@@ -2,9 +2,9 @@
   "template_id": "OBS",
   "summary": {
     "total_errors": 0,
-    "total_warnings": 180,
+    "total_warnings": 239,
     "languages_with_errors": 0,
-    "languages_with_warnings": 97
+    "languages_with_warnings": 131
   },
   "errors": {},
   "warnings": {
@@ -32,11 +32,39 @@
         }
       ]
     },
+    "agn": {
+      "AGNWPS/AGNWPSN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
     "akp": {
       "AKPWBT/AKPWBTN1DA": [
         {
           "ref": "LUK1:39-41",
           "details": "missing verses: 40, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "alp": {
+      "ALPWBT/ALPWBTN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "amf": {
+      "AMFSIM/AMFSIMN1DA": [
+        {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 5, timestamps repeated"
         }
       ]
     },
@@ -120,8 +148,20 @@
         }
       ]
     },
+    "blh": {
+      "BLHLBT/BLHBSLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        }
+      ]
+    },
     "boj": {
       "BOJWBT/BOJWBTN1DA": [
+        {
+          "ref": "LUK1:11-14",
+          "details": "missing verses: 12, timestamps repeated"
+        },
         {
           "ref": "LUK2:6-7",
           "details": "missing verses: 7, timestamps repeated"
@@ -130,6 +170,10 @@
     },
     "bor": {
       "BORWYI/BORWYIN1DA": [
+        {
+          "ref": "LUK1:62-64",
+          "details": "no verses in range, no verses after range, repeating verse 61 timestamp"
+        },
         {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
@@ -141,6 +185,10 @@
         {
           "ref": "LUK1:39-41",
           "details": "missing verses: 40, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -157,6 +205,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "btx": {
+      "BTXLAI/BTXLAIN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -187,6 +243,10 @@
     "cbs": {
       "CBSBSP/CBSBSPN2SA": [
         {
+          "ref": "LUK1:62-64",
+          "details": "no verses in range, no verses after range, repeating verse 61 timestamp"
+        },
+        {
           "ref": "MAT1:24-25",
           "details": "no verses in range, no verses after range, repeating verse 23 timestamp"
         }
@@ -216,8 +276,36 @@
         }
       ]
     },
+    "cfm": {
+      "CFMUBS/FLMUBSN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "cgc": {
+      "CGCTBL/CGCTBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "cjo": {
+      "CJOWBT/CJOWBTN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        }
+      ]
+    },
     "cul": {
       "CULWBT/CULWBTN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        },
         {
           "ref": "LUK2:6-7",
           "details": "missing verses: 7, timestamps repeated"
@@ -264,6 +352,34 @@
         }
       ]
     },
+    "eus": {
+      "EUSBSS/EUSEABN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        }
+      ]
+    },
+    "ffm": {
+      "FFMWBT/FFMTBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "gbi": {
+      "GBILAI/GBILAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        },
+        {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 5, timestamps repeated"
+        }
+      ]
+    },
     "gmv": {
       "GMVTBL/GMVTBLN2SA": [
         {
@@ -296,8 +412,20 @@
         }
       ]
     },
+    "hui": {
+      "HUIPNG/HUIPNGN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        }
+      ]
+    },
     "huu": {
       "HUUTBL/HUUTBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        },
         {
           "ref": "LUK2:6-7",
           "details": "missing verses: 7, timestamps repeated"
@@ -309,6 +437,14 @@
         {
           "ref": "LUK1:39-41",
           "details": "missing verses: 40, timestamps repeated"
+        }
+      ]
+    },
+    "ifu": {
+      "IFUWPS/IFUWPSN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -355,12 +491,28 @@
     "ipi": {
       "IPIPNG/IPIPNGN2SA": [
         {
+          "ref": "LUK1:56",
+          "details": "no verses in range, no verses after range, repeating verse 55 timestamp"
+        },
+        {
           "ref": "LUK1:57",
+          "details": "no verses in range, no verses after range, repeating verse 55 timestamp"
+        },
+        {
+          "ref": "LUK1:62-64",
           "details": "no verses in range, no verses after range, repeating verse 55 timestamp"
         },
         {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "itv": {
+      "ITVSTP/ITVSTPN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -375,8 +527,16 @@
     "jiv": {
       "JIVAIE/JIVAIEN2SA": [
         {
+          "ref": "LUK1:30-33",
+          "details": "missing verses: 33, timestamps repeated"
+        },
+        {
           "ref": "LUK1:39-41",
           "details": "missing verses: 40, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -391,6 +551,10 @@
     "kan": {
       "KANDPI/KANDPIN1DA": [
         {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 5, timestamps repeated"
+        },
+        {
           "ref": "LUK2:12-14",
           "details": "missing verses: 14, timestamps repeated"
         }
@@ -401,6 +565,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "kdn": {
+      "KDNBSZ/KDNBSZN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
         }
       ]
     },
@@ -425,6 +597,22 @@
         {
           "ref": "MAT1:24-25",
           "details": "no verses in range, no verses after range, repeating verse 23 timestamp"
+        }
+      ]
+    },
+    "kne": {
+      "KNETBL/KNETBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "kqe": {
+      "KQEBLI/KQETBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -460,6 +648,22 @@
         }
       ]
     },
+    "lem": {
+      "LEMWBT/LEMWBTN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        }
+      ]
+    },
+    "lex": {
+      "LEXWBT/LEXWBTN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
     "lhu": {
       "LHUTBS/LHUTBSN2DA": [
         {
@@ -481,6 +685,18 @@
         {
           "ref": "LUK1:39-41",
           "details": "missing verses: 40, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "ljp": {
+      "LJPLAI/LJPLAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -497,6 +713,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "no verses in range, no verses after range, repeating verse 10 timestamp"
+        }
+      ]
+    },
+    "lsi": {
+      "LSIBSM/LSIBSMN1DA": [
+        {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 5, timestamps repeated"
         }
       ]
     },
@@ -518,6 +742,10 @@
     },
     "mak": {
       "MAKLAI/MAKLAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        },
         {
           "ref": "LUK2:6-7",
           "details": "no verses in range, using verses 5 and 8 as boundary approximation"
@@ -565,6 +793,14 @@
         {
           "ref": "LUK1:39-41",
           "details": "missing verses: 39, timestamps repeated"
+        }
+      ]
+    },
+    "mcd": {
+      "MCDWBT/MCDTBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -648,8 +884,20 @@
         }
       ]
     },
+    "mtj": {
+      "MTJTBL/MTJTBLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
     "muh": {
       "MUHWBT/MUHWBTN2SA": [
+        {
+          "ref": "LUK1:22-24",
+          "details": "missing verses: 24, timestamps repeated"
+        },
         {
           "ref": "LUK1:26",
           "details": "no verses in range, using verses 25 and 27 as boundary approximation"
@@ -665,6 +913,10 @@
         {
           "ref": "MAT2:1-2",
           "details": "missing verses: 1, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
         }
       ]
     },
@@ -673,6 +925,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "mvp": {
+      "MVPLAI/MVPLAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -708,19 +968,55 @@
         }
       ]
     },
+    "nij": {
+      "NIJLAI/NIJLAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
     "npy": {
       "NPYLAI/NPYLAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        },
+        {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 4, timestamps repeated"
+        },
         {
           "ref": "LUK2:8-11",
           "details": "missing verses: 8, timestamps repeated"
         }
       ]
     },
+    "pad": {
+      "PADWBT/PADTBLN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
     "pao": {
       "PAONAB/PAONABN1DA": [
         {
+          "ref": "LUK1:62-64",
+          "details": "missing verses: 64, timestamps repeated"
+        },
+        {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "pau": {
+      "PAUPAL/PAUUBSN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -737,6 +1033,26 @@
         {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "ppk": {
+      "PPKLAI/PPKLAIN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        },
+        {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 5, timestamps repeated"
+        }
+      ]
+    },
+    "ptu": {
+      "PTULAI/PTULAIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
         }
       ]
     },
@@ -781,6 +1097,10 @@
         {
           "ref": "LUK1:26",
           "details": "no verses in range, using verses 25 and 27 as boundary approximation"
+        },
+        {
+          "ref": "LUK2:4-5",
+          "details": "missing verses: 4, timestamps repeated"
         }
       ]
     },
@@ -832,6 +1152,26 @@
         }
       ]
     },
+    "snf": {
+      "SNFWBT/SNFWYIN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
+        }
+      ]
+    },
+    "sri": {
+      "SRIWBT/SRIWBTN2SA": [
+        {
+          "ref": "LUK1:30-33",
+          "details": "missing verses: 32, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        }
+      ]
+    },
     "stb": {
       "STBTAP/STBTAPN1DA": [
         {
@@ -845,6 +1185,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "no verses in range, no verses after range, repeating verse 13 timestamp"
+        }
+      ]
+    },
+    "sxb": {
+      "SXBWBT/SXBBTLN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
         }
       ]
     },
@@ -931,6 +1279,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "no verses in range, no verses after range, repeating verse 12 timestamp"
+        }
+      ]
+    },
+    "tlb": {
+      "TLBLAI/TLBLAIN1DA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 10, timestamps repeated"
         }
       ]
     },
@@ -1055,6 +1411,14 @@
           "details": "no verses in range, using verses 7 and 9 as boundary approximation"
         },
         {
+          "ref": "LUK1:22-24",
+          "details": "missing verses: 23, timestamps repeated"
+        },
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
+        },
+        {
           "ref": "LUK2:1",
           "details": "no verses in range, no verses before range, using timestamp 0 and verse 3"
         }
@@ -1065,6 +1429,14 @@
         {
           "ref": "MAT1:24-25",
           "details": "missing verses: 25, timestamps repeated"
+        }
+      ]
+    },
+    "war": {
+      "WARSPV/WARSPVN2SA": [
+        {
+          "ref": "MAT2:9-10",
+          "details": "missing verses: 9, timestamps repeated"
         }
       ]
     },

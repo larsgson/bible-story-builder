@@ -568,15 +568,15 @@ def get_best_fileset_for_book(
                 if new_priority < current_priority:  # type: ignore[reportOperatorIssue]
                     audio_fileset = fileset_id
 
-        # Text priority (ALWAYS prefer Complete over canon-specific):
-        # 1. Complete (C) plain text (_ET or text_plain)
-        # 2. Complete (C) USX format
-        # 3. Complete (C) JSON format
-        # 4. Complete (C) other formats (text_format)
-        # 5. Canon-specific (OT/NT) plain text
-        # 6. Canon-specific (OT/NT) USX format
-        # 7. Canon-specific (OT/NT) JSON format
-        # 8. Canon-specific (OT/NT) other formats
+        # Text priority (ALWAYS prefer plain text first, then JSON/USX as fallback):
+        # PRIORITY 0: Complete (C) plain text (_ET or text_plain) - ALWAYS FIRST CHOICE
+        # PRIORITY 1: Complete (C) USX format - only if plain text not available
+        # PRIORITY 2: Complete (C) JSON format - only if plain text/USX not available
+        # PRIORITY 3: Complete (C) other formats (text_format)
+        # PRIORITY 4: Canon-specific (OT/NT) plain text - PREFERRED for partial
+        # PRIORITY 5: Canon-specific (OT/NT) USX format - fallback
+        # PRIORITY 6: Canon-specific (OT/NT) JSON format - fallback
+        # PRIORITY 7: Canon-specific (OT/NT) other formats
         if "text" in fileset_type:
             is_complete = fileset_size == "C"
 
@@ -708,8 +708,13 @@ def get_audio_path(fileset_id: str, book: str, chapter: int) -> Optional[str]:
     return data["data"][0].get("path")
 
 
-def get_text_content(fileset_id: str, book: str, chapter: int) -> Optional[str]:
-    """Get text content from API."""
+def get_text_content(fileset_id: str, book: str, chapter: int) -> Optional[dict]:
+    """Get text content from API.
+
+    Returns dict with either:
+    - {'type': 'path', 'data': url} for JSON/USX filesets with downloadable files
+    - {'type': 'verses', 'data': [verse_data]} for plain text filesets with inline verses
+    """
     # Use the correct endpoint format: /bibles/filesets/{fileset_id}/{book}/{chapter}
     endpoint = f"bibles/filesets/{fileset_id}/{book}/{chapter}"
 
@@ -719,7 +724,17 @@ def get_text_content(fileset_id: str, book: str, chapter: int) -> Optional[str]:
     if not data or "data" not in data or not data["data"]:
         return None
 
-    return data["data"][0].get("path")
+    first_item = data["data"][0]
+
+    # Check if this is a downloadable file (JSON/USX format)
+    if "path" in first_item:
+        return {"type": "path", "data": first_item["path"]}
+
+    # Check if this is inline verse data (plain text format)
+    elif "verse_text" in first_item:
+        return {"type": "verses", "data": data["data"]}
+
+    return None
 
 
 def get_timing_data(fileset_id: str, book: str, chapter: int) -> Optional[Dict]:
@@ -839,8 +854,8 @@ def download_text(
     error_logger: ErrorLogger,
 ) -> bool:
     """Download text file."""
-    text_path = get_text_content(fileset_id, book, chapter)
-    if not text_path:
+    text_content = get_text_content(fileset_id, book, chapter)
+    if not text_content:
         canon = determine_book_canon(book)
         error_logger.log_error(
             iso,
@@ -857,12 +872,26 @@ def download_text(
         return False
 
     try:
-        response = requests.get(text_path, timeout=DOWNLOAD_TIMEOUT)
-        response.raise_for_status()
-
         output_path.parent.mkdir(parents=True, exist_ok=True)
-        with open(output_path, "w", encoding="utf-8") as f:
-            f.write(response.text)
+
+        if text_content["type"] == "path":
+            # Download file from path (JSON/USX format)
+            response = requests.get(text_content["data"], timeout=DOWNLOAD_TIMEOUT)
+            response.raise_for_status()
+
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write(response.text)
+
+        elif text_content["type"] == "verses":
+            # Extract verse text from inline data (plain text format)
+            verses = []
+            for verse_data in text_content["data"]:
+                verse_text = verse_data.get("verse_text", "")
+                if verse_text:
+                    verses.append(verse_text)
+
+            with open(output_path, "w", encoding="utf-8") as f:
+                f.write("\n".join(verses))
 
         log(f"  ✓ Downloaded: {output_path.name}", "INFO")
         stats.downloaded_from_api += 1
@@ -880,6 +909,22 @@ def download_text(
             fileset=fileset_id,
             distinct_id=distinct_id,
             details=f"Text download failed for fileset_id={fileset_id}: {str(e)}",
+        )
+        stats.failed += 1
+        return False
+    except Exception as e:
+        log(f"  ✗ Failed to save text: {e}", "ERROR")
+        canon = determine_book_canon(book)
+        error_logger.log_error(
+            iso,
+            canon,
+            book,
+            chapter,
+            error_type="save_failed",
+            content_type="text",
+            fileset=fileset_id,
+            distinct_id=distinct_id,
+            details=f"Text save failed for fileset_id={fileset_id}: {str(e)}",
         )
         stats.failed += 1
         return False

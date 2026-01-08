@@ -15,7 +15,7 @@ import sys
 import zipfile
 from collections import defaultdict
 from pathlib import Path
-from typing import Dict, List, Optional, Set, Tuple
+from typing import Dict, List, Optional, Tuple
 
 TEMPLATE_DIR = Path("templates")
 WORKSPACE_DIR = Path("workspace/templates")
@@ -32,7 +32,7 @@ def log(msg: str, level: str = "INFO"):
     print(f"[{level}] {msg}")
 
 
-def load_regions_config() -> Tuple[Dict[str, str], Dict[str, List[str]]]:
+def load_regions_config() -> Tuple[Dict[str, List[str]], Dict[str, List[str]]]:
     """
     Load region mapping from config.
     Returns:
@@ -90,9 +90,10 @@ def load_template_refs(template_id: str) -> Dict[str, Dict[str, List[Tuple[int, 
 
     Only processes numbered .md files (story content), ignores index.md (navigation).
 
-    Splits comma-separated references into individual entries.
-    Example: "GEN 1:1,5-7" becomes two entries: (1, "1") and (1, "5-7")
-    Example: "GEN 6:21, GEN 7:1,7" becomes (6, "21"), (7, "1"), (7, "7")
+    Splits comma-separated references into individual entries, reusing book/chapter as needed.
+    Example: "LUK 1:8,11-14,18" becomes: (1, "8"), (1, "11-14"), (1, "18")
+    Example: "MAT 1:2,3-4,2:4-7" becomes: (1, "2"), (1, "3-4"), (2, "4-7")
+    Example: "MAT 1:2,3-4,2:4-7,LUK 2:7-8,11,13-15" splits with proper book/chapter reuse
     """
     path = TEMPLATE_DIR / template_id
     if not path.exists():
@@ -117,26 +118,39 @@ def load_template_refs(template_id: str) -> Dict[str, Dict[str, List[Tuple[int, 
                 comma_parts = [part.strip() for part in ref_content.split(",")]
 
                 current_book = None
+                current_chapter = None
+
                 for part in comma_parts:
-                    # Check if this part has a book code
+                    # Check if this part has a book code (e.g., "LUK 1:8" or "MAT 2:4-7")
                     book_match = re.match(r"([A-Z0-9]+)\s+(\d+):(.+)", part)
                     if book_match:
-                        # Full reference with book
+                        # Full reference with book and chapter
                         current_book = book_match.group(1).upper()
-                        chapter = int(book_match.group(2))
+                        current_chapter = int(book_match.group(2))
                         verses = book_match.group(3).strip()
+                        story_refs[story_num][current_book].append(
+                            (current_chapter, verses)
+                        )
                     else:
-                        # Just chapter:verses, use current book
+                        # Check if this part has chapter:verses (e.g., "2:4-7")
                         chapter_match = re.match(r"(\d+):(.+)", part)
                         if chapter_match and current_book:
-                            chapter = int(chapter_match.group(1))
+                            # New chapter, reuse current book
+                            current_chapter = int(chapter_match.group(1))
                             verses = chapter_match.group(2).strip()
+                            story_refs[story_num][current_book].append(
+                                (current_chapter, verses)
+                            )
+                        elif current_book and current_chapter is not None:
+                            # Just verses (e.g., "11-14" or "18"), reuse current book and chapter
+                            verses = part.strip()
+                            if verses:  # Make sure it's not empty
+                                story_refs[story_num][current_book].append(
+                                    (current_chapter, verses)
+                                )
                         else:
-                            # Just verses, assume same chapter as before
-                            # This shouldn't happen with proper template format
+                            # Cannot parse - missing book/chapter context
                             continue
-
-                    story_refs[story_num][current_book].append((chapter, verses))
 
         except Exception as e:
             log(f"Error reading {md_file}: {e}", "WARN")
@@ -170,7 +184,7 @@ def parse_timing_path(p: Path) -> Optional[Dict]:
             "chapter": int(chapter),
             "fileset": fileset,
         }
-    except:
+    except Exception:
         return None
 
 
@@ -300,7 +314,7 @@ def extract_verse_timestamps(
             timestamps.append(last_available_ts)
 
         return timestamps, missing_verses, None
-    except Exception as e:
+    except Exception:
         return None, [], None
 
 
@@ -475,8 +489,12 @@ def export_to_workspace(template_id: str) -> Tuple[bool, ExportLogger]:
                     timing_data = load_timing_file(meta["path"])
                     if not timing_data:
                         export_log.add(
-                            "Failed to Load Timing",
-                            f"{iso}/{distinct_id}/{fileset} {ref_key}",
+                            "error",
+                            iso,
+                            distinct_id,
+                            fileset,
+                            ref_key,
+                            "Failed to load timing data",
                         )
                         missing_count += 1
                         continue
@@ -630,7 +648,11 @@ def export_to_workspace(template_id: str) -> Tuple[bool, ExportLogger]:
 
                     # Add warnings section only if there are warnings for this distinct_id
                     if distinct_id in workspace_warnings[canon][category][iso]:
-                        warnings = workspace_warnings[canon][category][iso][distinct_id]
+                        warnings_data = workspace_warnings[canon][category][iso][
+                            distinct_id
+                        ]
+                        # Convert nested defaultdicts to regular dicts for JSON serialization
+                        warnings = json.loads(json.dumps(warnings_data, default=dict))
                         if warnings:
                             output_data["warnings"] = warnings
 
@@ -640,7 +662,7 @@ def export_to_workspace(template_id: str) -> Tuple[bool, ExportLogger]:
 
                     files_written += 1
 
-    log(f"\nWorkspace export summary:")
+    log("\nWorkspace export summary:")
     log(f"  Processed: {processed_count} references")
     log(f"  Missing: {missing_count} references")
     log(f"  Files written: {files_written}")
@@ -745,7 +767,7 @@ def create_region_zips(
                 zip_files_created += 1
                 log(f"  Created {safe_region_name}.zip with {files_in_zip} files")
 
-    log(f"\nRegion zip summary:")
+    log("\nRegion zip summary:")
     log(f"  Zip files created: {zip_files_created}")
     if languages_without_region:
         log(f"  Languages without region: {len(languages_without_region)}")
@@ -823,9 +845,9 @@ def export_pretty_timings(template_id: str) -> bool:
 
         shutil.copy2(manifest_src, manifest_dst)
         file_count += 1
-        log(f"  Copied manifest.json in compact format")
+        log("  Copied manifest.json in compact format")
 
-    log(f"\nPretty timings export complete")
+    log("\nPretty timings export complete")
     log(f"  Total files exported: {file_count}")
     log(f"  Export path: {export_timings_dir.absolute()}")
 
@@ -976,7 +998,7 @@ def create_all_timings_zip(template_id: str) -> bool:
     archive_size = zip_path.stat().st_size
     size_mb = archive_size / (1024 * 1024)
 
-    log(f"\nALL-timings.zip created successfully")
+    log("\nALL-timings.zip created successfully")
     log(f"  Total files archived: {file_count}")
     log(f"  Archive size: {size_mb:.2f} MB")
     log(f"  Archive path: {zip_path.absolute()}")
